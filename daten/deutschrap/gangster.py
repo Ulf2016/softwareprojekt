@@ -2,7 +2,6 @@
 import json
 import operator
 
-path = "gangster_rap.json"
 files = ['gangster_rap.json', 'gangster_rap_2.json', 'gangster_rap_3.json', 'gangster_rap_4.json']
 output = 'output/insults_sorted'
 path_insults = "../schimpfwortliste"
