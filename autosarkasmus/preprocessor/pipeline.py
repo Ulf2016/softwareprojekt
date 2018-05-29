@@ -13,7 +13,6 @@ from autosarkasmus.preprocessor.tokenizer.tokenizer import Tokenizer
 from autosarkasmus.preprocessor.normalizer.normalizer import Normalizer
 from autosarkasmus.preprocessor.tagger.tagger_m import Tagger
 
-
 class Pipeline:
     '''
     A wrapper class for twitter data preprocessing
