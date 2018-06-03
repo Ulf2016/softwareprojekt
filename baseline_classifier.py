@@ -33,8 +33,8 @@ from sklearn import preprocessing
 from sklearn import svm
 from sklearn.cross_validation import cross_val_score, cross_val_predict
 from sklearn import metrics
-
 from sklearn.model_selection import KFold
+from iwnlp.iwnlp_wrapper import IWNLPWrapper
 
 class Baseline_SVM:
 
@@ -52,16 +52,38 @@ class Baseline_SVM:
         """
         Preprocessing based on Scheffler et. al. German Twitter Preprocessing
         """
-        tokenizedTweets_writer = open('./daten/tokenized_tweets.txt', 'w')
-        preprocTweets_writer = open('./daten/preprocessed_tweets.txt', 'w')
+        tokenizedTweets_writer = open('./daten/tokenized_tweets_normalized.txt', 'w')
+        preprocTweets_writer = open('./daten/preprocessed_tweets_normalized.txt', 'w')
         
         pp = Pipeline(self.this_file, "./autosarkasmus/rsrc/de-tiger.map" )
         tweets_tkn, tweets_proc, labels = pp.process()
         assert(len(tweets_tkn) == len(tweets_proc) == len(labels))
         
+        # filter stopwords + normalize tokens
+        lemmatizer = IWNLPWrapper(lemmatizer_path='daten/IWNLP.Lemmatizer_20170501.json')
+        lemmatized_tokens = []
+        for x in range(len(tweets_tkn)):
+            tweet = []
+            for token in tweets_tkn[x]:
+                if token.lower() in stopwords.words('german'):
+                    continue 
+                try:
+                    lemma = lemmatizer.lemmatize_plain(token, ignore_case=True)
+                    if(lemma):
+                        tweet.append(lemma[0])
+                    else:
+                        tweet.append(token)
+
+                except Exception as e:
+                    print(e)
+            
+            lemmatized_tokens.append(tweet)
+           
+        assert(len(lemmatized_tokens) == len(tweets_proc) == len(labels))
+
         # write preprocessing results to file 
-        for x in range(len(tweets_proc)):
-            t_tweet = (" ").join(tweets_tkn[x])
+        for x in range(len(lemmatized_tokens)):
+            t_tweet = (" ").join(lemmatized_tokens[x])
             p_tweet = (" ").join([str(x) + "/" + str(y) for x,y in tweets_proc[x]])
             label = labels[x]
             tokenizedTweets_writer.write(t_tweet + "\t" + label + "\n")
@@ -70,7 +92,7 @@ class Baseline_SVM:
     def read_corpus(self):
         tweets = []
         labels = []
-        with open('./daten/tokenized_tweets.txt', 'r') as inputfile:
+        with open('./daten/tokenized_tweets_normalized.txt', 'r') as inputfile:
             for line in inputfile:
                 l = line.split("\t")
                 tweets.append(l[0].strip())
@@ -113,7 +135,7 @@ class Baseline_SVM:
         if(bigram):
             print("Baseline: tf-idf bigram SVM")
             self.write_label_to_csv("Baseline: tf-idf bigram SVM")
-            bow_transformer = CountVectorizer(analyzer="word", min_df=2, lowercase=False, ngram_range=(1,2))
+            bow_transformer = CountVectorizer(analyzer="word", min_df=1, lowercase=False, ngram_range=(1,2))
         else:
             print("Baseline: tf-idf unigram SVM")
             self.write_label_to_csv("Baseline: tf-idf unigram SVM")
@@ -157,7 +179,7 @@ class Baseline_SVM:
             Y_train_enc = le.fit_transform(Y_train)
             Y_test_enc = le.fit_transform(Y_test)
         
-            clf = svm.SVC(kernel='linear', C=0.5,random_state=5).fit(X_train_tfidf, Y_train_enc)
+            clf = svm.SVC(kernel='linear', C=0.5,random_state=1).fit(X_train_tfidf, Y_train_enc)
             
             predicted = clf.predict(X_test_tfidf)
             # scores.append(clf.score(X_test_tfidf, Y_test_enc))
@@ -171,7 +193,7 @@ class Baseline_SVM:
         self.write_score_to_csv(scores)
         print("Total Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
     
-    def baseline_mi(self, n=1000):
+    def baseline_mi(self, n=1500):
         vocab = []
         counter = 0
         with open('daten/mi_vocab.txt', 'r', encoding='utf-8') as input_file:
@@ -185,7 +207,7 @@ class Baseline_SVM:
         ten_folds = self.get_n_folds(tweets, labels)
         print("Baseline: mutual information feature selection")
         self.write_label_to_csv("Baseline: feature selection w. mutual information")
-        bow_transformer = CountVectorizer(analyzer="word", min_df=1, lowercase=False, vocabulary=set(vocab))
+        bow_transformer = CountVectorizer(analyzer="word", min_df=2, lowercase=False, vocabulary=set(vocab))
         document_term_matrix = bow_transformer.fit(tweets)
         # print(bow_transformer.vocabulary_)
     
@@ -209,7 +231,7 @@ class Baseline_SVM:
             Y_train_enc = le.fit_transform(Y_train)
             Y_test_enc = le.fit_transform(Y_test)
         
-            clf = svm.SVC(kernel='linear', C=0.5,random_state=5).fit(document_term_matrix_tr, Y_train_enc)
+            clf = svm.SVC(kernel='linear', C=0.5,random_state=1).fit(document_term_matrix_tr, Y_train_enc)
             
             predicted = clf.predict(document_term_matrix_te)
             score = metrics.f1_score(Y_test_enc, predicted, average='weighted')
@@ -349,7 +371,7 @@ class Baseline_SVM:
 if __name__ == '__main__':
     c = Baseline_SVM('./daten/germeval/germeval2018.training.txt')
     c.baseline_mi()
-    # c.preprocess()
+    #c.preprocess()
     c.createBaselineClassifier(False)
     c.createBaselineClassifier(True)
     # c.feature_selector()
