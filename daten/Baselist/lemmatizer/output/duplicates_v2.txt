@@ -1,0 +1,4 @@
+blöd|ADJ	2
+gewalttätig|ADJ	2
+anstrengen|VERB	2
+unverantwortlich|ADJ	2
