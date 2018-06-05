@@ -1,0 +1,131 @@
+%\documentclass[aspectratio=169]{beamer}
+\documentclass{beamer}
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+\usetheme {Dresden}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox}
+
+
+\usenavigationsymbolstemplate{}
+
+\addtobeamertemplate{footline}{centered}
+{%
+   \usebeamercolor[fg]{author in sidebar}
+   \vskip-1cm
+\hspace*{\fill} Spezifikationsvortrag Softwareprojekt\hspace*{\fill}%
+\llap
+   \insertframenumber\,/\,\inserttotalframenumber\kern1em\vskip2pt%
+}
+
+\begin{document}
+
+\title[]{Spezifikationsvortrag}
+\author[]{Fabian Düker, Uli Steinbach}
+\institute{Universität Heidelberg, Institut für Computerlinguistik\linebreak\vspace{0.03\textwidth}
+Softwareprojekt, SoSe 2018\linebreak\vspace{0.02\textwidth}
+Prof Dr. Katja Markert}
+\date{12.06.2018}
+
+\frame{\titlepage}
+\begin{frame}[allowframebreaks]{Übersicht}
+\tableofcontents
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%% SECTION 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Übersicht}
+
+\subsection[Übersicht]{Übersicht }
+
+\begin{frame}{Übersicht}
+\begin{block}{Autom. Erstellung eines Lexikons für die Erkennung von Abusive Words }
+Anwendung auf Germeval Task I 2018 \\Binäre Klassifikation von 5000 Tweets 
+\end{block}
+\end{frame}
+
+
+\section{inhaltliche Spezifikation}
+\subsection[inh. Spez.]{ inh. Spezifikation }
+
+\begin{frame}{Problemstellung}
+\begin{itemize}
+	\item Problem: Hatespeech ist in ständiger Veränderung begriffen (Neologismen, Ambiguität, Kontext)
+	\item Wiegand et al. 2016: Erstellung eines englischen Lexikons mit guten Ergebnissen auf cross-domain Evaluation
+	\item SentiWS: Lexikon mit negativen Wörtern für das Deutsche
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lösungsansatz}
+\begin{itemize}
+\item Erstellung Baselexikon aus SentiWS neg. Sentiment-Lexikon
+\item halbautomatische Erweiterung des Baselexikons mit deutschen Schimpwörtern
+\item autom. Erweiterung mittels graphbasiertem Label-Propagation-Algorithmus
+\item Anwendung auf Germeval 2018 Datenset und Evaluation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{halbautom. Erweiterung mit deutschen Schimpfwörtern}
+\begin{itemize}
+\item Genius API: Erstellung eines Deutschrapkorpus 
+\item Deutschrap: zeitgemäße Verwendung von Schimpfwörtern (genrespezifisch, aber auch politisch + rassistisch)
+\item autom. Extraktion von Kandidaten mittels syntaktischer Pattern
+\item Beispielpattern: Du [NN] , Du [ADJ]* [NN]
+\item manuelle Bereinigung der extrahierten Daten und Auswahl von Schimpfwörtern
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Auszug aus Korpus}
+\begin{itemize}
+\item Liste mit Songs/Artists, Textauszug, Übersicht Top-Schimpfwörter
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Evaluation}
+\begin{itemize}
+\item Baseline 1: Unigram und Bigram SVM 
+\item Baseline 2: Feature Selection (Mutual Information) SVM 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evaluation}
+\begin{itemize}
+\item Tabelle Baseline 1+2
+\item Tabelle Baseline 3
+\end{itemize}
+\end{frame}
+
+
+\section{Modularisierung und Aufgabenverteilung}
+\subsection[Modularisierung]{ Modularisierung und Aufgabenverteilung }
+
+\begin{frame}{Aufgabenverteilung}
+\end{frame}
+
+\begin{frame}{Zeitplan}
+\end{frame}
+
+
+\section{Programmarchitektur, Datenstrukturen}
+\subsection[Programmarchitektur]{ Programmarchitektur und Datenstrukturen }
+
+\begin{frame}{Programmarchitektur}
+\end{frame}
+
+\begin{frame}{Datenstrukturen}
+\end{frame}
+
+\section{}
+\subsection[]{}
+
+
+%%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Literatur}
+\end{frame}
+
+
+
+\end{document}
