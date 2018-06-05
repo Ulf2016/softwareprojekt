@@ -85,16 +85,92 @@ Anwendung auf Germeval Task I 2018 \\Binäre Klassifikation von 5000 Tweets
 
 \begin{frame}{Evaluation}
 \begin{itemize}
-\item Baseline 1: Unigram und Bigram SVM 
+\item Baseline 1: Unigram und Bigram SVM: 
 \item Baseline 2: Feature Selection (Mutual Information) SVM 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Evaluation}
-\begin{itemize}
-\item Tabelle Baseline 1+2
-\item Tabelle Baseline 3
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain,t]{Evaluation}
+\begin{table}[]
+\centering
+\caption{Baseline: tf-idf unigram SVM}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
+1 & 4500 & 1524 & 2976 & 146.94 & 500 & 160 & 340 & 144.124 & 0.7026952348344236 \\ \hline
+2 & 4500 & 1560 & 2940 & 146.73 & 500 & 124 & 376 & 146.05 & 0.7430423747345847 \\ \hline
+3 & 4500 & 1525 & 2975 & 146.73 & 500 & 159 & 341 & 146.0 & 0.6822048536263124 \\ \hline
+4 & 4500 & 1505 & 2995 & 146.57 & 500 & 179 & 321 & 147.512 & 0.6637390819218496 \\ \hline
+5 & 4500 & 1498 & 3002 & 145.94 & 500 & 186 & 314 & 153.154 & 0.6466493970138341 \\ \hline
+6 & 4500 & 1504 & 2996 & 147.0 & 500 & 180 & 320 & 143.568 & 0.6675527979162865 \\ \hline
+7 & 4500 & 1504 & 2996 & 146.61 & 500 & 180 & 320 & 147.106 & 0.6563892890626787 \\ \hline
+8 & 4500 & 1519 & 2981 & 146.16 & 500 & 165 & 335 & 151.13 & 0.6681861534976389 \\ \hline
+9 & 4500 & 1504 & 2996 & 147.08 & 500 & 180 & 320 & 142.86 & 0.650127611518916 \\ \hline
+10 & 4500 & 1513 & 2987 & 146.83 & 500 & 171 & 329 & 145.104 & 0.6737827241885149 \\ \hline
+\multicolumn{10}{|r|}{\bf{Total Accuracy: 0.68 (+/- 0.05)}} \\ 
+\hline
+\end{tabular}%
+}
+\end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain, t]{Evaluation}
+\begin{table}[]
+\centering
+\caption{Baseline: tf-idf bigram SVM}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
+1 & 4500 & 1524 & 2976 & 146.94 & 500 & 160 & 340 & 144.124 & 0.6713317445366677 \\ \hline
+2 & 4500 & 1560 & 2940 & 146.73 & 500 & 124 & 376 & 146.05 & 0.7143231005141465 \\ \hline
+3 & 4500 & 1525 & 2975 & 146.73 & 500 & 159 & 341 & 146.0 & 0.6607936275023581 \\ \hline
+4 & 4500 & 1505 & 2995 & 146.57 & 500 & 179 & 321 & 147.512 & 0.6407256780069586 \\ \hline
+5 & 4500 & 1498 & 3002 & 145.94 & 500 & 186 & 314 & 153.154 & 0.6004567364407795 \\ \hline
+6 & 4500 & 1504 & 2996 & 147.0 & 500 & 180 & 320 & 143.568 & 0.636733440679629 \\ \hline
+7 & 4500 & 1504 & 2996 & 146.61 & 500 & 180 & 320 & 147.106 & 0.6211176439430055 \\ \hline
+8 & 4500 & 1519 & 2981 & 146.16 & 500 & 165 & 335 & 151.13 & 0.6254687762688433 \\ \hline
+9 & 4500 & 1504 & 2996 & 147.08 & 500 & 180 & 320 & 142.86 & 0.6184350158030838 \\ \hline
+10 & 4500 & 1513 & 2987 & 146.83 & 500 & 171 & 329 & 145.104 & 0.6386443278943279 \\ \hline
+\multicolumn{10}{|r|}{\bf{Total Accuracy: 0.64 (+/- 0.06)}} \\ 
+\hline
+\end{tabular}%
+}
+\end{table}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[plain, t]{Evaluation}
+\begin{table}[]
+\centering
+\caption{Baseline: Feature-Selection m. Mutual Information}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
+1 & 4500 & 1524 & 2976 & 146.94 & 500 & 160 & 340 & 144.124 & 0.7506333288282201 \\ \hline
+2 & 4500 & 1560 & 2940 & 146.73 & 500 & 124 & 376 & 146.05 & 0.8159589743589742 \\ \hline
+3 & 4500 & 1525 & 2975 & 146.73 & 500 & 159 & 341 & 146.0 & 0.7661802897341697 \\ \hline
+4 & 4500 & 1505 & 2995 & 146.57 & 500 & 179 & 321 & 147.512 & 0.761125609472951 \\ \hline
+5 & 4500 & 1498 & 3002 & 145.94 & 500 & 186 & 314 & 153.154 & 0.717136006424597 \\ \hline
+6 & 4500 & 1504 & 2996 & 147.0 & 500 & 180 & 320 & 143.568 & 0.7715594209711858 \\ \hline
+7 & 4500 & 1504 & 2996 & 146.61 & 500 & 180 & 320 & 147.106 & 0.7808015386464718 \\ \hline
+8 & 4500 & 1519 & 2981 & 146.16 & 500 & 165 & 335 & 151.13 & 0.7812137931034483 \\ \hline
+9 & 4500 & 1504 & 2996 & 147.08 & 500 & 180 & 320 & 142.86 & 0.7738412698412699 \\ \hline
+10 & 4500 & 1513 & 2987 & 146.83 & 500 & 171 & 329 & 145.104 & 0.7651150793650793 \\ \hline
+\multicolumn{10}{|r|}{\bf{Total Accuracy: 0.77 (+/- 0.05)}} \\
+\hline
+\end{tabular}%
+}
+\end{table}
 \end{frame}
 
 
@@ -106,6 +182,7 @@ Anwendung auf Germeval Task I 2018 \\Binäre Klassifikation von 5000 Tweets
 
 \begin{frame}{Zeitplan}
 \end{frame}
+
 
 
 \section{Programmarchitektur, Datenstrukturen}

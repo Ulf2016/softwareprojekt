@@ -25,27 +25,31 @@
 \headcommand {\beamer@framepages {8}{8}}
 \headcommand {\slideentry {2}{1}{6}{9/9}{inh. Spez.}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\sectionentry {3}{Modularisierung und Aufgabenverteilung}{10}{Modularisierung und Aufgabenverteilung}{0}}
-\headcommand {\beamer@sectionpages {4}{9}}
-\headcommand {\beamer@subsectionpages {4}{9}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{Modularisierung}}\headcommand {\beamer@subsectionpages {10}{9}}
-\headcommand {\slideentry {3}{1}{1}{10/10}{Modularisierung}{0}}
+\headcommand {\slideentry {2}{1}{7}{10/10}{inh. Spez.}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{1}{2}{11/11}{Modularisierung}{0}}
+\headcommand {\slideentry {2}{1}{8}{11/11}{inh. Spez.}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\sectionentry {4}{Programmarchitektur, Datenstrukturen}{12}{Programmarchitektur, Datenstrukturen}{0}}
-\headcommand {\beamer@sectionpages {10}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{12}{Programmarchitektur}}\headcommand {\beamer@subsectionpages {12}{11}}
-\headcommand {\slideentry {4}{1}{1}{12/12}{Programmarchitektur}{0}}
+\headcommand {\sectionentry {3}{Modularisierung und Aufgabenverteilung}{12}{Modularisierung und Aufgabenverteilung}{0}}
+\headcommand {\beamer@sectionpages {4}{11}}
+\headcommand {\beamer@subsectionpages {4}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{12}{Modularisierung}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {3}{1}{1}{12/12}{Modularisierung}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {4}{1}{2}{13/13}{Programmarchitektur}{0}}
+\headcommand {\slideentry {3}{1}{2}{13/13}{Modularisierung}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{14}{}}\headcommand {\beamer@subsectionpages {14}{13}}
-\headcommand {\slideentry {5}{1}{1}{14/14}{}{0}}
+\headcommand {\sectionentry {4}{Programmarchitektur, Datenstrukturen}{14}{Programmarchitektur, Datenstrukturen}{0}}
+\headcommand {\beamer@sectionpages {12}{13}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{14}{Programmarchitektur}}\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\slideentry {4}{1}{1}{14/14}{Programmarchitektur}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@partpages {1}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@sectionpages {14}{14}}
-\headcommand {\beamer@documentpages {14}}
-\headcommand {\def \inserttotalframenumber {14}}
+\headcommand {\slideentry {4}{1}{2}{15/15}{Programmarchitektur}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{16}{}}\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\slideentry {5}{1}{1}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@partpages {1}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@sectionpages {16}{16}}
+\headcommand {\beamer@documentpages {16}}
+\headcommand {\def \inserttotalframenumber {16}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  5 JUN 2018 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.7)  5 JUN 2018 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1055,7 +1055,14 @@ Now handling font encoding PD1 ...
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count153
 )
-(./präsentation.aux)
+(./präsentation.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `präsentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1346,41 +1353,21 @@ Overfull \hbox (728.39072pt too wide) has occurred while \output is active
 
 [8
 
-]
-Overfull \hbox (22.39612pt too wide) has occurred while \output is active
-[]\OT1/cmss/m/n/6 centered[]
- []
+] [9
 
+]pdfTeX warning (ext4): destination with the same identifier (name{my-label}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \end{frame}
+                  [10
 
-Overfull \hbox (728.39072pt too wide) has occurred while \output is active
-[][][]
- []
-
-[9
-
-]
-Overfull \hbox (22.39612pt too wide) has occurred while \output is active
-[]\OT1/cmss/m/n/6 centered[]
- []
-
-
-Overfull \hbox (728.39072pt too wide) has occurred while \output is active
-[][][]
- []
-
-[10
-
-]
-Overfull \hbox (22.39612pt too wide) has occurred while \output is active
-[]\OT1/cmss/m/n/6 centered[]
- []
-
-
-Overfull \hbox (728.39072pt too wide) has occurred while \output is active
-[][][]
- []
-
-[11
+]pdfTeX warning (ext4): destination with the same identifier (name{my-label}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \end{frame}
+                  [11
 
 ]
 Overfull \hbox (22.39612pt too wide) has occurred while \output is active
@@ -1419,6 +1406,30 @@ Overfull \hbox (728.39072pt too wide) has occurred while \output is active
 [14
 
 ]
+Overfull \hbox (22.39612pt too wide) has occurred while \output is active
+[]\OT1/cmss/m/n/6 centered[]
+ []
+
+
+Overfull \hbox (728.39072pt too wide) has occurred while \output is active
+[][][]
+ []
+
+[15
+
+]
+Overfull \hbox (22.39612pt too wide) has occurred while \output is active
+[]\OT1/cmss/m/n/6 centered[]
+ []
+
+
+Overfull \hbox (728.39072pt too wide) has occurred while \output is active
+[][][]
+ []
+
+[16
+
+]
 \tf@nav=\write6
 \openout6 = `präsentation.nav'.
 
@@ -1428,37 +1439,41 @@ Overfull \hbox (728.39072pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `präsentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
  (./präsentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `präsentation.out' has not changed.
-(rerunfilecheck)             Checksum: 731B367D7C3EB75079BD8662F866B08C;563.
+(rerunfilecheck)             Checksum: DFC505E414F99028E33428A46E026F5F;563.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 17264 strings out of 494447
- 329629 string characters out of 6166767
- 401168 words of memory out of 5000000
- 20159 multiletter control sequences out of 15000+600000
- 9957 words of font info for 37 fonts, out of 8000000 for 9000
+ 17309 strings out of 494447
+ 330399 string characters out of 6166767
+ 422565 words of memory out of 5000000
+ 20197 multiletter control sequences out of 15000+600000
+ 12160 words of font info for 45 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  48i,19n,56p,895b,754s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss1
 0.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mss12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmss8.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb>
-Output written on präsentation.pdf (14 pages, 70985 bytes).
+ts/cm/cmssbx10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msam10.pfb>
+Output written on präsentation.pdf (16 pages, 87418 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 368 compressed objects within 4 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 44 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
