@@ -1,150 +1,150 @@
-heftig|ADJ
-haarig|ADJ
-schmerzlich|ADJ
-verzweifelt|ADJ
-unzuverlässig|ADJ
-beleidigend|ADJ
-gelähmt|ADJ
-egoistisch|ADJ
-total|ADJ
-rücksichtslos|ADJ
-unbeliebt|ADJ
-zahlungsunfähig|ADJ
-Abgesoffen|ADJ
-undercover|ADJ
-krumm|ADJ
-kalt|ADJ
-farblos|ADJ
-grausig|ADJ
-gewaltsam|ADJ
-happig|ADJ
-absurd|ADJ
-stupide|ADJ
-grauenhaft|ADJ
-ehrenlos|ADJ
-wettbewerbswidrig|ADJ
-unberechtigt|ADJ
-glanzlos|ADJ
-destruktiv|ADJ
-entlaufen|ADJ
-heikel|ADJ
-untragbar|ADJ
-begrenzt|ADJ
-unerbittlich|ADJ
-belanglos|ADJ
-grässlich|ADJ
-niederträchtig|ADJ
-kränklich|ADJ
-vorhersehbar|ADJ
-dusselig|ADJ
-ladykillend|ADJ
-knapp|ADJ
-scheusslich|ADJ
-minderwertig|ADJ
-verhasst|ADJ
-debil|ADJ
-undemokratisch|ADJ
-gebrechlich|ADJ
-lang|ADJ
-defizitär|ADJ
-irre|ADJ
-Nichtskönner|NOUN
-Pappenheimer|NOUN
-Manipulation|NOUN
-Räuber|NOUN
-Muschi|NOUN
-Clown|NOUN
-Unfall|NOUN
-Jammerlappen|NOUN
-Spasti|NOUN
-Schwächung|NOUN
-Fluch|NOUN
-Reparatur|NOUN
-Unfreundlichkeit|NOUN
-Vernichtung|NOUN
-Denkfehler|NOUN
-Konflikt|NOUN
-Nutzlosigkeit|NOUN
-Furz|NOUN
-Mist|NOUN
-Gefährdung|NOUN
-Brillenschlange|NOUN
-Verlust|NOUN
-Garnichts|NOUN
-Abstumpfung|NOUN
-Misstrauensantrag|NOUN
-Mistratte|NOUN
-Drohung|NOUN
-Minderung|NOUN
-Zwangslage|NOUN
-Angriff|NOUN
-Feind|NOUN
-Annullierung|NOUN
-Schwuchtel|NOUN
-Bitterkeit|NOUN
-Eierkopf|NOUN
-Bösewicht|NOUN
-Fehltritt|NOUN
-Minusmensch|NOUN
-Glanzlosigkeit|NOUN
-Stagnation|NOUN
-Pleite|NOUN
-Pappnase|NOUN
-Schwanz|NOUN
-Ausbeute|NOUN
-Rückstand|NOUN
-Ende|NOUN
-Versagen|NOUN
-Dreck|NOUN
-Trennung|NOUN
-Fut|NOUN
-verirren|VERB
-verarschen|VERB
-zurückbleiben|VERB
-magern|VERB
-loswerden|VERB
-trennen|VERB
-töten|VERB
-schmuggeln|VERB
-verzögern|VERB
-klagen|VERB
-drosseln|VERB
-aufrühren|VERB
-ergaunern|VERB
-verspielen|VERB
-abweichen|VERB
-anspannen|VERB
-ausbeuten|VERB
-schließen|VERB
-krachen|VERB
-aufhören|VERB
-verraten|VERB
-heucheln|VERB
-schmerzen|VERB
-frustrieren|VERB
-infiltrieren|VERB
-aussterben|VERB
-erschlagen|VERB
-bestrafen|VERB
-lähmen|VERB
-unterliegen|VERB
-degradieren|VERB
-meiden|VERB
-zensieren|VERB
-befürchten|VERB
-erleiden|VERB
-bedrohen|VERB
-verwüsten|VERB
-zersetzen|VERB
-herabsetzen|VERB
-anklagen|VERB
-rächen|VERB
-drängen|VERB
-langweilen|VERB
-schubsen|VERB
-übertreten|VERB
-stocken|VERB
-abschrecken|VERB
-ausschalten|VERB
-verkleinern|VERB
-verringern|VERB
+heftig|ADJ  0
+haarig|ADJ  1
+schmerzlich|ADJ 1
+verzweifelt|ADJ 1
+unzuverlässig|ADJ   1
+beleidigend|ADJ 0
+gelähmt|ADJ 1
+egoistisch|ADJ  1
+total|ADJ   0
+rücksichtslos|ADJ   1
+unbeliebt|ADJ   1
+zahlungsunfähig|ADJ 1
+Abgesoffen|ADJ  1
+undercover|ADJ  0
+krumm|ADJ   1
+kalt|ADJ    1
+farblos|ADJ 1
+grausig|ADJ 1
+gewaltsam|ADJ   1
+happig|ADJ  0
+absurd|ADJ  1
+stupide|ADJ 1
+grauenhaft|ADJ  1
+ehrenlos|ADJ    1
+wettbewerbswidrig|ADJ   0
+unberechtigt|ADJ    0
+glanzlos|ADJ    1
+destruktiv|ADJ  1
+entlaufen|ADJ   1
+heikel|ADJ  1
+untragbar|ADJ   1
+begrenzt|ADJ    1
+unerbittlich|ADJ    1
+belanglos|ADJ   1
+grässlich|ADJ   1
+niederträchtig|ADJ  1
+kränklich|ADJ   1
+vorhersehbar|ADJ    1
+dusselig|ADJ    1
+ladykillend|ADJ 0
+knapp|ADJ   0
+scheusslich|ADJ 1
+minderwertig|ADJ    1
+verhasst|ADJ    1
+debil|ADJ   1
+undemokratisch|ADJ  1
+gebrechlich|ADJ 1
+lang|ADJ    0
+defizitär|ADJ   1
+irre|ADJ    1
+Nichtskönner|NOUN   1
+Pappenheimer|NOUN   1
+Manipulation|NOUN   1
+Räuber|NOUN 1
+Muschi|NOUN 1
+Clown|NOUN  1
+Unfall|NOUN 1
+Jammerlappen|NOUN   1
+Spasti|NOUN 1
+Schwächung|NOUN 0
+Fluch|NOUN  1
+Reparatur|NOUN  0
+Unfreundlichkeit|NOUN   1
+Vernichtung|NOUN    1
+Denkfehler|NOUN 1
+Konflikt|NOUN   1
+Nutzlosigkeit|NOUN  1
+Furz|NOUN   1
+Mist|NOUN   1
+Gefährdung|NOUN 0
+Brillenschlange|NOUN    1
+Verlust|NOUN    1
+Garnichts|NOUN  1
+Abstumpfung|NOUN    1
+Misstrauensantrag|NOUN  0
+Mistratte|NOUN  1
+Drohung|NOUN    1
+Minderung|NOUN  0
+Zwangslage|NOUN 0
+Angriff|NOUN    1
+Feind|NOUN  1
+Annullierung|NOUN   0
+Schwuchtel|NOUN 1
+Bitterkeit|NOUN 1
+Eierkopf|NOUN   1
+Bösewicht|NOUN  1
+Fehltritt|NOUN  1
+Minusmensch|NOUN    1
+Glanzlosigkeit|NOUN 1
+Stagnation|NOUN 1
+Pleite|NOUN 1
+Pappnase|NOUN   1
+Schwanz|NOUN    1
+Ausbeute|NOUN   1
+Rückstand|NOUN  1
+Ende|NOUN   0
+Versagen|NOUN   1
+Dreck|NOUN  1
+Trennung|NOUN   0
+Fut|NOUN    1
+verirren|VERB   1
+verarschen|VERB 1
+zurückbleiben|VERB  1
+magern|VERB 0
+loswerden|VERB  1
+trennen|VERB    0
+töten|VERB  1
+schmuggeln|VERB 0
+verzögern|VERB  1
+klagen|VERB 1
+drosseln|VERB   1
+aufrühren|VERB  1
+ergaunern|VERB  1
+verspielen|VERB 1
+abweichen|VERB  1
+anspannen|VERB  1
+ausbeuten|VERB  1
+schließen|VERB  0
+krachen|VERB    0
+aufhören|VERB   0
+verraten|VERB   1
+heucheln|VERB   1
+schmerzen|VERB  0
+frustrieren|VERB    1
+infiltrieren|VERB   1
+aussterben|VERB 1
+erschlagen|VERB 1
+bestrafen|VERB  1
+lähmen|VERB 1
+unterliegen|VERB    1
+degradieren|VERB    1
+meiden|VERB 1
+zensieren|VERB  1
+befürchten|VERB 0
+erleiden|VERB   0
+bedrohen|VERB   1
+verwüsten|VERB  1
+zersetzen|VERB  1
+herabsetzen|VERB    1
+anklagen|VERB   1
+rächen|VERB 1
+drängen|VERB    1
+langweilen|VERB 1
+schubsen|VERB   1
+übertreten|VERB 0
+stocken|VERB    0
+abschrecken|VERB    1
+ausschalten|VERB    1
+verkleinern|VERB    0
+verringern|VERB 0
