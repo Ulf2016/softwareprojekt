@@ -36,24 +36,24 @@ Prof Dr. Katja Markert}
 
 \section{Übersicht}
 
-\subsection[Übersicht]{Übersicht }
+\subsection[Aufgabe]{Aufgabe }
 
 \begin{frame}{Übersicht}
 \begin{block}{Autom. Erstellung eines Lexikons für die Erkennung von Abusive Words }
-Anwendung auf Germeval Task I 2018 \\Binäre Klassifikation von 5000 Tweets 
+Anwendung auf Germeval 2018 Task I $\Rightarrow$ Binäre Klassifikation von 5000 Tweets 
 \end{block}
 \end{frame}
 
 
-\section{inhaltliche Spezifikation}
+\section{Inhaltliche Spezifikation}
 \subsection[inh. Spez.]{ inh. Spezifikation }
 
 \begin{frame}{Problemstellung}
 \begin{itemize}
-	\item Problem: Hatespeech ist in ständiger Veränderung begriffen (Neologismen, Ambiguität, Kontext)
+	\item Problem: Hatespeech ist in ständiger Veränderung begriffen (Neologismen, Ambiguität, Kontext/Domäne)
 	\item Wiegand et al. 2016: Erstellung eines englischen Lexikons mit guten Ergebnissen auf cross-domain Evaluation
 	\item SentiWS: Lexikon mit negativen Wörtern für das Deutsche
-
+	
 \end{itemize}
 \end{frame}
 
@@ -70,23 +70,47 @@ Anwendung auf Germeval Task I 2018 \\Binäre Klassifikation von 5000 Tweets
 \begin{itemize}
 \item Genius API: Erstellung eines Deutschrapkorpus 
 \item Deutschrap: zeitgemäße Verwendung von Schimpfwörtern (genrespezifisch, aber auch politisch + rassistisch)
-\item autom. Extraktion von Kandidaten mittels syntaktischer Pattern
+\item Autom. Extraktion von Kandidaten mittels syntaktischer Pattern
 \item Beispielpattern: Du [NN] , Du [ADJ]* [NN]
-\item manuelle Bereinigung der extrahierten Daten und Auswahl von Schimpfwörtern
+\item Manuelle Bereinigung der extrahierten Daten und Auswahl von eindeutigen Schimpfwörtern
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Auszug aus Korpus}
 \begin{itemize}
-\item Liste mit Songs/Artists, Textauszug, Übersicht Top-Schimpfwörter
+\item here
 \end{itemize}
 \end{frame}
 
+
+\begin{frame}{Graph-basierter Ansatz für autom. Erweiterung des Baselexikons}
+\begin{itemize}
+\item Erstellung von pos + neg seed-Liste mit annotierten Schimpwörtern aus Baselexikon (+) und häufigsten Wörtern (-)
+\item Graph mit Kanten zw. Wörtern auf Basis von Kosinusähnlichkeit zwischen Word Embeddings Vektoren (auf Twitter Korpus trainiert)
+\item Propagierung der Seed-Labels auf ungelabelte Knoten/Wörter mittels graphbasiertem Label-Propagation-Algorithmus (Adsorption Algorithmus, Talukdar et al. 2008)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain, t]
+{Graph-basierter Ansatz für autom. Erweiterung des Baselexikons}
+\includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{graph.png}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EVALUATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Evaluation}
 \begin{itemize}
 \item Baseline 1: Unigram und Bigram SVM: 
 \item Baseline 2: Feature Selection (Mutual Information) SVM 
+\item Allg. Preprocessing: Autosarkasmus-SP (SoSe 2016): Alle Tweets wurden tokenisiert, normalisiert und pos-getagged. Zusätzlich Lemmatisierung und stopword removal.
+\item 10-Fold Cross Validation mit kontrollierbarem random-seed für bessere Vergleichbarkeit.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evaluation}
+\begin{itemize}
+\item Unigram und Bigram SVM: Es wurde ein SVM Klassifizierer mit Standard-Parametern (Regularisierungs-Parameter C = 1.0, linear Kernel) trainiert. Input-Features sind die auf der Dokument-Term Matrix berechneten tf-idf Werte für Uni- bzw. Bigramme.  
+\item Feature Selection Algorithmus: Berechnung des mutual information score (Manning et. al 20??) zwischen Label und Wort $\Rightarrow$ 1500 Wörter mit den höchsten mi-scores wurden als Input-Features für den SVM Klassifizierer benutzt (C=1.0, linear-kernel). 
 \end{itemize}
 \end{frame}
 
@@ -177,13 +201,50 @@ Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
 \section{Modularisierung und Aufgabenverteilung}
 \subsection[Modularisierung]{ Modularisierung und Aufgabenverteilung }
 
+\begin{frame}[plain, t]
+\begin{table}[]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll}
+Modul &  & Uli & Fabian \\
+\bf{Erstellung Baselexikon} &  &  &  \\
+ & Integration SentiWS &  & x \\
+ & Extraktion neg. Wörter in SentiWS &  & x \\
+ & PAT-basierte Extraktion von NNs/ADJs & x &  \\
+ & Skript für Erstellung eines Annotations-Testsets & x &  \\
+\bf{Erstellung Baselines} &  &  &  \\
+ & Implementation manuelle 10-Fold Cross Validation & x &  \\
+ & Integration Autosarkasmus-Tweet Preprocessing & x &  \\
+ & Erweitertes Preprocessing (Lemmatisierung, Stopwörter) & x &  \\
+ & Implementation Unigram/Bigram SVM Baseline & x &  \\
+ & Implementation Mutual Information (Manning et. al 2011) & x &  \\
+ & Implementation Feature Selection (MI) SVM Baseline & x &  \\
+ & Evaluation und Output & x &  \\
+ \bf{Erstellung Word-Similarity Graph} &  &  &  \\
+ & Word Embeddings auf Twitter Daten & x & x \\
+ & Erstellung des Wortähnlichkeitsgraphen auf Basis von Kosinusähnlichkeiten & x & x \\
+ & Unknown Words Handhabung (character-level embeddings?) & x & x \\
+ & Erstellung der Seed Listen (pos + neg) & x & x \\
+\bf{Label Propagation} &  &  &  \\
+ & Implementation Adsorption Algorithmus (Talukdar 2008) & x & x \\
+ & Erweiterung des Baselexikons mit Output & x & x \\
+\bf{Anwendung und Evaluation} &  &  &  \\
+ & Test auf Germeval Daten & x & x \\
+ & Verbesserungen und Erweiterungen & x & x \\
+ & Visualisierung des Outputs & x & x \\
+ & Präsentation der Ergebnisse & x & x \\
+ & Abschlussbericht & x & x
+\end{tabular}%
+}
+\end{table}
+\end{frame}
+
 \begin{frame}{Aufgabenverteilung}
 \end{frame}
 
 \begin{frame}{Zeitplan}
 \end{frame}
-
-
 
 \section{Programmarchitektur, Datenstrukturen}
 \subsection[Programmarchitektur]{ Programmarchitektur und Datenstrukturen }
