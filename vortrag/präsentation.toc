@@ -1,9 +1,8 @@
-\beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{\IeC {\"U}bersicht}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Aufgabe }{3}{0}{1}
 \beamer@sectionintoc {2}{Inhaltliche Spezifikation}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{ inh. Spezifikation\IeC {\nobreakspace }}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{ inh. Spezifikation }{4}{0}{2}
 \beamer@sectionintoc {3}{Modularisierung und Aufgabenverteilung}{19}{0}{3}
-\beamer@subsectionintoc {3}{1}{ Modularisierung und Aufgabenverteilung\IeC {\nobreakspace }}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{ Modularisierung und Aufgabenverteilung }{19}{0}{3}
 \beamer@sectionintoc {4}{Programmarchitektur, Datenstrukturen}{23}{0}{4}
-\beamer@subsectionintoc {4}{1}{ Programmarchitektur und Datenstrukturen\IeC {\nobreakspace }}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{ Programmarchitektur und Datenstrukturen }{23}{0}{4}
