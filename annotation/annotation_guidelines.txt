@@ -1,6 +1,9 @@
 Die folgenden Pattern sollen als Guideline für die Annotation der negativen Sentiment Wörter aus SentiWS dienen und sind stark angelehnt an die Annotations-Guidelines von Wiegand et. al. (https://github.com/uds-lsv/lexicon-of-abusive-words/blob/master/AnnotationGuidelines/instructionsAnnotatingNegativePolarExpressions.pdf) 
 
 Alle Pattern sollen bezüglich ihres Potentials für die Verletzung von Personen evaluiert werden, also vor dem Hintergrund einer direkten Äußerung ggü. jemandem bewertet werden. 
+Bei Unsicherheit nach allen Tests --> 1 kodieren
+So nah wie möglich an den Pattern bleiben, keine großen Abweichungen (Offensiveness muss vom Wort selbst ausgehen!)
+Bei Unklarheiten zuerst Duden, Synonymlexika hinzuziehen
 
 N:
 Du bist (so) ein/eine/einer _
@@ -8,8 +11,11 @@ Du bist (selbst) verantwortlich für diese/diesen/dieses _
 Wir wollen deine _ hier nicht
 Ich kann deine _ nicht ausstehen
 
+Unterscheidung zw. gegenstandsbezogene (Abnutzung) und personenbezogene Substantive (Abneigung) 
+Nicht adjektvieren oder verbalisieren (POS-Tag beachten!) 
+
 V:
-Du bist die ganze Zeit am _
+Du bist die ganze Zeit am _ 
 Du machst nichts anderes als _ 
 Du _ mich _ 
 Du hast gerade alles ge_ 
@@ -20,6 +26,8 @@ Adj:
 Du bist so _ 
 Sei nicht so _
 Du bist so ein/eine _ Person
+
+Richtung der Adjektive: befremdlich (ist eher distanziert)
 
 
 

@@ -6,7 +6,6 @@ def create_annotation_testset(path_to_baselist, n=50):
 	"""
 	Inputfile: Baselist 
 	"""
-	seed(42)
 	nouns = []
 	verbs = []
 	adj = []
@@ -16,11 +15,11 @@ def create_annotation_testset(path_to_baselist, n=50):
 		for line in inputfile:
 			token = line.split("|")[0].strip()
 			tag = line.split("|")[1].strip()
-			if tag == "NN":
+			if tag == "NOUN":
 				nouns.append(line)
-			elif tag == "VVINF":
+			elif tag == "VERB":
 				verbs.append(line)
-			elif tag == "ADJX":
+			elif tag == "ADJ":
 				adj.append(line)
 	for i in range(n):
 		index_noun = randrange(len(nouns))
