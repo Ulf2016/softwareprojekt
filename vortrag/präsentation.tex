@@ -46,7 +46,7 @@ Anwendung auf Germeval 2018 Task I $\Rightarrow$ Binäre Klassifikation von 5000
 
 
 \section{Inhaltliche Spezifikation}
-\subsection[inh. Spez.]{ inh. Spezifikation }
+\subsection[inh. Spez.]{ inh. Spezifikation }
 
 \begin{frame}{Problemstellung}
 \begin{itemize}
@@ -78,7 +78,7 @@ Anwendung auf Germeval 2018 Task I $\Rightarrow$ Binäre Klassifikation von 5000
 \end{block}
 \end{frame}
 
-\begin{frame}{Erweiterung des Baselexikons}
+\begin{frame}{Erstellung des Baselexikons}
 \begin{itemize}
 \item Genius API: Erstellung eines Deutschrapkorpus 
 \item Deutschrap: zeitgemäße Verwendung von Schimpfwörtern (genrespezifisch, aber auch politisch, rassistisch, sexistisch)
@@ -86,7 +86,7 @@ Anwendung auf Germeval 2018 Task I $\Rightarrow$ Binäre Klassifikation von 5000
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Erweiterung des Baselexikons}
+\begin{frame}{Erstellung des Baselexikons}
 	\begin{itemize}
 		\item Automatischer Abgleich aller Nomen im Rapkorpus
 		\item mit Schimpfwortliste aus dem Internet
@@ -100,7 +100,7 @@ Anwendung auf Germeval 2018 Task I $\Rightarrow$ Binäre Klassifikation von 5000
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Erweiterung des Baselexikons}
+\begin{frame}{Erstellung des Baselexikons}
 	\begin{itemize}
 
 		\item Lemmatisierung mit IWNLP
@@ -278,7 +278,7 @@ Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODULARISIERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Modularisierung und Aufgabenverteilung}
-\subsection[Modularisierung]{ Modularisierung und Aufgabenverteilung }
+\subsection[Modularisierung]{ Modularisierung und Aufgabenverteilung }
 
 \begin{frame} 
 \begin{itemize}
@@ -296,7 +296,13 @@ Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
 \begin{tabular}{llll}
 Modul &  & Uli & Fabian \\
 \bf{Erstellung Baselexikon} &  &  &  \\
+& Extraktion negativer Wörter aus SentiWS &  & x \\
+& Erstellung Rapkorpus & x &  \\
  & PAT-basierte Extraktion von NNs/ADJs & x & x  \\
+ & Autom. Abgleich von Nomen mit Schimpfwortliste und Patterns &  & x \\
+ & Handselektion der beleidigenden Nomen &  & x \\
+ & Lemmatisierung des Lexikons mit IWNLP Lemmatizer &  & x \\
+ & Korrektur und Restlemmatisierung des Lexikons &  & x \\
  & Skript für Erstellung eines Annotations-Testsets & x &  \\
   & Skript für autom. Auswertung d. Annotations-Testsets &  & x \\
 \bf{Erstellung Baselines} &  &  &  \\
@@ -333,7 +339,7 @@ Modul &  & Uli & Fabian \\
 \end{frame}
 
 \section{Programmarchitektur, Datenstrukturen}
-\subsection[Programmarchitektur]{ Programmarchitektur und Datenstrukturen }
+\subsection[Programmarchitektur]{ Programmarchitektur und Datenstrukturen }
 
 \begin{frame}{Programmarchitektur}
 \end{frame}
@@ -349,7 +355,21 @@ Modul &  & Uli & Fabian \\
 
 \begin{frame}{Literatur}
 \begin{itemize}
-\item Talukdar 2008, Manning et al. 2011, Autosarkasmus Gruppe 2016, BR/PULS Studie 2016, Wiegand et al. 2018
+\item Talukdar, Pereira 2008 - Expermiments in Graph-based Semi-Supervised Learning Methods for Class-Instance Acquisition
+\item Velikovich et al. 2010 - The Viability of Web-derived Polarity Lexicons
+\item Wiegand et al. 2018 - Inducing a Lexicon of Abusive Words - A Feature-Based Approach
+\item Manning et al. 2011
+\item Autosarkasmus Gruppe 2016
+\item BR/PULS Studie 2016
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ressourcen}
+\begin{itemize}
+\item \textbf{Schimpfwortliste} http://www.hyperhero.com/de/insults.htm
+\item \textbf{SentiWS} http://wortschatz.uni-leipzig.de/en/download/
+\item \textbf{Genius} API https://genius.com/
+\item \textbf{spaCy} https://spacy.io/
 \end{itemize}
 \end{frame}
 

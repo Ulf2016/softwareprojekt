@@ -1,8 +1,0 @@
-\beamer@sectionintoc {1}{\IeC {\"U}bersicht}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{\IeC {\"U}bersicht }{3}{0}{1}
-\beamer@sectionintoc {2}{inhaltliche Spezifikation}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{ inh. Spezifikation }{4}{0}{2}
-\beamer@sectionintoc {3}{Modularisierung und Aufgabenverteilung}{16}{0}{3}
-\beamer@subsectionintoc {3}{1}{ Modularisierung und Aufgabenverteilung }{16}{0}{3}
-\beamer@sectionintoc {4}{Programmarchitektur, Datenstrukturen}{18}{0}{4}
-\beamer@subsectionintoc {4}{1}{ Programmarchitektur und Datenstrukturen }{18}{0}{4}
