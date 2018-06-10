@@ -12,14 +12,14 @@
 {%
    \usebeamercolor[fg]{author in sidebar}
    \vskip-1cm
-\hspace*{\fill} Spezifikationsvortrag Softwareprojekt - Graphbasierte Methode zur Generierung von deutschen Lexika für Hate Speech \hspace*{\fill}%
+\hspace*{\fill} Spezifikationsvortrag Softwareprojekt \hspace*{\fill}%
 \llap
    \insertframenumber\,/\,\inserttotalframenumber\kern1em\vskip2pt%
 }
 
 \begin{document}
 
-\title[]{Spezifikationsvortrag}
+\title[]{Spezifikationsvortrag - Graphbasierte Methode zur Generierung von deutschen Lexika für Hate Speech}
 \author[]{Fabian Düker, Uli Steinbach}
 \institute{Universität Heidelberg, Institut für Computerlinguistik\linebreak\vspace{0.03\textwidth}
 Softwareprojekt, SoSe 2018\linebreak\vspace{0.02\textwidth}
@@ -158,7 +158,7 @@ Auszug der extrahierten Schimpfwörter vor Handselektion
 \begin{itemize}
 \item Erstellung von pos + neg seed-Liste mit annotierten Schimpwörtern aus Baselexikon (+) und häufigsten Wörtern (-)
 \item Graph mit Kanten zw. Wörtern auf Basis von Kosinusähnlichkeit zwischen Word Embeddings Vektoren (auf Twitter Korpus trainiert)
-\item Propagierung der Seed-Labels auf ungelabelte Knoten/Wörter mittels graphbasiertem Label-Propagation-Algorithmus (Adsorption Algorithmus, Talukdar et al. 2008)
+\item Propagierung der Seed-Labels auf ungelabelte Knoten/Wörter mittels graphbasiertem Label-Propagation-Algorithmus (Adsorption Algorithmus, Talukdar/Crammer 2009)
 \end{itemize}
 \end{frame}
 
@@ -175,6 +175,14 @@ Auszug der extrahierten Schimpfwörter vor Handselektion
 \end{figure}
 
 \end{frame}
+
+Transduktives Lernen (statt induktiv)
+Menge von labeled und Menge von unlabeled Instanzen
+Goal: Label the unlabeled instances! 
+mehrere Ansätze/Varianten: 
+Random Walk Variante: kontrollierter Random Walk über den Graphen G
+kontrolliert über 3 Wahrscheinlichkeiten für jeden Knoten (inj, cont, abnd) 
+   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EVALUATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -378,7 +386,7 @@ Modul &  & Uli & Fabian \\
 
 \begin{frame}{Literatur}
 \begin{itemize}
-\item Talukdar, Pereira 2008 - Expermiments in Graph-based Semi-Supervised Learning Methods for Class-Instance Acquisition
+\item Talukdar, Crammer 2009 - New Regularized Algorithms for Transductive Learning
 \item Velikovich et al. 2010 - The Viability of Web-derived Polarity Lexicons
 \item Wiegand et al. 2018 - Inducing a Lexicon of Abusive Words - A Feature-Based Approach
 \item Manning et al. 2008 - Introduction to Information Retrieval

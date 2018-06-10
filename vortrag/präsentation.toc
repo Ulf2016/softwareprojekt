@@ -3,7 +3,7 @@
 \beamer@subsectionintoc {1}{1}{Aufgabe }{3}{0}{1}
 \beamer@sectionintoc {2}{Inhaltliche Spezifikation}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{ inh. Spezifikation }{4}{0}{2}
-\beamer@sectionintoc {3}{Modularisierung und Aufgabenverteilung}{21}{0}{3}
-\beamer@subsectionintoc {3}{1}{ Modularisierung und Aufgabenverteilung }{21}{0}{3}
-\beamer@sectionintoc {4}{Literatur und Ressourcen}{23}{0}{4}
-\beamer@subsectionintoc {4}{1}{Literatur und Ressourcen}{23}{0}{4}
+\beamer@sectionintoc {3}{Modularisierung und Aufgabenverteilung}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{ Modularisierung und Aufgabenverteilung }{22}{0}{3}
+\beamer@sectionintoc {4}{Literatur und Ressourcen}{24}{0}{4}
+\beamer@subsectionintoc {4}{1}{Literatur und Ressourcen}{24}{0}{4}
