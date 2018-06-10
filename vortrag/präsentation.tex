@@ -12,7 +12,7 @@
 {%
    \usebeamercolor[fg]{author in sidebar}
    \vskip-1cm
-\hspace*{\fill} Spezifikationsvortrag Softwareprojekt\hspace*{\fill}%
+\hspace*{\fill} Spezifikationsvortrag Softwareprojekt - Graphbasierte Methode zur Generierung von deutschen Lexika für Hate Speech \hspace*{\fill}%
 \llap
    \insertframenumber\,/\,\inserttotalframenumber\kern1em\vskip2pt%
 }
@@ -52,14 +52,16 @@ Anwendung auf Germeval 2018 Task I $\Rightarrow$ Binäre Klassifikation von 5000
 \begin{itemize}
 	\item Problem: Hatespeech ist in ständiger Veränderung begriffen (Neologismen, Ambiguität, Kontext/Domäne)
 	\item Wiegand et al. 2016: Erstellung eines englischen Lexikons mit guten Ergebnissen auf cross-domain Evaluation
-	\item SentiWS: Lexikon mit negativen Wörtern für das Deutsche
-	
+	\item Erstellung eines kontextunabhängigen Lexikons für das Deutsche
+	\item Anwendung des Lexikons bei der (binären) Erkennung von Tweets
+%	\item SentiWS: Lexikon mit negativen Wörtern für das Deutsche
+
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Lösungsansatz}
 \begin{itemize}
-\item Erstellung Baselexikon aus SentiWS neg. Sentiment-Lexikon
+\item manuelle Erstellung Baselexikon aus SentiWS neg. Sentiment-Lexikon
 \item Halbautomatische Erweiterung des Baselexikons mit deutschen Schimpwörtern
 \item Autom. Erweiterung mittels graphbasiertem Label-Propagation-Algorithmus
 \item Anwendung auf Germeval 2018 Datenset und Evaluation
@@ -152,12 +154,51 @@ Auszug der extrahierten Schimpfwörter vor Handselektion
 \end{frame}
 
 
+\begin{frame}{Graph-basierter Ansatz für autom. Erweiterung des Baselexikons}
+\begin{itemize}
+\item Erstellung von pos + neg seed-Liste mit annotierten Schimpwörtern aus Baselexikon (+) und häufigsten Wörtern (-)
+\item Graph mit Kanten zw. Wörtern auf Basis von Kosinusähnlichkeit zwischen Word Embeddings Vektoren (auf Twitter Korpus trainiert)
+\item Propagierung der Seed-Labels auf ungelabelte Knoten/Wörter mittels graphbasiertem Label-Propagation-Algorithmus (Adsorption Algorithmus, Talukdar et al. 2008)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[plain, t]
+{Graph-basierter Ansatz für autom. Erweiterung des Baselexikons}
+\bigskip
+\bigskip
+\center
+\begin{figure}[hbt]
+    \begin{center}
+        \includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{graph.png}\\
+    \end{center}
+\caption{Label Propagation Graph aus Wiegand et al. 2018}\label{preprocess}
+\end{figure}
+
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EVALUATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Anwendung und Evaluation auf Germeval Datenset}
+\begin{itemize}
+\item Germeval 2018: deutschsprachiger Twitter Korpus $\Rightarrow$ 5000 annotierte Tweets bzgl. beleidigender Sprache
+\item Task I: binäre Klassifikation der Tweets
+\item \textbf{beleidigend:} \\ \footnotesize \texttt{Für mich ist die \#katholische \#Kirche nur ein Sammelbecken von \#Verbrechern \#Kinderschändern und \#Kriminellen}
+\item \normalsize \textbf{other:} \\ \footnotesize \texttt{Endlich hat Kurz einen Verbündeten aus Frankreich, der auch die LBR ungesetzliche Einwanderung von jungen Afrikanern unterbinden will}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Anwendung und Evaluation auf Germeval Datenset}
+\begin{itemize}
+\item Unser Ansatz für die Verwendung des Baselexikons und warum könnte das besser sein ?
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Baseline}
 \begin{itemize}
-\item Baseline 1: Unigram und Bigram SVM
-\item Baseline 2: Feature Selection (Mutual Information) SVM 
+\item Baseline 1: Majority Baseline
+\item Baseline 2: Unigram und Bigram SVM
+\item Baseline 3: Feature Selection (Mutual Information) SVM 
 \item Preprocessing: Autosarkasmus-SP (SoSe 2016): Alle Tweets wurden tokenisiert, normalisiert und pos-getagged. Zusätzlich Lemmatisierung und stopword removal
 \item 10-Fold Cross Validation mit random-seed für bessere Vergleichbarkeit
 \end{itemize}
@@ -165,10 +206,11 @@ Auszug der extrahierten Schimpfwörter vor Handselektion
 
 \begin{frame}{Baseline}
 \begin{itemize}
-\item Unigram und Bigram SVM: Es wurde ein SVM Klassifizierer mit Standard-Parametern (Regularisierungs-Parameter C = 1.0, linear Kernel) trainiert. Input-Features sind die auf der Dokument-Term Matrix berechneten tf-idf Werte für Uni- bzw. Bigramme. Für die Unigramme wurde ein unterer cutoff von mind. 2 Vorkommen festgelegt.   
-\item Feature Selection Algorithmus: Berechnung des mutual information score (Manning et. al 2011) zwischen Label und Wort $\Rightarrow$ 1500 Wörter mit den höchsten mi-scores wurden als Input-Features für den SVM Klassifizierer (Regularisierungsparameter C=1.0, linearer Kernel) benutzt. 
+\item Unigram und Bigram SVM: Input-Features sind die auf der Dokument-Term Matrix berechneten tf-idf Werte für Uni- bzw. Bigramme.    
+\item Feature Selection Algorithmus: Berechnung des mutual information score (Manning et. al 2011) zwischen Label und Wort $\Rightarrow$ 1500 Wörter mit den höchsten mi-scores als Input-Features für SVM Klassifizierer. 
 \end{itemize}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[plain,t]{Evaluation der Baseline}
@@ -253,27 +295,6 @@ Fold & \#train & pos & neg & tok/tw & \#test & pos & neg & tok/tw & F1 \\ \hline
 \end{table}
 \end{frame}
 
-\begin{frame}{Graph-basierter Ansatz für autom. Erweiterung des Baselexikons}
-\begin{itemize}
-\item Erstellung von pos + neg seed-Liste mit annotierten Schimpwörtern aus Baselexikon (+) und häufigsten Wörtern (-)
-\item Graph mit Kanten zw. Wörtern auf Basis von Kosinusähnlichkeit zwischen Word Embeddings Vektoren (auf Twitter Korpus trainiert)
-\item Propagierung der Seed-Labels auf ungelabelte Knoten/Wörter mittels graphbasiertem Label-Propagation-Algorithmus (Adsorption Algorithmus, Talukdar et al. 2008)
-\end{itemize}
-\end{frame}
-
-\begin{frame}[plain, t]
-{Graph-basierter Ansatz für autom. Erweiterung des Baselexikons}
-\bigskip
-\bigskip
-\center
-\begin{figure}[hbt]
-    \begin{center}
-        \includegraphics[width=\textwidth,height=0.95\textheight,keepaspectratio]{graph.png}\\
-    \end{center}
-\caption{Label Propagation Graph aus Wiegand et al. 2018}\label{preprocess}
-\end{figure}
-
-\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODULARISIERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -332,35 +353,37 @@ Modul &  & Uli & Fabian \\
 \end{table}
 \end{frame}
 
-\begin{frame}{Aufgabenverteilung}
-\end{frame}
+%\begin{frame}{Aufgabenverteilung}
+%\end{frame}
+%
+%\begin{frame}{Zeitplan}
+%\end{frame}
+%
+%\section{Programmarchitektur, Datenstrukturen}
+%\subsection[Programmarchitektur]{ Programmarchitektur und Datenstrukturen }
+%
+%\begin{frame}{Programmarchitektur}
+%\end{frame}
+%
+%\begin{frame}{Datenstrukturen}
+%\end{frame}
 
-\begin{frame}{Zeitplan}
-\end{frame}
-
-\section{Programmarchitektur, Datenstrukturen}
-\subsection[Programmarchitektur]{ Programmarchitektur und Datenstrukturen }
-
-\begin{frame}{Programmarchitektur}
-\end{frame}
-
-\begin{frame}{Datenstrukturen}
-\end{frame}
-
-\section{}
-\subsection[]{}
 
 
 %%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Literatur und Ressourcen}
+\subsection[Lit. + Res.]{Literatur und Ressourcen}
+
 
 \begin{frame}{Literatur}
 \begin{itemize}
 \item Talukdar, Pereira 2008 - Expermiments in Graph-based Semi-Supervised Learning Methods for Class-Instance Acquisition
 \item Velikovich et al. 2010 - The Viability of Web-derived Polarity Lexicons
 \item Wiegand et al. 2018 - Inducing a Lexicon of Abusive Words - A Feature-Based Approach
-\item Manning et al. 2011
-\item Autosarkasmus Gruppe 2016
-\item BR/PULS Studie 2016
+\item Manning et al. 2008 - Introduction to Information Retrieval
+\item Autosarkasmus SWP 2016 - https://gitlab.cl.uni-heidelberg.de/hoff/GermanTwitterPreprocessing
+\item BR/PULS Studie 2016 - https://www.br.de/puls/musik/so-homophob-frauenfeindlich-rassistisch-und-behindertenfeindlich-ist-deutschrap-100.html
 \end{itemize}
 \end{frame}
 
@@ -368,7 +391,7 @@ Modul &  & Uli & Fabian \\
 \begin{itemize}
 \item \textbf{Schimpfwortliste} http://www.hyperhero.com/de/insults.htm
 \item \textbf{SentiWS} http://wortschatz.uni-leipzig.de/en/download/
-\item \textbf{Genius} API https://genius.com/
+\item \textbf{Genius API} https://genius.com/
 \item \textbf{spaCy} https://spacy.io/
 \end{itemize}
 \end{frame}
