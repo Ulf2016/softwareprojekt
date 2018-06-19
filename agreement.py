@@ -27,6 +27,7 @@ def agreement(path1, path2):
     return kappa
         
 path1 = "./annotation/annotationv5/Baselist_full_annotated_dueker.txt"
-path2 = "./annotation/annotationv4/annotation_complete.txt" 
+path2 = "./annotation/annotationv5/annotation_complete.txt" 
+
 
 print(agreement(path1, path2))
