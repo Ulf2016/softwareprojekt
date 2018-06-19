@@ -26,7 +26,7 @@ def agreement(path1, path2):
     kappa = cohen_kappa_score(vector1, vector2)
     return kappa
         
-path1 = "./annotation/annotationv4/anno_testset_v4 _dueker"
-path2 = "./annotation/annotationv4/annotation_steinbach.txt" 
+path1 = "./annotation/annotationv5/Baselist_full_annotated_dueker.txt"
+path2 = "./annotation/annotationv5/annotation_complete.txt" 
 
 print(agreement(path1, path2))
