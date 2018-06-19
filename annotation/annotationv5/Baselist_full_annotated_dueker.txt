@@ -1595,7 +1595,7 @@ Beschwerlichkeit|NOUN	0
 Angriff|NOUN	0
 zweifeln|VERB	0
 unscharf|ADJ	0
-Revolution|NOUN	
+Revolution|NOUN	0
 Angreifer|NOUN	0
 verärgern|VERB	0
 statisch|ADJ	0
