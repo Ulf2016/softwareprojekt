@@ -9,6 +9,7 @@ with open("embeddings") as read_file:
 with open("output", 'w') as write_file:
     for i in data:
         for j in data:
-            sim = spatial.distance.cosine(data[i], data[j])
-            write_file.write(i + '\t' + str(sim) + '\t' + j + '\n')
+            if(i!=j):
+                sim = spatial.distance.cosine(data[i], data[j])
+                write_file.write(i + '\t' + j + '\t' + str(sim) + '\n')
 
