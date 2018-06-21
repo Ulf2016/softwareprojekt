@@ -13,9 +13,8 @@ tags = []
 
 for i in data: 
     j = i.split('|')
-    tokens.append(j[0])
+    tokens.append(j[0].lower())
     tags.append(j[1])
-
 
 for token, tag in zip(tokens, tags):
     lemma = lemmatizer.lemmatize(token, pos_universal_google=tag)
