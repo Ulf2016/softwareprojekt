@@ -1,0 +1,16 @@
+betrunken	0.0	betrunken
+betrunken	0.10819861535418729	dumm
+betrunken	0.23858885483935233	fehlen
+betrunken	0.7604987533381943	bitch
+dumm	0.10819861535418729	betrunken
+dumm	0.0	dumm
+dumm	0.23789190835937302	fehlen
+dumm	0.6902156674589397	bitch
+fehlen	0.23858885483935233	betrunken
+fehlen	0.23789190835937302	dumm
+fehlen	0.0	fehlen
+fehlen	0.8850997818820596	bitch
+bitch	0.7604987533381943	betrunken
+bitch	0.6902156674589397	dumm
+bitch	0.8850997818820596	fehlen
+bitch	0.0	bitch
