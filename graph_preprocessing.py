@@ -84,27 +84,38 @@ class GraphPreprocessor:
 				w1, w2 = key.split("+")
 				graph_input_file.write(w1 + "\t" + w2 + "\t" + str(val) + "\n")
 
-	def create_graph_seed_and_goldlabel(self, nGold, nSeeds):
+	def create_graph_seed_and_goldlabel(self, nGold, nSeedsPos, nSeedsNeg):
 		"""
 		Wort \t Label \t Weight
 		Extract n words from baselexicon and m < n seed words from abusive words in baselexicon
 		"""
 		seed(2)
-		seeds = []
+		seeds_pos = []
+		seeds_neg = []
 		words = []
 		abusiveWords = [word for word, val in self.baselexicon.items() if int(val[-1]) == 1]
+		non_abusiveWords = [word for word, val in self.baselexicon.items() if int(val[-1]) != 1]
 		allWords = [word for word, val in self.baselexicon.items()]
 		
-		assert(nSeeds < len(abusiveWords))
+		assert(nSeedsPos < len(abusiveWords))
+		assert(nSeedsNeg < len(non_abusiveWords))
+		assert((len(abusiveWords) + len(non_abusiveWords)) == len(self.baselexicon))
 
-		while(len(seeds) <= nSeeds):
+		while(len(seeds_pos) < nSeedsPos):
 			index = randrange(len(abusiveWords))
 			word = abusiveWords.pop(index)
-			seeds.append(word)
+			seeds_pos.append(word)
 			i = allWords.index(word)
 			allWords.pop(i)
 
-		assert((len(seeds) + len(allWords)) == len(self.baselexicon))
+		while(len(seeds_neg) < nSeedsNeg):
+			index = randrange(len(non_abusiveWords))
+			word = non_abusiveWords.pop(index)
+			seeds_neg.append(word)
+			i = allWords.index(word)
+			allWords.pop(i)
+
+		assert((len(seeds_pos) + len(seeds_neg) + len(allWords)) == len(self.baselexicon))
 
 		while(len(words) < nGold):
 			index = randrange(len(allWords))
@@ -119,9 +130,10 @@ class GraphPreprocessor:
 				goldlabel_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
 
 		with open('daten/seeds.txt', 'w') as seeds_file:
-			for word in seeds: 
+			for word in seeds_pos: 
 				seeds_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
-		
+			for word in seeds_neg: 
+					seeds_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
 
 
 if __name__ == '__main__':
@@ -134,5 +146,5 @@ if __name__ == '__main__':
 	else:
 		print("reading baselexicon from file")
 	# g.calculate_cosine_similarity()
-	g.create_graph_seed_and_goldlabel(100,20)
+	g.create_graph_seed_and_goldlabel(100,2, 2)
 	
