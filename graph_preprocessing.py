@@ -66,6 +66,7 @@ class GraphPreprocessor:
 
 	def calculate_cosine_similarity(self):
 		d = {}
+		dic = {}
 		l = list(self.baselexicon)
 	
 		for i in range(len(l)):
@@ -78,15 +79,24 @@ class GraphPreprocessor:
 		key = d.keys()
 		values = d.values()
 		scores = np.array(list(values))
-		median = np.median(scores)
-		MAD = np.median(np.absolute(scores - median))
-		scores2 = (scores - median) / MAD
-		scores3 = np.clip(scores2, -2.0, 2.0)
-		scores4 = ( (scores3/4.0) + 0.5)
-		scores4[scores4 == 0] = 0.5
-		dic = {}
-		for k,v in zip(key, scores4):
-			dic[k] = v
+		mean = np.mean(scores)
+		for k,v in zip(key, scores):
+			if float(v) > mean:
+				dic[k] = v
+
+		
+		############### MAD ##########
+		# median = np.median(scores)
+		# MAD = np.median(np.absolute(scores - median))
+		# scores2 = (scores - median) / MAD
+		# scores3 = np.clip(scores2, -2.0, 2.0)
+		# scores4 = ( (scores3/4.0) + 0.5)
+		# # scores4[scores4 == 0] = 0.5
+		# dic = {}
+		# for k,v in zip(key, scores4):
+		# 	if float(v) > 0.2:
+		# 		dic[k] = v
+
 		# write to file
 		self.create_graph_output(dic)
 
@@ -129,7 +139,7 @@ class GraphPreprocessor:
 
 		assert((len(seeds_pos) + len(seeds_neg) + len(allWords)) == len(self.baselexicon))
 
-		while(len(words)):
+		while(len(allWords)):
 			index = randrange(len(allWords))
 			word = allWords.pop(index)
 			words.append(word)
@@ -139,13 +149,20 @@ class GraphPreprocessor:
 		#  <source_node>TAB<target_node>TAB<edge_weight>
 		with open('daten/gold_labels.txt', 'w') as goldlabel_file:
 			for word in words:
-				goldlabel_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
+				label = int(self.baselexicon[word][-1])
+				if(label):
+					label_string = 'off'
+				else:
+					label_string = 'neg'
+				goldlabel_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 
 		with open('daten/seeds.txt', 'w') as seeds_file:
-			for word in seeds_pos: 
-				seeds_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
+			for word in seeds_pos:
+				label_string = 'off'
+				seeds_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 			for word in seeds_neg: 
-				seeds_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
+				label_string = 'neg'
+				seeds_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 
 # set score normalization
 # konnektivität 
