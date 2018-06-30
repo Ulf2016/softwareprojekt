@@ -5,6 +5,7 @@ import json
 import math
 import ast
 import copy 
+import statistics
 import numpy as np
 from operator import itemgetter
 from random import randrange
@@ -65,26 +66,47 @@ class GraphPreprocessor:
 
 	def calculate_cosine_similarity(self):
 		d = {}
+		dic = {}
 		l = list(self.baselexicon)
 	
 		for i in range(len(l)):
 			key = l[i]
 			for j in l[i:]:
 				if(key != j):
-					sim = spatial.distance.cosine(self.baselexicon[key][1], self.baselexicon[j][1])
+					sim = 1.0 - (spatial.distance.cosine(self.baselexicon[key][1], self.baselexicon[j][1]))
 					d[key + "+" + j] = sim
-		assert(len(d) == ((len(self.baselexicon) * (len(self.baselexicon)-1))/2))
-		# write to file
-		self.create_graph_output(d)
+		# normalize
+		key = d.keys()
+		values = d.values()
+		scores = np.array(list(values))
+		mean = np.mean(scores)
+		for k,v in zip(key, scores):
+			if float(v) > mean:
+				dic[k] = v
 
+		
+		############### MAD ##########
+		# median = np.median(scores)
+		# MAD = np.median(np.absolute(scores - median))
+		# scores2 = (scores - median) / MAD
+		# scores3 = np.clip(scores2, -2.0, 2.0)
+		# scores4 = ( (scores3/4.0) + 0.5)
+		# # scores4[scores4 == 0] = 0.5
+		# dic = {}
+		# for k,v in zip(key, scores4):
+		# 	if float(v) > 0.2:
+		# 		dic[k] = v
+
+		# write to file
+		self.create_graph_output(dic)
 
 	def create_graph_output(self, d):
 		with open('daten/graph_input.txt', 'w') as graph_input_file:
 			for key, val in d.items():
 				w1, w2 = key.split("+")
-				graph_input_file.write(w1 + "\t" + w2 + "\t" + str(val) + "\n")
+				graph_input_file.write(w1 + "\t" + w2 + "\t" + "%0.2f" % (val) + "\n")
 
-	def create_graph_seed_and_goldlabel(self, nGold, nSeedsPos, nSeedsNeg):
+	def create_graph_seed_and_goldlabel(self, nSeedsPos, nSeedsNeg):
 		"""
 		Wort \t Label \t Weight
 		Extract n words from baselexicon and m < n seed words from abusive words in baselexicon
@@ -117,24 +139,36 @@ class GraphPreprocessor:
 
 		assert((len(seeds_pos) + len(seeds_neg) + len(allWords)) == len(self.baselexicon))
 
-		while(len(words) < nGold):
+		while(len(allWords)):
 			index = randrange(len(allWords))
 			word = allWords.pop(index)
 			words.append(word)
 
-		assert(len(words) == nGold)
 
 		# write to outputfile
+		#  <source_node>TAB<target_node>TAB<edge_weight>
 		with open('daten/gold_labels.txt', 'w') as goldlabel_file:
 			for word in words:
-				goldlabel_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
+				label = int(self.baselexicon[word][-1])
+				if(label):
+					label_string = 'off'
+				else:
+					label_string = 'neg'
+				goldlabel_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 
 		with open('daten/seeds.txt', 'w') as seeds_file:
-			for word in seeds_pos: 
-				seeds_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
+			for word in seeds_pos:
+				label_string = 'off'
+				seeds_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 			for word in seeds_neg: 
-					seeds_file.write(word + "\t" + self.baselexicon[word][-1] + "\t" + str(1.0) + "\n")
+				label_string = 'neg'
+				seeds_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 
+# set score normalization
+# konnektivität 
+# anzahl seeds und nur die häufigsten abusive words (Twitter Korpus Institut)
+# Ruppenhofer anschreiben
+# Evaluation: Baselexicon - seeds = GL
 
 if __name__ == '__main__':
 	g = GraphPreprocessor('/Users/ulisteinbach/Desktop/SS18/software_projekt/softwareprojekt/daten/Baselist/final_list.txt', '/Users/ulisteinbach/Downloads/embed_tweets_de_300M_52D')
@@ -145,6 +179,6 @@ if __name__ == '__main__':
 		g.write_baselexicon_to_file()
 	else:
 		print("reading baselexicon from file")
-	# g.calculate_cosine_similarity()
-	g.create_graph_seed_and_goldlabel(100,2, 2)
+	g.calculate_cosine_similarity()
+	g.create_graph_seed_and_goldlabel(20, 20)
 	
