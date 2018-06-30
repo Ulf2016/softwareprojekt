@@ -80,11 +80,11 @@ class GraphPreprocessor:
 		values = d.values()
 		scores = np.array(list(values))
 		mean = np.mean(scores)
+		
 		for k,v in zip(key, scores):
 			if float(v) > mean:
 				dic[k] = v
 
-		
 		############### MAD ##########
 		# median = np.median(scores)
 		# MAD = np.median(np.absolute(scores - median))
@@ -96,9 +96,18 @@ class GraphPreprocessor:
 		# for k,v in zip(key, scores4):
 		# 	if float(v) > 0.2:
 		# 		dic[k] = v
+		
+		li = []
+		for d in dic.keys():
+			l = d.split("+")
+			c = l[0]
+			li.append(c)
 
+		self.graph_input = set(li)
+		
 		# write to file
 		self.create_graph_output(dic)
+
 
 	def create_graph_output(self, d):
 		with open('daten/graph_input.txt', 'w') as graph_input_file:
@@ -138,23 +147,25 @@ class GraphPreprocessor:
 			allWords.pop(i)
 
 		assert((len(seeds_pos) + len(seeds_neg) + len(allWords)) == len(self.baselexicon))
+		print(len(seeds_neg), len(seeds_pos), len(allWords), len(self.baselexicon))
 
-		while(len(allWords)):
-			index = randrange(len(allWords))
-			word = allWords.pop(index)
-			words.append(word)
-
-
+		excluded_words = []
 		# write to outputfile
 		#  <source_node>TAB<target_node>TAB<edge_weight>
 		with open('daten/gold_labels.txt', 'w') as goldlabel_file:
-			for word in words:
+			for word in allWords:
 				label = int(self.baselexicon[word][-1])
 				if(label):
 					label_string = 'off'
 				else:
 					label_string = 'neg'
-				goldlabel_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
+				if(word in self.graph_input):
+					goldlabel_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
+				else:
+
+					excluded_words.append(word)
+		print("excluded " + str(len(excluded_words)) + " words")
+		print(excluded_words)
 
 		with open('daten/seeds.txt', 'w') as seeds_file:
 			for word in seeds_pos:
