@@ -1,4 +1,5 @@
 import os
+import operator
 
 #defaults:
 graph_file = 'data/graph_input.txt'
@@ -15,6 +16,8 @@ mu3 = 0.01
 beta = 2
 
 output_file = 'data/output/label_prop_output'
+
+evaluation_file = 'data/evaluation.txt'
 
 
 def createConfig(graph_file, seed_file, gold_labels_file, iters, verbose, 
@@ -42,14 +45,36 @@ def createConfig(graph_file, seed_file, gold_labels_file, iters, verbose,
         write_file.write(to_write)
 
 count = 0
-for i in range(9):
-    mu2 = float(i+1)/100
-    print(mu2)
-    for j in range(9):
-        mu3 = float(j+1)/100
-        print(mu3)
+e = []
+for i in range(10):
+    mu2 = float(i+1)/1000
+    for j in range(10):
+        mu3 = float(j+1)/1000
         createConfig(graph_file, seed_file, gold_labels_file, iters, verbose, 
             prune_threshold, algo, mu1, mu2, mu3, beta, output_file+str(count))
         os.system('junto config new_config')
+        correct = 0
+        false = 0
+        with open(output_file+str(count), 'r') as read_file:
+            for line in read_file.read().splitlines():
+                line = line.split('\t')
+                if(len(line[1])>0):  
+                    if(line[1].split()[0] == line[3].split()[2]):
+                        correct += 1
+                    else:
+                        false += 1
+        e.append([mu2, mu3, correct, false, float(correct)/(float(false)+float(correct))])
+        
+
         count+=1
+
+with open(evaluation_file, 'w') as write_file:
+    write_file.write('[mu2, mu3, correct, false, correct%]\n')
+    s = sorted(e, key=lambda e: e[2], reverse=True)
+    for i in s:
+        write_file.write(str(i) + '\n')
+
+    
+
+
 

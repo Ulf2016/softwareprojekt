@@ -9,8 +9,8 @@
     algo = adsorption
     #Hyperparameters
     mu1 = 1
-    mu2 = 0.09
-    mu3 = 0.09
+    mu2 = 0.01
+    mu3 = 0.07
     beta = 2
-    output_file = data/label_prop_output80
+    output_file = data/output/label_prop_output6
     
