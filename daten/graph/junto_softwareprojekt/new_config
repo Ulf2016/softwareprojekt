@@ -1,0 +1,16 @@
+#inputs
+    graph_file = data/graph_input.txt
+    seed_file = data/seeds.txt
+    gold_labels_file = data/gold_labels.txt
+    #Parameters
+    iters = 10
+    verbose = true
+    prune_threshold = 0
+    algo = adsorption
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.09
+    mu3 = 0.09
+    beta = 2
+    output_file = data/label_prop_output80
+    
