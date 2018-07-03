@@ -1,1947 +1,1947 @@
-('dumm', 36)
-('arsch', 26)
-('schei\xc3\x9f', 24)
-('dummheit', 16)
-('b\xc3\xb6se', 12)
-('fresse', 12)
-('l\xc3\xbcge', 12)
-('scheisse', 9)
-('abschaum', 9)
-('bl\xc3\xb6d', 9)
-('scheiss', 8)
-('d\xc3\xa4mlich', 8)
-('widerlich', 8)
-('versager', 8)
-('hurensohn', 7)
-('feige', 7)
-('verarschen', 6)
-('schei\xc3\x9fe', 6)
-('verlierer', 6)
-('heuchler', 6)
-('spinner', 5)
-('arschloch', 5)
-('link', 5)
-('schlampe', 5)
-('idiot', 5)
-('kacke', 5)
-('schmarotzer', 5)
-('arrogant', 4)
-('frech', 4)
-('unf\xc3\xa4higkeit', 4)
-('pervers', 3)
-('feigling', 3)
-('verr\xc3\xa4ter', 3)
-('fett', 3)
-('ekelhaft', 2)
-('schw\xc3\xa4tzer', 2)
-('wichtigtuer', 2)
-('verflucht', 2)
-('verh\xc3\xb6hnen', 2)
-('naiv', 2)
-('h\xc3\xa4\xc3\x9flich', 2)
-('kriminell', 2)
-('muschi', 2)
-('unehrlich', 2)
-('bl\xc3\xb6dheit', 2)
-('verlogen', 2)
-('wicht', 2)
-('weib', 2)
-('penner', 2)
-('doof', 2)
-('korrupt', 2)
-('inkompetenz', 2)
-('bastard', 2)
-('witzfigur', 2)
-('schwuchtel', 2)
-('fettsack', 2)
-('mistst\xc3\xbcck', 2)
-('pseudo', 2)
-('trottel', 2)
-('gefickt', 2)
-('arroganz', 1)
-('l\xc3\xbcmmel', 1)
-('psycho', 1)
-('widerw\xc3\xa4rtig', 1)
-('blender', 1)
-('verachten', 1)
-('l\xc3\xbcgner', 1)
-('ausbeuter', 1)
-('m\xc3\xb6se', 1)
-('heuchlerisch', 1)
-('dummkopf', 1)
-('spast', 1)
-('beschissen', 1)
-('depp', 1)
-('ekelig', 1)
-('wirr', 1)
-('taugenichts', 1)
-('pisser', 1)
-('asozial', 1)
-('hinterlistig', 1)
-('luder', 1)
-('stinken', 1)
-('h\xc3\xa4sslich', 1)
-('schn\xc3\xb6sel', 1)
-('lachnummer', 1)
-('hexe', 1)
-('heucheln', 1)
-('terrorisieren', 1)
-('bengel', 1)
-('b\xc3\xb6sewicht', 1)
-('hure', 1)
-('hinterlist', 1)
-('mongo', 1)
-('tunte', 1)
-('vollidiot', 1)
-('bekloppt', 1)
-('honk', 1)
-('faschist', 1)
-('bl\xc3\xb6dmann', 1)
-('dreist', 1)
-('w\xc3\xbcrgen', 1)
-('gro\xc3\x9fmaul', 1)
-('egoschwein', 0)
-('frechheit', 0)
-('sklaventreiber', 0)
-('spacken', 0)
-('verfluchen', 0)
-('spanner', 0)
-('k\xc3\xb6ter', 0)
-('geldgeil', 0)
-('bauernkind', 0)
-('schwanzgesicht', 0)
-('zahnlos', 0)
-('spasti', 0)
-('paranoid', 0)
-('wasserkopf', 0)
-('unzivilisiert', 0)
-('arschgeburt', 0)
-('stra\xc3\x9fenpenner', 0)
-('holzkopf', 0)
-('pickelgesicht', 0)
-('mutlosigkeit', 0)
-('faulheit', 0)
-('fr\xc3\xbcchtchen', 0)
-('hexennase', 0)
-('sch\xc3\xa4big', 0)
-('tucke', 0)
-('lustknabe', 0)
-('geizkragen', 0)
-('betr\xc3\xbcger', 0)
-('ergaunern', 0)
-('wichsgesicht', 0)
-('sucker', 0)
-('dorftrottel', 0)
-('unseri\xc3\xb6s', 0)
-('missgeb\xc3\xbcrtig', 0)
-('beknackt', 0)
-('kr\xc3\xbcppel', 0)
-('tollw\xc3\xbctig', 0)
-('armselig', 0)
-('vulg\xc3\xa4r', 0)
-('hundeficker', 0)
-('schlamperei', 0)
-('charakterlos', 0)
-('hurentochter', 0)
-('ehrenlos', 0)
-('missgestalt', 0)
-('unehrlichkeit', 0)
-('kacken', 0)
-('pimmel', 0)
-('grottenschlecht', 0)
-('unsportlich', 0)
-('hampelmann', 0)
-('k\xc3\xb6rperklaus', 0)
-('loser', 0)
-('arschgesicht', 0)
-('gehasst', 0)
-('homof\xc3\xbcrst', 0)
-('hanswurst', 0)
-('streber', 0)
-('egoist', 0)
-('absto\xc3\x9fend', 0)
-('schwachkopf', 0)
-('unz\xc3\xbcchtig', 0)
-('engstirnig', 0)
-('mistkind', 0)
-('brillenschlange', 0)
-('rechthaberisch', 0)
-('schwuli', 0)
-('untermensch', 0)
-('drecksack', 0)
-('junkie', 0)
-('charakterschwach', 0)
-('geh\xc3\xa4ssig', 0)
-('schwabbelbacke', 0)
-('ekelerregend', 0)
-('motherfucker', 0)
-('mastschwein', 0)
-('begriffsstutzig', 0)
-('nutte', 0)
-('debil', 0)
-('barbarisch', 0)
-('schwanzlos', 0)
-('trottelig', 0)
-('jammerlappen', 0)
-('schei\xc3\x9fhaufen', 0)
-('notgeil', 0)
-('w\xc3\xbcrdelos', 0)
-('eierkopf', 0)
-('flittchen', 0)
-('miesepetrig', 0)
-('suppenkasper', 0)
-('dreckskind', 0)
-('pussy', 0)
-('ver\xc3\xa4chtlich', 0)
-('langweiler', 0)
-('egoistisch', 0)
-('abzocke', 0)
-('schei\xc3\x9fkerl', 0)
-('kinderficker', 0)
-('fotzenkopf', 0)
-('minusmensch', 0)
-('mannsweib', 0)
-('pimmelgesicht', 0)
-('pappnase', 0)
-('r\xc3\xbcde', 0)
-('schlaffi', 0)
-('spott', 0)
-('gottlos', 0)
-('grimmig', 0)
-('r\xc3\xa4udig', 0)
-('arschgefickt', 0)
-('erbsenz\xc3\xa4hler', 0)
-('stupide', 0)
-('abgewichst', 0)
-('habgierig', 0)
-('schwabbeltitte', 0)
-('dusselig', 0)
-('unsozial', 0)
-('boshaft', 0)
-('wichser', 0)
-('landei', 0)
-('faschistisch', 0)
-('dreckskerl', 0)
-('bitch', 0)
-('stricher', 0)
-('fadenscheinig', 0)
-('hackfresse', 0)
-('gauner', 0)
-('mutterficker', 0)
-('missraten', 0)
-('\xc3\xbcbergewichtig', 0)
-('grenzdebil', 0)
-('illoyal', 0)
-('disziplinlos', 0)
-('nichtsk\xc3\xb6nner', 0)
-('geistlos', 0)
-('selbsts\xc3\xbcchtig', 0)
-('hundesohn', 0)
-('verr\xc3\xbcckter', 0)
-('homophob', 0)
-('bahnhofsstricher', 0)
-('gottverdammt', 0)
-('verr\xc3\xa4terisch', 0)
-('erb\xc3\xa4rmlich', 0)
-('idiotisch', 0)
-('bedeppert', 0)
-('dreckst\xc3\xbcck', 0)
-('schmierig', 0)
-('knilch', 0)
-('skrupellos', 0)
-('vollspast', 0)
-('verfickt', 0)
-('missgeburt', 0)
-('flachwichser', 0)
-('hornochse', 0)
-('banause', 0)
-('biatch', 0)
-('fotzenknecht', 0)
-('fotze', 0)
-('schlampenkind', 0)
-('neunmalkluger', 0)
-('berschissen', 0)
-('fut', 0)
-('untreu', 0)
-('assi', 0)
-('nuttensohn', 0)
-('mutlos', 0)
-('hurenbock', 0)
-('denkfaul', 0)
-('scheu\xc3\x9flich', 0)
-('reagenzglasgeburt', 0)
-('fickfehler', 0)
-('inkompetent', 0)
-('borniert', 0)
-('nervig', 0)
-('mitl\xc3\xa4ufer', 0)
-('hofnarr', 0)
-('narr', 0)
-('halunke', 0)
-('ficker', 0)
-('labil', 0)
-('freak', 0)
-('unzuverl\xc3\xa4ssig', 0)
-('blau\xc3\xa4ugig', 0)
-('faul', 0)
-('kasper', 0)
-('zugekokst', 0)
-('pantoffelheld', 0)
-('wixxer', 0)
-('gammler', 0)
-('nuttenkind', 0)
-('st\xc3\xbcmperhaft', 0)
-('wichsfleck', 0)
-('nutzlos', 0)
-('heuchelei', 0)
-('pickelface', 0)
-('mistratte', 0)
-('ungehobelt', 0)
-('hosenschei\xc3\x9fer', 0)
-('spastiker', 0)
-('fucker', 0)
-('versaut', 0)
-('heimt\xc3\xbcckisch', 0)
-('besch\xc3\xa4men', 0)
-('geisteskrank', 0)
-('eklig', 0)
-('schurke', 0)
-('verkackter', 0)
-('laienhaft', 0)
-('weichei', 0)
-('b\xc3\xb6sartig', 0)
-('ungeduscht', 0)
-('scheusslich', 0)
-('schei\xc3\x9fer', 0)
-('fies', 0)
-('geizhals', 0)
-('abgefuckt', 0)
-('verabscheuungsw\xc3\xbcrdig', 0)
-('dussel', 0)
-('arschkind', 0)
-('arschgeige', 0)
-('desolat', 0)
-('drecksau', 0)
-('dilettantisch', 0)
-('ganz', 62)
-('ende', 44)
-('problem', 41)
-('krieg', 39)
-('kurz', 30)
-('gewalt', 30)
-('angst', 24)
-('schuld', 23)
-('opfer', 23)
-('falsch', 22)
-('fehler', 21)
-('terror', 20)
-('deine', 19)
-('gro\xc3\x9f', 18)
-('kind', 18)
-('letzte', 18)
-('dreck', 17)
-('tod', 14)
-('propaganda', 13)
-('schlimm', 13)
-('schade', 13)
-('untergang', 13)
-('langsam', 13)
-('schlecht', 12)
-('mord', 12)
-('schwarz', 11)
-('verboten', 11)
-('sorgen', 11)
-('alt', 10)
-('verbieten', 10)
-('ziemlich', 10)
-('wut', 9)
-('kritisch', 9)
-('sterben', 8)
-('schlie\xc3\x9fen', 8)
-('tot', 8)
-('chaos', 8)
-('gefahr', 8)
-('arabisch', 8)
-('kritik', 8)
-('unf\xc3\xa4hig', 7)
-('kuh', 7)
-('klein', 7)
-('leiden', 7)
-('m\xc3\xbcll', 7)
-('fehlen', 7)
-('kritisieren', 7)
-('traurig', 7)
-('fallen', 7)
-('mist', 7)
-('strafbar', 7)
-('zensur', 7)
-('fl\xc3\xbcchtling', 7)
-('vorwerfen', 7)
-('zerst\xc3\xb6rt', 7)
-('kampf', 7)
-('t\xc3\xb6ten', 7)
-('total', 6)
-('aufh\xc3\xb6ren', 6)
-('beschweren', 6)
-('hund', 6)
-('wahnsinn', 6)
-('pest', 6)
-('schwer', 6)
-('verdammt', 6)
-('krank', 6)
-('verlieren', 6)
-('klagen', 6)
-('pfeife', 6)
-('l\xc3\xb6schen', 6)
-('k\xc3\xa4mpfen', 6)
-('lang', 6)
-('verurteilen', 5)
-('blockieren', 5)
-('unfassbar', 5)
-('scheitern', 5)
-('verschwinden', 5)
-('primitiv', 5)
-('gef\xc3\xa4hrlich', 5)
-('kriminalit\xc3\xa4t', 5)
-('beenden', 5)
-('not', 5)
-('widerspruch', 5)
-('protestieren', 5)
-('sorge', 5)
-('leid', 5)
-('schwein', 5)
-('drohen', 5)
-('unsinn', 5)
-('schulden', 5)
-('todesstrafe', 5)
-('opposition', 5)
-('f\xc3\xbcrchten', 5)
-('sch\xc3\xa4men', 5)
-('reich', 5)
-('abschaffen', 5)
-('betrug', 5)
-('niederlage', 4)
-('gegner', 4)
-('pflicht', 4)
-('verletzt', 4)
-('furchtbar', 4)
-('ratte', 4)
-('negativ', 4)
-('unterdr\xc3\xbcckung', 4)
-('m\xc3\xbche', 4)
-('revolution', 4)
-('schuldig', 4)
-('zerst\xc3\xb6ren', 4)
-('armut', 4)
-('hungern', 4)
-('aufstand', 4)
-('totschlag', 4)
-('hart', 4)
-('\xc3\xa4rgern', 4)
-('vollkommen', 4)
-('arm', 4)
-('einstellen', 4)
-('verrat', 4)
-('gruselig', 4)
-('sch\xc3\xa4den', 4)
-('sack', 4)
-('schmutz', 4)
-('unm\xc3\xb6glich', 4)
-('psychisch', 3)
-('verachtung', 3)
-('hoffnungslos', 3)
-('verzweiflung', 3)
-('bitter', 3)
-('flasche', 3)
-('st\xc3\xb6ren', 3)
-('kalt', 3)
-('emp\xc3\xb6rung', 3)
-('esel', 3)
-('sau', 3)
-('reduzieren', 3)
-('provokation', 3)
-('abschaffung', 3)
-('verzichten', 3)
-('kaputt', 3)
-('unfall', 3)
-('entt\xc3\xa4uschen', 3)
-('trauern', 3)
-('sucht', 3)
-('feuer', 3)
-('elend', 3)
-('jammern', 3)
-('verzweifelt', 3)
-('zorn', 3)
-('untergehen', 3)
-('hungrig', 3)
-('zwang', 3)
-('rutsch', 3)
-('fehlanzeige', 3)
-('zerst\xc3\xb6rung', 3)
-('bescheuert', 3)
-('haft', 3)
-('skandal', 3)
-('angriff', 3)
-('schwanz', 3)
-('drastisch', 3)
-('schlicht', 3)
-('beschneidung', 3)
-('manipulation', 3)
-('loswerden', 3)
-('flucht', 3)
-('aufregung', 3)
-('nerven', 3)
-('unverantwortlich', 3)
-('scheiden', 2)
-('begrenzt', 2)
-('verletzen', 2)
-('anklagen', 2)
-('beklagen', 2)
-('skeptisch', 2)
-('fisch', 2)
-('ungerechtigkeit', 2)
-('unaufh\xc3\xb6rlich', 2)
-('leugnen', 2)
-('brechen', 2)
-('arbeitslos', 2)
-('rutschen', 2)
-('rebellion', 2)
-('terrorismus', 2)
-('lauch', 2)
-('bedrohung', 2)
-('st\xc3\xbcrzen', 2)
-('dieb', 2)
-('trennen', 2)
-('beschwerde', 2)
-('gleichg\xc3\xbcltigkeit', 2)
-('ablehnung', 2)
-('zeitverschwendung', 2)
-('bestrafung', 2)
-('hohn', 2)
-('\xc3\xbcberfallen', 2)
-('unterirdisch', 2)
-('w\xc3\xbcste', 2)
-('problematisch', 2)
-('niedergang', 2)
-('unterlassen', 2)
-('unterdr\xc3\xbccken', 2)
-('entt\xc3\xa4uscht', 2)
-('klage', 2)
-('teuer', 2)
-('verdorben', 2)
-('ablehnen', 2)
-('streiken', 2)
-('kriechen', 2)
-('diffamierung', 2)
-('unversch\xc3\xa4mtheit', 2)
-('vorbestraft', 2)
-('bombardieren', 2)
-('r\xc3\xbccktritt', 2)
-('vorwurf', 2)
-('streiten', 2)
-('langweilig', 2)
-('\xc3\xbcberfl\xc3\xbcssig', 2)
-('beschr\xc3\xa4nkt', 2)
-('reihenweise', 2)
-('unklar', 2)
-('abnehmen', 2)
-('desaster', 2)
-('abschreckung', 2)
-('radikal', 2)
-('auseinandersetzung', 2)
-('unbedeutend', 2)
-('erschreckend', 2)
-('weinen', 2)
-('unrecht', 2)
-('aggressiv', 2)
-('misstrauen', 2)
-('konfrontation', 2)
-('versenkung', 2)
-('schwierig', 2)
-('streit', 2)
-('auffallen', 2)
-('gest\xc3\xb6rt', 2)
-('zweifel', 2)
-('bef\xc3\xbcrchten', 2)
-('angreifen', 2)
-('veraltet', 2)
-('besch\xc3\xa4digen', 2)
-('gewaltsam', 2)
-('ausschlie\xc3\x9fen', 2)
-('absurd', 2)
-('unglaubw\xc3\xbcrdig', 2)
-('verbot', 2)
-('schamlos', 2)
-('fremd', 2)
-('scham', 2)
-('zweifelhaft', 2)
-('ersch\xc3\xbcttert', 2)
-('leere', 2)
-('verr\xc3\xbcckt', 2)
-('unterwerfen', 2)
-('n\xc3\xb6rgeln', 2)
-('brand', 2)
-('erbrechen', 2)
-('abstieg', 2)
-('versuchung', 1)
-('aufschrei', 1)
-('berauben', 1)
-('ung\xc3\xbcltig', 1)
-('einbrechen', 1)
-('trotzen', 1)
-('leichtsinn', 1)
-('trott', 1)
-('begrenzung', 1)
-('unn\xc3\xb6tig', 1)
-('farce', 1)
-('sinnlos', 1)
-('r\xc3\xbcckzug', 1)
-('neustart', 1)
-('durcheinander', 1)
-('unterlassung', 1)
-('zaudern', 1)
-('ausbeutung', 1)
-('vernachl\xc3\xa4ssigung', 1)
-('herausforderung', 1)
-('undemokratisch', 1)
-('\xc3\x84rger', 1)
-('unredlich', 1)
-('sinken', 1)
-('abbrechen', 1)
-('abf\xc3\xa4llig', 1)
-('unh\xc3\xb6flich', 1)
-('r\xc3\xbcckgang', 1)
-('h\xc3\xa4rte', 1)
-('k\xc3\xa4lte', 1)
-('ersch\xc3\xbctterung', 1)
-('schlange', 1)
-('gr\xc3\xb6\xc3\x9fter', 1)
-('wahnsinnig', 1)
-('eingeschr\xc3\xa4nkt', 1)
-('brennen', 1)
-('aggressivit\xc3\xa4t', 1)
-('vermeiden', 1)
-('aussetzung', 1)
-('dramatisch', 1)
-('grauen', 1)
-('ablenkung', 1)
-('attacke', 1)
-('dr\xc3\xa4ngen', 1)
-('zur\xc3\xbcckgeschickt', 1)
-('distanzieren', 1)
-('anstrengend', 1)
-('langeweile', 1)
-('leer', 1)
-('unwissend', 1)
-('verwirrung', 1)
-('f\xc3\xa4lschung', 1)
-('aufbringen', 1)
-('schrecklich', 1)
-('verherrlichen', 1)
-('trennung', 1)
-('ausschalten', 1)
-('wunde', 1)
-('r\xc3\xbcckl\xc3\xa4ufig', 1)
-('unbrauchbar', 1)
-('affe', 1)
-('grob', 1)
-('vermeidung', 1)
-('stress', 1)
-('zwietracht', 1)
-('vergeblich', 1)
-('enthauptung', 1)
-('verlust', 1)
-('undiszipliniert', 1)
-('trauma', 1)
-('krankheit', 1)
-('entt\xc3\xa4uschend', 1)
-('uneinigkeit', 1)
-('abfall', 1)
-('zerschlagung', 1)
-('krumm', 1)
-('pech', 1)
-('abbruch', 1)
-('schmerzen', 1)
-('dekadenz', 1)
-('irrsinnig', 1)
-('unverst\xc3\xa4ndlich', 1)
-('besorgt', 1)
-('geil', 1)
-('\xc3\xbcberschreiten', 1)
-('unklug', 1)
-('schmock', 1)
-('sauer', 1)
-('untragbar', 1)
-('korruption', 1)
-('aufregen', 1)
-('ungerecht', 1)
-('gering', 1)
-('inflation', 1)
-('sto\xc3\x9fen', 1)
-('m\xc3\xbcdigkeit', 1)
-('\xc3\x9cbertreibung', 1)
-('kapitalverbrechen', 1)
-('r\xc3\xbccksichtslos', 1)
-('nachlassen', 1)
-('r\xc3\xa4chen', 1)
-('ungehorsam', 1)
-('schlapp', 1)
-('einschr\xc3\xa4nken', 1)
-('attackieren', 1)
-('einschr\xc3\xa4nkung', 1)
-('eingehen', 1)
-('k\xc3\xbcrzen', 1)
-('riesig', 1)
-('unw\xc3\xbcrdig', 1)
-('belastung', 1)
-('abgrund', 1)
-('billig', 1)
-('be\xc3\xa4ngstigend', 1)
-('fad', 1)
-('knecht', 1)
-('flach', 1)
-('provozieren', 1)
-('widersprechen', 1)
-('invasion', 1)
-('unfug', 1)
-('keim', 1)
-('abdanken', 1)
-('isolieren', 1)
-('cool', 1)
-('unerwartet', 1)
-('n\xc3\xb6tigen', 1)
-('uneinig', 1)
-('feindlich', 1)
-('schmutzig', 1)
-('konflikt', 1)
-('unruhig', 1)
-('senkung', 1)
-('bedrohen', 1)
-('verschleppen', 1)
-('belasten', 1)
-('hilflos', 1)
-('ruin', 1)
-('best\xc3\xbcrzt', 1)
-('knapp', 1)
-('pleite', 1)
-('beseitigen', 1)
-('last', 1)
-('manipulieren', 1)
-('zwingen', 1)
-('versto\xc3\x9fen', 1)
-('bef\xc3\xbcrchtung', 1)
-('agitation', 1)
-('w\xc3\xbctend', 1)
-('behinderung', 1)
-('schw\xc3\xa4chen', 1)
-('arbeitsloser', 1)
-('riskieren', 1)
-('ermahnung', 1)
-('abschie\xc3\x9fen', 1)
-('ersch\xc3\xb6pft', 1)
-('krise', 1)
-('sexy', 1)
-('makel', 1)
-('altmodisch', 1)
-('\xc3\xbcbersehen', 1)
-('ablenken', 1)
-('auseinandersetzen', 1)
-('dunkelheit', 1)
-('angreifer', 1)
-('panik', 1)
-('kontroverse', 1)
-('einf\xc3\xa4ltig', 1)
-('geldstrafe', 1)
-('verzicht', 1)
-('kompliziert', 1)
-('\xc3\xbcbertreiben', 1)
-('widerruf', 1)
-('seltsam', 1)
-('selbstverliebt', 1)
-('gebrechlich', 1)
-('missachtung', 1)
-('t\xc3\xa4uschen', 1)
-('gef\xc3\xa4hrden', 1)
-('beschr\xc3\xa4nkung', 1)
-('l\xc3\xb6schung', 1)
-('aufgeregt', 1)
-('trauer', 1)
-('sabotage', 1)
-('krass', 1)
-('verurteilung', 1)
-('pfosten', 1)
-('einsch\xc3\xbcchterung', 1)
-('wegfallen', 1)
-('diffamieren', 1)
-('naivit\xc3\xa4t', 1)
-('schrott', 1)
-('zusammenbruch', 1)
-('\xc3\x9cbel', 1)
-('unterbrechen', 1)
-('zur\xc3\xbcckgeben', 1)
-('dunkel', 1)
-('einbruch', 1)
-('verdacht', 1)
-('m\xc3\xbcde', 1)
-('ertrinken', 1)
-('beschnitten', 1)
-('unruhe', 1)
-('offensive', 1)
-('versagen', 1)
-('stau', 1)
-('\xc3\x84rgernis', 1)
-('fragw\xc3\xbcrdig', 1)
-('z\xc3\xb6gern', 1)
-('versto\xc3\x9f', 1)
-('habgier', 0)
-('gestre\xc3\x9ft', 0)
-('zerst\xc3\xb6rerisch', 0)
-('unterwerfung', 0)
-('abwertung', 0)
-('unbefriedigend', 0)
-('schwinden', 0)
-('protest', 0)
-('fehlermeldung', 0)
-('verdr\xc3\xa4ngung', 0)
-('aggression', 0)
-('verrucht', 0)
-('r\xc3\xbcckstand', 0)
-('vergeudung', 0)
-('krachen', 0)
-('besorgniserregend', 0)
-('undercover', 0)
-('sturz', 0)
-('unsicher', 0)
-('infiltration', 0)
-('tr\xc3\xbcgerisch', 0)
-('anspannen', 0)
-('zur\xc3\xbcckhalten', 0)
-('verstimmen', 0)
-('l\xc3\xbcckenhaft', 0)
-('ungeschicklichkeit', 0)
-('ruchlos', 0)
-('fehde', 0)
-('rabiat', 0)
-('missgl\xc3\xbccken', 0)
-('unlogisch', 0)
-('unbestimmtheit', 0)
-('mangelbehaftet', 0)
-('verminderung', 0)
-('unwirtlich', 0)
-('zusammenrechen', 0)
-('unge\xc3\xbcbt', 0)
-('schwierigkeit', 0)
-('geisteskrankheit', 0)
-('allerdicksten', 0)
-('zerbrechen', 0)
-('unzufriedenheit', 0)
-('mittelm\xc3\xa4\xc3\x9figkeit', 0)
-('anf\xc3\xa4llig', 0)
-('ausfallen', 0)
-('einbrecher', 0)
-('leistungsunf\xc3\xa4hig', 0)
-('negativit\xc3\xa4t', 0)
-('frustrieren', 0)
-('annullieren', 0)
-('giftig', 0)
-('einst\xc3\xbcrzen', 0)
-('verschwenden', 0)
-('abstumpfen', 0)
-('abtakeln', 0)
-('alkoholisiert', 0)
-('ausl\xc3\xb6schung', 0)
-('mager', 0)
-('\xc3\x9cbergewicht', 0)
-('kr\xc3\xa4nklich', 0)
-('barriere', 0)
-('unrentabilit\xc3\xa4t', 0)
-('schmuggel', 0)
-('intervenieren', 0)
-('klischee', 0)
-('unerquicklich', 0)
-('morbid', 0)
-('z\xc3\xbcchtigen', 0)
-('schlumpf', 0)
-('schlottern', 0)
-('ambivalenz', 0)
-('verd\xc3\xa4chtige', 0)
-('unterentwickelt', 0)
-('angetrunken', 0)
-('ambivalent', 0)
-('mangelhaft', 0)
-('ausfall', 0)
-('ermordung', 0)
-('teuerungsrate', 0)
-('zahlungsunf\xc3\xa4higkeit', 0)
-('missverst\xc3\xa4ndnis', 0)
-('verschmutzung', 0)
-('befall', 0)
-('unstetig', 0)
-('fahrl\xc3\xa4ssig', 0)
-('gartenzwerg', 0)
-('besteuern', 0)
-('befallen', 0)
-('traurigkeit', 0)
-('ausschlie\xc3\x9fung', 0)
-('tr\xc3\xbcb', 0)
-('ziellosigkeit', 0)
-('abh\xc3\xa4ngigkeit', 0)
-('lausbub', 0)
-('panisch', 0)
-('zweideutig', 0)
-('unbedacht', 0)
-('verbannung', 0)
-('ergebnislos', 0)
-('aufw\xc3\xbchlen', 0)
-('zwecklos', 0)
-('verz\xc3\xb6gerung', 0)
-('turbolenzen', 0)
-('ausgleiten', 0)
-('unberechtigt', 0)
-('tr\xc3\xa4ge', 0)
-('aufl\xc3\xb6sen', 0)
-('unsolidarisch', 0)
-('umst\xc3\xa4ndlich', 0)
-('massaker', 0)
-('ver\xc3\xa4ngstigt', 0)
-('kr\xc3\xa4nkung', 0)
-('widerrufen', 0)
-('herzlos', 0)
-('verlangsamen', 0)
-('schadensbild', 0)
-('besorgnis', 0)
-('zersetzen', 0)
-('verletzlich', 0)
-('unh\xc3\xb6flichkeit', 0)
-('ungeheuer', 0)
-('sto\xc3\x9f', 0)
-('erschlaffen', 0)
-('verdr\xc3\xa4ngen', 0)
-('sprengen', 0)
-('fehlkauf', 0)
-('schleppend', 0)
-('hysterisch', 0)
-('t\xc3\xb6richt', 0)
-('ungedeckt', 0)
-('wiesel', 0)
-('anma\xc3\x9fen', 0)
-('verwerflich', 0)
-('abw\xc3\xa4rtstrend', 0)
-('antiquiert', 0)
-('strenge', 0)
-('zwangsma\xc3\x9fnahmen', 0)
-('achtlosigkeit', 0)
-('inkonsistenz', 0)
-('reklamation', 0)
-('anspannung', 0)
-('inkonsistent', 0)
-('misstrauensantrag', 0)
-('mittelm\xc3\xa4\xc3\x9fig', 0)
-('bruch', 0)
-('ungeschminkt', 0)
-('tyrannei', 0)
-('diebstahl', 0)
-('alarm', 0)
-('unwirtschaftlichkeit', 0)
-('verstricken', 0)
-('bedr\xc3\xbccken', 0)
-('hunger', 0)
-('lurch', 0)
-('abwerten', 0)
-('teuerung', 0)
-('arbeitend', 0)
-('wirtschaftskrise', 0)
-('verharmlosen', 0)
-('drohung', 0)
-('ausbeute', 0)
-('beschneiden', 0)
-('flaute', 0)
-('risiko', 0)
-('beschuldigung', 0)
-('anstrengen', 0)
-('tr\xc3\xbcbsal', 0)
-('abf\xc3\xbchren', 0)
-('unzusammenh\xc3\xa4ngend', 0)
-('ungebeten', 0)
-('anf\xc3\xa4lligkeit', 0)
-('umtausch', 0)
-('unwirksamkeit', 0)
-('h\xc3\xb6hnisch', 0)
-('fraglich', 0)
-('bestechen', 0)
-('rechtswidrig', 0)
-('lasch', 0)
-('blitzen', 0)
-('schuldnerin', 0)
-('unwahrheit', 0)
-('arbeitslosigkeit', 0)
-('rebellisch', 0)
-('unverh\xc3\xa4ltnism\xc3\xa4\xc3\x9figkeit', 0)
-('todesfall', 0)
-('epidemie', 0)
-('nille', 0)
-('nervosit\xc3\xa4t', 0)
-('entkr\xc3\xa4ftet', 0)
-('beeintr\xc3\xa4chtigen', 0)
-('ungeb\xc3\xbchrlich', 0)
-('inkorrekt', 0)
-('blutig', 0)
-('stehlen', 0)
-('unliebsam', 0)
-('turbolenz', 0)
-('ungl\xc3\xbccklich', 0)
-('schramme', 0)
-('unpers\xc3\xb6nlich', 0)
-('vage', 0)
-('abschw\xc3\xa4chen', 0)
-('abrupt', 0)
-('nachl\xc3\xa4ssigkeit', 0)
-('\xc3\x9cberf\xc3\xbcllung', 0)
-('mangeln', 0)
-('unwichtig', 0)
-('vorurteil', 0)
-('kurzsichtig', 0)
-('d\xc3\xbcsternis', 0)
-('\xc3\xbcberschwemmen', 0)
-('schreck', 0)
-('beeintr\xc3\xa4chtigung', 0)
-('androhung', 0)
-('l\xc3\xa4ppisch', 0)
-('fl\xc3\xbcchtigkeit', 0)
-('fragil', 0)
-('monotonie', 0)
-('welken', 0)
-('liquidieren', 0)
-('unsittlich', 0)
-('j\xc3\xa4hzorn', 0)
-('unfair', 0)
-('stenz', 0)
-('riskant', 0)
-('komisch', 0)
-('hemmung', 0)
-('abspaltung', 0)
-('beunruhigen', 0)
-('ungesetzlich', 0)
-('abstumpfung', 0)
-('knappheit', 0)
-('entmutigen', 0)
-('infektion', 0)
-('r\xc3\xbcckschritt', 0)
-('heimsuchung', 0)
-('misstrauisch', 0)
-('niedrig', 0)
-('schw\xc3\xa4chung', 0)
-('aufl\xc3\xb6sung', 0)
-('intolerant', 0)
-('frustriert', 0)
-('notfall', 0)
-('wettbewerbswidrig', 0)
-('pflichtwidrig', 0)
-('hektik', 0)
-('emp\xc3\xb6ren', 0)
-('beklagenswert', 0)
-('anf\xc3\xa4nger', 0)
-('minderung', 0)
-('qualvoll', 0)
-('abschreibung', 0)
-('fehlerhaft', 0)
-('bombardement', 0)
-('ordnungswidrig', 0)
-('dilemma', 0)
-('untreue', 0)
-('unvollst\xc3\xa4ndig', 0)
-('hektisch', 0)
-('gekr\xc3\xa4nkt', 0)
-('fehlgeburt', 0)
-('gnadenlosigkeit', 0)
-('zusammenbrechen', 0)
-('m\xc3\xbcrrisch', 0)
-('unterliegen', 0)
-('diffus', 0)
-('lakonisch', 0)
-('amateur', 0)
-('verlangsamung', 0)
-('fuchsteufelswild', 0)
-('bombardierung', 0)
-('gammelig', 0)
-('unsolide', 0)
-('zerren', 0)
-('beschwerlich', 0)
-('unerlaubt', 0)
-('absperrung', 0)
-('verwerfung', 0)
-('fl\xc3\xbcchtiger', 0)
-('schr\xc3\xa4glauf', 0)
-('entbehrungsreich', 0)
-('apathisch', 0)
-('unerbittlichkeit', 0)
-('trag\xc3\xb6die', 0)
-('entlassen', 0)
-('d\xc3\xbcster', 0)
-('handicap', 0)
-('ma\xc3\x9flosigkeit', 0)
-('nachl\xc3\xa4ssig', 0)
-('sch\xc3\xa4digend', 0)
-('t\xc3\xbcrkischem', 0)
-('missgelaunt', 0)
-('doppeldeutigkeit', 0)
-('entlassung', 0)
-('renitent', 0)
-('brisant', 0)
-('ge\xc3\xa4rgert', 0)
-('groteske', 0)
-('entf\xc3\xbchrung', 0)
-('gebrechen', 0)
-('braunfarben', 0)
-('desinteressiert', 0)
-('vergammeln', 0)
-('undurchf\xc3\xbchrbar', 0)
-('komplikation', 0)
-('unwahr', 0)
-('schmerzlich', 0)
-('verblassen', 0)
-('streng', 0)
-('konkurrenzkampf', 0)
-('schl\xc3\xa4gerei', 0)
-('fehlverhalten', 0)
-('unaufgefordert', 0)
-('aufblasen', 0)
-('entgleiten', 0)
-('riese', 0)
-('mittellos', 0)
-('\xc3\xa4rgerlich', 0)
-('schockierend', 0)
-('abschreckend', 0)
-('bedr\xc3\xa4ngung', 0)
-('explosion', 0)
-('absto\xc3\x9f', 0)
-('unrasiert', 0)
-('keimig', 0)
-('unbeliebtheit', 0)
-('erz\xc3\xbcrnt', 0)
-('heikel', 0)
-('schmerzhaft', 0)
-('illegalit\xc3\xa4t', 0)
-('hungertod', 0)
-('absenken', 0)
-('defekt', 0)
-('besch\xc3\xa4mung', 0)
-('abbau', 0)
-('verwundung', 0)
-('widersinnig', 0)
-('verheeren', 0)
-('ausbrechen', 0)
-('absperren', 0)
-('abraten', 0)
-('melodrama', 0)
-('zersetzend', 0)
-('einsinken', 0)
-('stillstehen', 0)
-('einschrumpfen', 0)
-('langatmig', 0)
-('erbittern', 0)
-('unbefugt', 0)
-('eklatant', 0)
-('abtragen', 0)
-('harsch', 0)
-('unheilbarkeit', 0)
-('erleiden', 0)
-('mau', 0)
-('irrational', 0)
-('viertelvoll', 0)
-('schwindlig', 0)
-('nachteilig', 0)
-('fiasko', 0)
-('ineffizienz', 0)
-('unvorhergesehen', 0)
-('bedeutungslos', 0)
-('m\xc3\xb6rderisch', 0)
-('ineffizient', 0)
-('trostlosigkeit', 0)
-('\xc3\xbcberflutet', 0)
-('schadhaft', 0)
-('existenzbedrohend', 0)
-('ersch\xc3\xb6pfen', 0)
-('schmuggeln', 0)
-('verschwenderisch', 0)
-('erschweren', 0)
-('suboptimal', 0)
-('pessimistisch', 0)
-('verh\xc3\xa4ngnis', 0)
-('entschwinden', 0)
-('herabsetzen', 0)
-('zusammenhanglos', 0)
-('ersch\xc3\xbctternd', 0)
-('halbfertig', 0)
-('strittig', 0)
-('achtlos', 0)
-('verschw\xc3\xb6rung', 0)
-('ausgrenzung', 0)
-('unsachgem\xc3\xa4\xc3\x9f', 0)
-('belanglos', 0)
-('unerkl\xc3\xa4rlich', 0)
-('ungewohnt', 0)
-('hysterie', 0)
-('pfandsuchend', 0)
-('\xc3\x9cberschwemmung', 0)
-('hemmen', 0)
-('un\xc3\xbcblich', 0)
-('\xc3\x9cberh\xc3\xb6hung', 0)
-('bubi', 0)
-('tadeln', 0)
-('traumatisch', 0)
-('kurseinbruch', 0)
-('verfehlung', 0)
-('widerspr\xc3\xbcchlich', 0)
-('punk', 0)
-('bek\xc3\xbcmmert', 0)
-('abgestanden', 0)
-('erm\xc3\xbcdung', 0)
-('unpopul\xc3\xa4r', 0)
-('murren', 0)
-('einbehalten', 0)
-('ungleich', 0)
-('verstopfen', 0)
-('alarmieren', 0)
-('umgetauscht', 0)
-('fahrl\xc3\xa4ssigkeit', 0)
-('qual', 0)
-('fehlleistung', 0)
-('eigenartig', 0)
-('ungl\xc3\xbcck', 0)
-('ausgrenzen', 0)
-('abnutzen', 0)
-('bauer', 0)
-('unwissenheit', 0)
-('erniedrigung', 0)
-('grauenhaft', 0)
-('schrumpfen', 0)
-('bankrott', 0)
-('unrentabel', 0)
-('st\xc3\xbcrmisch', 0)
-('unvollkommen', 0)
-('verzerrung', 0)
-('unterbelichtet', 0)
-('ersticken', 0)
-('ladykillend', 0)
-('alptraum', 0)
-('einschlagen', 0)
-('schabe', 0)
-('lieblos', 0)
-('rosten', 0)
-('schlachtfeld', 0)
-('trotten', 0)
-('abstrich', 0)
-('langweilen', 0)
-('diskriminierung', 0)
-('fl\xc3\xbcchtig', 0)
-('garstig', 0)
-('dekadent', 0)
-('beschr\xc3\xa4nken', 0)
-('absto\xc3\x9fen', 0)
-('bombe', 0)
-('mindern', 0)
-('entlaufen', 0)
-('verschlechtern', 0)
-('zappeln', 0)
-('unzureichend', 0)
-('ziellos', 0)
-('gleichg\xc3\xbcltig', 0)
-('gangster', 0)
-('unbegr\xc3\xbcndet', 0)
-('missverstehen', 0)
-('zoll', 0)
-('kriegerisch', 0)
-('stottern', 0)
-('vergeuden', 0)
-('unlauter', 0)
-('kl\xc3\xa4ger', 0)
-('unerfreulich', 0)
-('sprengstoff', 0)
-('jammer', 0)
-('verstrickung', 0)
-('oberfl\xc3\xa4chlichkeit', 0)
-('defizit\xc3\xa4r', 0)
-('faulende', 0)
-('sch\xc3\xa4digung', 0)
-('dominierung', 0)
-('doppelspiel', 0)
-('ruckeln', 0)
-('schwerwiegend', 0)
-('unregelm\xc3\xa4\xc3\x9figkeit', 0)
-('sabotieren', 0)
-('reparatur', 0)
-('abnahme', 0)
-('schaurig', 0)
-('kapitulation', 0)
-('ungeordnet', 0)
-('skandal\xc3\xb6s', 0)
-('unterlaufen', 0)
-('niedergeschlagenheit', 0)
-('stornierung', 0)
-('unvern\xc3\xbcnftig', 0)
-('best\xc3\xbcrzung', 0)
-('gl\xc3\xbccklosigkeit', 0)
-('scheidung', 0)
-('absturz', 0)
-('rammen', 0)
-('diktatorisch', 0)
-('verwunden', 0)
-('umweltsch\xc3\xa4dlich', 0)
-('zerfressen', 0)
-('stornieren', 0)
-('sklavenarbeit', 0)
-('gl\xc3\xbccklos', 0)
-('gedr\xc3\xa4ngt', 0)
-('missfallen', 0)
-('gedr\xc3\xa4nge', 0)
-('schlechtigkeit', 0)
-('zittern', 0)
-('einsch\xc3\xbcchternd', 0)
-('abneigung', 0)
-('besch\xc3\xa4ftigungsloser', 0)
-('ersch\xc3\xb6pfung', 0)
-('r\xc3\xbccksendung', 0)
-('l\xc3\xa4hmung', 0)
-('schonungslos', 0)
-('\xc3\xbcbertreten', 0)
-('dezimieren', 0)
-('aushungern', 0)
-('hindernis', 0)
-('rost', 0)
-('ermahnen', 0)
-('verworren', 0)
-('ratlosigkeit', 0)
-('lutscher', 0)
-('sturheit', 0)
-('leblosigkeit', 0)
-('rausgeschmissen', 0)
-('lutschen', 0)
-('schauerlich', 0)
-('erdr\xc3\xbcckend', 0)
-('erosion', 0)
-('vergelten', 0)
-('ungehorsamkeit', 0)
-('verleumdung', 0)
-('verschimmelt', 0)
-('absurdit\xc3\xa4t', 0)
-('unerwiesen', 0)
-('bedr\xc3\xbcckt', 0)
-('hilflosigkeit', 0)
-('unfreundlich', 0)
-('anstrengung', 0)
-('teufelskreis', 0)
-('explodieren', 0)
-('preissturz', 0)
-('unangenehm', 0)
-('unbehaglichkeit', 0)
-('degradierung', 0)
-('rauh', 0)
-('m\xc3\xbcder', 0)
-('entziehung', 0)
-('ungezogen', 0)
-('erm\xc3\xbcden', 0)
-('dr\xc3\xa4ngelnd', 0)
-('panne', 0)
-('fehlkonstruktion', 0)
-('verdunkeln', 0)
-('kr\xc3\xa4nken', 0)
-('vorzeitig', 0)
-('hungersnot', 0)
-('bet\xc3\xa4uben', 0)
-('gefecht', 0)
-('ehebruch', 0)
-('unvereinbarkeit', 0)
-('fanatisch', 0)
-('vergeltung', 0)
-('meiden', 0)
-('intervention', 0)
-('starr', 0)
-('folgewidrig', 0)
-('geiz', 0)
-('monoton', 0)
-('nass', 0)
-('leblos', 0)
-('\xc3\xbcberm\xc3\xa4\xc3\x9fig', 0)
-('unbequemlichkeit', 0)
-('wichtigtun', 0)
-('verschwendung', 0)
-('k\xc3\xbcndigung', 0)
-('stilllegung', 0)
-('unbotm\xc3\xa4\xc3\x9fig', 0)
-('unr\xc3\xbchmlich', 0)
-('wackeln', 0)
-('melancholisch', 0)
-('unvereinbar', 0)
-('tr\xc3\xa4ne', 0)
-('beseitigung', 0)
-('unheilbar', 0)
-('unscharf', 0)
-('unaufrichtig', 0)
-('betrunken', 0)
-('anklage', 0)
-('unvollst\xc3\xa4ndigkeit', 0)
-('st\xc3\xb6rung', 0)
-('beschwerlichkeit', 0)
-('lebensgef\xc3\xa4hrlich', 0)
-('unzufrieden', 0)
-('unmoralisch', 0)
-('stre\xc3\x9f', 0)
-('rothaarig', 0)
-('heftig', 0)
-('beschuldigen', 0)
-('verherrlichung', 0)
-('h\xc3\xa4misch', 0)
-('s\xc3\xbcdl\xc3\xa4ndisch', 0)
-('verheerend', 0)
-('notstand', 0)
-('gesch\xc3\xa4ftsaufl\xc3\xb6sung', 0)
-('beunruhigend', 0)
-('finte', 0)
-('unfein', 0)
-('vereiteln', 0)
-('befangenheit', 0)
-('blockade', 0)
-('vagheit', 0)
-('torheit', 0)
-('abh\xc3\xa4ngig', 0)
-('zwiesp\xc3\xa4ltig', 0)
-('freudlos', 0)
-('farblos', 0)
-('entfremden', 0)
-('abnutzung', 0)
-('leichtsinnig', 0)
-('entr\xc3\xbcstet', 0)
-('undurchsichtig', 0)
-('unsicherheit', 0)
-('behindern', 0)
-('minderwertigkeit', 0)
-('bosheit', 0)
-('umstritten', 0)
-('sintflut', 0)
-('verzweifeln', 0)
-('uneinsichtig', 0)
-('melancholie', 0)
-('furchterregend', 0)
-('missachten', 0)
-('tatenlos', 0)
-('begrenzen', 0)
-('ungem\xc3\xbctlich', 0)
-('pikiert', 0)
-('zwietr\xc3\xa4chtig', 0)
-('verschrumpeln', 0)
-('frustrierend', 0)
-('beule', 0)
-('bizarr', 0)
-('kapitulieren', 0)
-('widerlegen', 0)
-('trist', 0)
-('flau', 0)
-('unkorrekt', 0)
-('zerschmettern', 0)
-('d\xc3\xbcrre', 0)
-('r\xc3\xa4tselraten', 0)
-('pessimismus', 0)
-('entf\xc3\xbchren', 0)
-('ramponieren', 0)
-('verwelken', 0)
-('undankbarkeit', 0)
-('abschrecken', 0)
-('unachtsam', 0)
-('unpassend', 0)
-('f\xc3\xa4lschen', 0)
-('entw\xc3\xbcrdigend', 0)
-('groll', 0)
-('rasend', 0)
-('zerrei\xc3\x9fen', 0)
-('vorhersehbar', 0)
-('kl\xc3\xa4glicher', 0)
-('\xc3\x9cberschu\xc3\x9f', 0)
-('einschlag', 0)
-('unwirtschaftlich', 0)
-('abbauen', 0)
-('apokalyptisch', 0)
-('verschlingen', 0)
-('qualit\xc3\xa4tsminderung', 0)
-('l\xc3\xa4hmen', 0)
-('verkleinerung', 0)
-('unsauber', 0)
-('entt\xc3\xa4uschung', 0)
-('sprengung', 0)
-('unzuverl\xc3\xa4ssigkeit', 0)
-('k\xc3\xbcndigen', 0)
-('bed\xc3\xbcrftig', 0)
-('\xc3\x9cberma\xc3\x9f', 0)
-('deformation', 0)
-('konfrontieren', 0)
-('ver\xc3\xa4rgern', 0)
-('r\xc3\xbccksichtslosigkeit', 0)
-('infiltrieren', 0)
-('bedauernswert', 0)
-('unloyal', 0)
-('banalit\xc3\xa4t', 0)
-('launenhaftigkeit', 0)
-('inkonsequent', 0)
-('abschw\xc3\xa4chung', 0)
-('inkonsequenz', 0)
-('verh\xc3\xa4ngnisvoll', 0)
-('unstimmigkeit', 0)
-('gnadenlos', 0)
-('blindheit', 0)
-('befremdlich', 0)
-('ung\xc3\xbcnstig', 0)
-('konkurrieren', 0)
-('konjunkturr\xc3\xbcckgang', 0)
-('neid', 0)
-('hinf\xc3\xa4llig', 0)
-('l\xc3\xa4stig', 0)
-('\xc3\xbcbellaunig', 0)
-('hochtrabend', 0)
-('sorgenschwer', 0)
-('versklaven', 0)
-('rechtswidrigkeit', 0)
-('katastrophe', 0)
-('ungeschickt', 0)
-('h\xc3\xb6lzern', 0)
-('desinteresse', 0)
-('\xc3\x9cberschreitung', 0)
-('kentern', 0)
-('entmutigung', 0)
-('annullierung', 0)
-('niedertr\xc3\xa4chtig', 0)
-('provisorisch', 0)
-('verfehlen', 0)
-('erbost', 0)
-('\xc3\xa4ngstigen', 0)
-('bitterkeit', 0)
-('besch\xc3\xa4ftigungslos', 0)
-('unvermeidlich', 0)
-('schw\xc3\xa4che', 0)
-('schuldner', 0)
-('durchfallen', 0)
-('destruktiv', 0)
-('handgemenge', 0)
-('lebensgefahr', 0)
-('dezimierung', 0)
-('leichtsinnsfehler', 0)
-('besteuerung', 0)
-('nachteil', 0)
-('schmerzvoll', 0)
-('happig', 0)
-('verw\xc3\xbcstung', 0)
-('kollabieren', 0)
-('wutentbrannt', 0)
-('sinnlosigkeit', 0)
-('zur\xc3\xbcckgegeben', 0)
-('tragisch', 0)
-('abweichen', 0)
-('spr\xc3\xb6de', 0)
-('degradieren', 0)
-('ersch\xc3\xbcttern', 0)
-('energielosigkeit', 0)
-('haarig', 0)
-('uns\xc3\xa4glich', 0)
-('trostlos', 0)
-('unsinnig', 0)
-('antipathie', 0)
-('rebell', 0)
-('untr\xc3\xb6stlich', 0)
-('fehleranf\xc3\xa4llig', 0)
-('unbarmherzig', 0)
-('frivol', 0)
-('gedankenlos', 0)
-('bu\xc3\x9fgeld', 0)
-('finster', 0)
-('wertverlust', 0)
-('revolte', 0)
-('deinstallieren', 0)
-('ungesund', 0)
-('aussetzen', 0)
-('vernichtend', 0)
-('sch\xc3\xa4dlich', 0)
-('zensieren', 0)
-('ma\xc3\x9flos', 0)
-('kopfschmerz', 0)
-('obergro\xc3\x9f', 0)
-('mangel', 0)
-('einsturz', 0)
-('aufschlagen', 0)
-('zwangslage', 0)
-('stagnation', 0)
-('bed\xc3\xbcrftige', 0)
-('machtlos', 0)
-('unvollkommenheit', 0)
-('besch\xc3\xa4ftigungslose', 0)
-('strapaze', 0)
-('deformieren', 0)
-('unwirksam', 0)
-('verr\xc3\xbccktheit', 0)
-('unbehagen', 0)
-('einbu\xc3\x9fe', 0)
-('abschreiben', 0)
-('kollidieren', 0)
-('wimmernden', 0)
-('wermutstropfen', 0)
-('missgl\xc3\xbcck', 0)
-('unzumutbarkeit', 0)
-('gef\xc3\xa4hrdung', 0)
-('unmenschlichkeit', 0)
-('unqualifiziert', 0)
-('rivale', 0)
-('tr\xc3\xa4gheit', 0)
-('funz', 0)
-('heimzahlen', 0)
-('folgenschwer', 0)
-('repetiv', 0)
-('defizit', 0)
-('vorwand', 0)
-('\xc3\xbcberh\xc3\xb6hen', 0)
-('schwerf\xc3\xa4llig', 0)
-('riesengro\xc3\x9f', 0)
-('heruntermachen', 0)
-('kontraproduktiv', 0)
-('nappel', 0)
-('zur\xc3\xbcckgehen', 0)
-('aufschreien', 0)
-('kritiker', 0)
-('volumin\xc3\xb6s', 0)
-('ruppig', 0)
-('untergraben', 0)
-('neutralisieren', 0)
-('verhasst', 0)
-('unzurechnungsf\xc3\xa4hig', 0)
-('geringwertig', 0)
-('unwillig', 0)
-('t\xc3\xa4uschung', 0)
-('b\xc3\xb6sartigkeit', 0)
-('wertlosigkeit', 0)
-('gallig', 0)
-('drosseln', 0)
-('fesseln', 0)
-('undiplomatisch', 0)
-('wertlos', 0)
-('beunruhigung', 0)
-('kontrovers', 0)
-('erschrecken', 0)
-('unangemessen', 0)
-('absteigen', 0)
-('abfuhr', 0)
-('abweisen', 0)
-('steif', 0)
-('unordnung', 0)
-('verringern', 0)
-('niedergeschlagen', 0)
-('vertreibung', 0)
-('bevormunden', 0)
-('verbraucht', 0)
-('stilllegen', 0)
-('zumutung', 0)
-('krude', 0)
-('entbindung', 0)
-('wrack', 0)
-('furcht', 0)
-('schock', 0)
-('\xc3\xbcberw\xc3\xa4ltigen', 0)
-('ungeeignet', 0)
-('neurreich', 0)
-('verschmutzen', 0)
-('gehandicapt', 0)
-('unverbesserlich', 0)
-('bewegungslos', 0)
-('schmerzerf\xc3\xbcllt', 0)
-('unglaubw\xc3\xbcrdigkeit', 0)
-('heillos', 0)
-('zerstreuen', 0)
-('verderben', 0)
-('androhen', 0)
-('bedauern', 0)
-('ungerechtfertigt', 0)
-('stagnieren', 0)
-('driften', 0)
-('verz\xc3\xb6gern', 0)
-('fruchtlos', 0)
-('unbefriedigt', 0)
-('vers\xc3\xa4umnis', 0)
-('aff\xc3\xa4re', 0)
-('archaisch', 0)
-('strafverfahren', 0)
-('unverantwortlichkeit', 0)
-('wackelig', 0)
-('unterw\xc3\xbcrfig', 0)
-('schubs', 0)
-('frust', 0)
-('bevormundung', 0)
-('beschruppt', 0)
-('zerschlagen', 0)
-('klitzeklein', 0)
-('abd\xc3\xa4mpfen', 0)
-('dominieren', 0)
-('streik', 0)
-('missgeschick', 0)
-('ern\xc3\xbcchternd', 0)
-('verfallen', 0)
-('ungewollt', 0)
-('erliegen', 0)
-('verwirren', 0)
-('gans', 0)
-('schwund', 0)
-('krach', 0)
-('chaotisch', 0)
-('abgedroschen', 0)
-('anomalie', 0)
-('unkritisch', 0)
-('kollaps', 0)
-('fatal', 0)
-('willk\xc3\xbcrlich', 0)
-('r\xc3\xbcckst\xc3\xa4ndig', 0)
-('stocken', 0)
-('gemein', 0)
-('versenken', 0)
-('verkehrswidrig', 0)
-('ungleichheit', 0)
-('marzahner', 0)
-('verschleudern', 0)
-('unpraktisch', 0)
-('herrisch', 0)
-('stinktier', 0)
-('depression', 0)
-('profan', 0)
-('absch\xc3\xa4tzig', 0)
-('bedr\xc3\xbcckung', 0)
-('feindselig', 0)
-('abweisung', 0)
-('ungenauigkeit', 0)
-('undankbar', 0)
-('n\xc3\xb6tigung', 0)
-('totalit\xc3\xa4r', 0)
-('pubert\xc3\xa4r', 0)
-('unbestimmt', 0)
-('unfreundlichkeit', 0)
-('klobig', 0)
-('verwickeln', 0)
-('hippie', 0)
-('leichtgl\xc3\xa4ubig', 0)
-('l\xc3\xa4diert', 0)
-('zornig', 0)
-('konkurrenz', 0)
-('ern\xc3\xbcchterung', 0)
-('wankelm\xc3\xbctig', 0)
-('finanzkrise', 0)
-('abst\xc3\xbcrzen', 0)
-('abdankung', 0)
-('widerspenstig', 0)
-('ungeduld', 0)
-('widrigkeit', 0)
-('senken', 0)
-('knurrig', 0)
-('denkfehler', 0)
-('statisch', 0)
-('aufreibend', 0)
-('unerh\xc3\xb6rt', 0)
-('streunend', 0)
-('redundanz', 0)
-('unsch\xc3\xb6n', 0)
-('unmoral', 0)
-('aufbl\xc3\xa4hen', 0)
-('zerrung', 0)
-('kraftlos', 0)
-('unzumutbar', 0)
-('verbeulen', 0)
-('verschlechterung', 0)
-('konkurs', 0)
-('crash', 0)
-('absenkung', 0)
-('betr\xc3\xbcgerisch', 0)
-('aufhebung', 0)
-('abfallen', 0)
-('abschu\xc3\x9f', 0)
-('ablaufen', 0)
-('banal', 0)
-('schuldhaft', 0)
-('blockierung', 0)
-('stur', 0)
-('matt', 0)
-('fluch', 0)
-('aufr\xc3\xbchren', 0)
-('unklarheit', 0)
-('nervenaufreibend', 0)
-('rezession', 0)
-('verweigerung', 0)
-('schimmelig', 0)
-('ausgestorben', 0)
-('stillstand', 0)
-('immobilit\xc3\xa4t', 0)
-('wirkungslos', 0)
-('makelhaft', 0)
-('kippen', 0)
-('fehltritt', 0)
-('elendig', 0)
-('abreissen', 0)
-('drosselung', 0)
-('magern', 0)
-('abriss', 0)
-('auseinanderfallen', 0)
-('aufgeben', 0)
-('versp\xc3\xa4tet', 0)
-('zusammensto\xc3\x9fen', 0)
-('weinend', 0)
-('vergeltungsma\xc3\x9fnahme', 0)
-('zahlungsunf\xc3\xa4hig', 0)
-('merkw\xc3\xbcrdigkeit', 0)
-('einsamkeit', 0)
-('gel\xc3\xa4hmt', 0)
-('unbequem', 0)
-('niederschmetternd', 0)
-('isolation', 0)
-('aggressor', 0)
-('hinterhalt', 0)
-('herausfordern', 0)
-('einsam', 0)
-('ungeduldig', 0)
-('diskreditieren', 0)
-('abspalten', 0)
-('tabu', 0)
-('verspielen', 0)
-('verdrie\xc3\x9flich', 0)
-('entfremdung', 0)
-('bedeutungslosigkeit', 0)
-('zur\xc3\xbcckschicken', 0)
-('weglassen', 0)
-('eingebildet', 0)
-('garnichts', 0)
-('bluthungrig', 0)
-('fl\xc3\xbcchtend', 0)
-('\xc3\xbcberlastet', 0)
-('d\xc3\xa4mpfer', 0)
-('schelte', 0)
-('unerbittlich', 0)
-('leidende', 0)
-('d\xc3\xa4mpfen', 0)
-('verkleinern', 0)
-('niedergleitend', 0)
-('schmerz', 0)
-('\xc3\xbcbertrieben', 0)
-('\xc3\x9cberlastung', 0)
-('heimsuchen', 0)
-('eint\xc3\xb6nig', 0)
-('unterbrechung', 0)
-('abrutsch', 0)
-('aufruhr', 0)
-('unstetigkeit', 0)
-('bedenklich', 0)
-('unzul\xc3\xa4ssig', 0)
-('h\xc3\xa4ngengeblieben', 0)
-('dahinschwinden', 0)
-('grau', 0)
-('schlag', 0)
-('ungenau', 0)
-('ausl\xc3\xa4ndisch', 0)
-('groggy', 0)
-('turbulent', 0)
-('verw\xc3\xbcsten', 0)
-('un\xc3\xbcbersichtlich', 0)
-('befangen', 0)
-('r\xc3\xbcckst\xc3\xa4ndigkeit', 0)
-('bedauerlich', 0)
-('zusammensto\xc3\x9f', 0)
-('unfreiwillig', 0)
-('traumatisieren', 0)
-('energielos', 0)
-('schal', 0)
-('r\xc3\xbcckfall', 0)
-('aufgebracht', 0)
-('provisorium', 0)
-('entbinden', 0)
-('kostspieligkeit', 0)
-('k\xc3\xbcrzung', 0)
-('bedrohlich', 0)
-('anma\xc3\x9fung', 0)
-('abgleiten', 0)
-('zur\xc3\xbcckbleiben', 0)
-('kahl', 0)
-('abrutschen', 0)
-('unbewiesen', 0)
-('instabilit\xc3\xa4t', 0)
-('unheilvoll', 0)
-('verzerren', 0)
-('umtauschen', 0)
-('entziehen', 0)
-('br\xc3\xbcchig', 0)
-('omin\xc3\xb6s', 0)
-('sackgasse', 0)
-('glanzlosigkeit', 0)
-('grausamkeit', 0)
-('m\xc3\xbchsam', 0)
-('mittellosigkeit', 0)
-('dissens', 0)
-('unverh\xc3\xa4ltnism\xc3\xa4\xc3\x9fig', 0)
-('besoffen', 0)
-('verf\xc3\xa4lschen', 0)
-('tristesse', 0)
-('instabil', 0)
-('rivalit\xc3\xa4t', 0)
-('geistlosigkeit', 0)
-('schelten', 0)
-('unverlangt', 0)
-('\xc3\xb6de', 0)
-('verletzbar', 0)
-('schimpfend', 0)
-('anst\xc3\xb6\xc3\x9fig', 0)
-('hartn\xc3\xa4ckig', 0)
-('absinken', 0)
-('verletzung', 0)
-('feminin', 0)
-('aussichtslos', 0)
-('trugschlu\xc3\x9f', 0)
-('schubsen', 0)
-('kostspielig', 0)
-('allergr\xc3\xb6\xc3\x9fte', 0)
-('versklavung', 0)
-('verdecken', 0)
-('verfassungswidrig', 0)
-('d\xc3\xbcrr', 0)
-('dem\xc3\xbctigung', 0)
-('kollision', 0)
-('zerschunden', 0)
-('liquidation', 0)
-('vermindern', 0)
-('abweichung', 0)
-('schocken', 0)
-('verdorbenheit', 0)
-('verderblich', 0)
-('verzwickt', 0)
-('verfall', 0)
-('drift', 0)
-('ehebrechen', 0)
-('gammeln', 0)
-('beanstanden', 0)
-('seicht', 0)
-('kaltherzig', 0)
-('ausbruch', 0)
-('nerv\xc3\xb6s', 0)
-('s\xc3\xbcndenbock', 0)
-('schlitterbahn', 0)
-('frustration', 0)
-('missmutig', 0)
-('steuerhinterziehung', 0)
-('haarstr\xc3\xa4ubend', 0)
-('aussterben', 0)
-('entsetzlich', 0)
-('meckern', 0)
-('zweifeln', 0)
-('unn\xc3\xbctz', 0)
-('unregelm\xc3\xa4\xc3\x9fig', 0)
-('immobil', 0)
-('abd\xc3\xa4mpfung', 0)
-('kostenintensiv', 0)
-('winzig', 0)
-('unmut', 0)
-('misslingen', 0)
-('n\xc3\xa4rrisch', 0)
-('grotesk', 0)
-('verirren', 0)
-('entnervt', 0)
-('melodramatisch', 0)
-('b\xc3\xbcrde', 0)
-('besch\xc3\xa4digung', 0)
-('widrig', 0)
+dumm	36	1
+arsch	26	1
+scheiß	24	1
+dummheit	16	1
+böse	12	1
+fresse	12	1
+lüge	12	1
+scheisse	9	1
+abschaum	9	1
+blöd	9	1
+scheiss	8	1
+dämlich	8	1
+widerlich	8	1
+versager	8	1
+hurensohn	7	1
+feige	7	1
+verarschen	6	1
+scheiße	6	1
+verlierer	6	1
+heuchler	6	1
+spinner	5	1
+arschloch	5	1
+link	5	1
+schlampe	5	1
+idiot	5	1
+kacke	5	1
+schmarotzer	5	1
+arrogant	4	1
+frech	4	1
+unfähigkeit	4	1
+pervers	3	1
+feigling	3	1
+verräter	3	1
+fett	3	1
+ekelhaft	2	1
+schwätzer	2	1
+wichtigtuer	2	1
+verflucht	2	1
+verhöhnen	2	1
+naiv	2	1
+häßlich	2	1
+kriminell	2	1
+muschi	2	1
+unehrlich	2	1
+blödheit	2	1
+verlogen	2	1
+wicht	2	1
+weib	2	1
+penner	2	1
+doof	2	1
+korrupt	2	1
+inkompetenz	2	1
+bastard	2	1
+witzfigur	2	1
+schwuchtel	2	1
+fettsack	2	1
+miststück	2	1
+pseudo	2	1
+trottel	2	1
+gefickt	2	1
+arroganz	1	1
+lümmel	1	1
+psycho	1	1
+widerwärtig	1	1
+blender	1	1
+verachten	1	1
+lügner	1	1
+ausbeuter	1	1
+möse	1	1
+heuchlerisch	1	1
+dummkopf	1	1
+spast	1	1
+beschissen	1	1
+depp	1	1
+ekelig	1	1
+wirr	1	1
+taugenichts	1	1
+pisser	1	1
+asozial	1	1
+hinterlistig	1	1
+luder	1	1
+stinken	1	1
+hässlich	1	1
+schnösel	1	1
+lachnummer	1	1
+hexe	1	1
+heucheln	1	1
+terrorisieren	1	1
+bengel	1	1
+bösewicht	1	1
+hure	1	1
+hinterlist	1	1
+mongo	1	1
+tunte	1	1
+vollidiot	1	1
+bekloppt	1	1
+honk	1	1
+faschist	1	1
+blödmann	1	1
+dreist	1	1
+würgen	1	1
+großmaul	1	1
+egoschwein	0	1
+frechheit	0	1
+sklaventreiber	0	1
+spacken	0	1
+verfluchen	0	1
+spanner	0	1
+köter	0	1
+geldgeil	0	1
+bauernkind	0	1
+schwanzgesicht	0	1
+zahnlos	0	1
+spasti	0	1
+paranoid	0	1
+wasserkopf	0	1
+unzivilisiert	0	1
+arschgeburt	0	1
+straßenpenner	0	1
+holzkopf	0	1
+pickelgesicht	0	1
+mutlosigkeit	0	1
+faulheit	0	1
+früchtchen	0	1
+hexennase	0	1
+schäbig	0	1
+tucke	0	1
+lustknabe	0	1
+geizkragen	0	1
+betrüger	0	1
+ergaunern	0	1
+wichsgesicht	0	1
+sucker	0	1
+dorftrottel	0	1
+unseriös	0	1
+missgebürtig	0	1
+beknackt	0	1
+krüppel	0	1
+tollwütig	0	1
+armselig	0	1
+vulgär	0	1
+hundeficker	0	1
+schlamperei	0	1
+charakterlos	0	1
+hurentochter	0	1
+ehrenlos	0	1
+missgestalt	0	1
+unehrlichkeit	0	1
+kacken	0	1
+pimmel	0	1
+grottenschlecht	0	1
+unsportlich	0	1
+hampelmann	0	1
+körperklaus	0	1
+loser	0	1
+arschgesicht	0	1
+gehasst	0	1
+homofürst	0	1
+hanswurst	0	1
+streber	0	1
+egoist	0	1
+abstoßend	0	1
+schwachkopf	0	1
+unzüchtig	0	1
+engstirnig	0	1
+mistkind	0	1
+brillenschlange	0	1
+rechthaberisch	0	1
+schwuli	0	1
+untermensch	0	1
+drecksack	0	1
+junkie	0	1
+charakterschwach	0	1
+gehässig	0	1
+schwabbelbacke	0	1
+ekelerregend	0	1
+motherfucker	0	1
+mastschwein	0	1
+begriffsstutzig	0	1
+nutte	0	1
+debil	0	1
+barbarisch	0	1
+schwanzlos	0	1
+trottelig	0	1
+jammerlappen	0	1
+scheißhaufen	0	1
+notgeil	0	1
+würdelos	0	1
+eierkopf	0	1
+flittchen	0	1
+miesepetrig	0	1
+suppenkasper	0	1
+dreckskind	0	1
+pussy	0	1
+verächtlich	0	1
+langweiler	0	1
+egoistisch	0	1
+abzocke	0	1
+scheißkerl	0	1
+kinderficker	0	1
+fotzenkopf	0	1
+minusmensch	0	1
+mannsweib	0	1
+pimmelgesicht	0	1
+pappnase	0	1
+rüde	0	1
+schlaffi	0	1
+spott	0	1
+gottlos	0	1
+grimmig	0	1
+räudig	0	1
+arschgefickt	0	1
+erbsenzähler	0	1
+stupide	0	1
+abgewichst	0	1
+habgierig	0	1
+schwabbeltitte	0	1
+dusselig	0	1
+unsozial	0	1
+boshaft	0	1
+wichser	0	1
+landei	0	1
+faschistisch	0	1
+dreckskerl	0	1
+bitch	0	1
+stricher	0	1
+fadenscheinig	0	1
+hackfresse	0	1
+gauner	0	1
+mutterficker	0	1
+missraten	0	1
+übergewichtig	0	1
+grenzdebil	0	1
+illoyal	0	1
+disziplinlos	0	1
+nichtskönner	0	1
+geistlos	0	1
+selbstsüchtig	0	1
+hundesohn	0	1
+verrückter	0	1
+homophob	0	1
+bahnhofsstricher	0	1
+gottverdammt	0	1
+verräterisch	0	1
+erbärmlich	0	1
+idiotisch	0	1
+bedeppert	0	1
+dreckstück	0	1
+schmierig	0	1
+knilch	0	1
+skrupellos	0	1
+vollspast	0	1
+verfickt	0	1
+missgeburt	0	1
+flachwichser	0	1
+hornochse	0	1
+banause	0	1
+biatch	0	1
+fotzenknecht	0	1
+fotze	0	1
+schlampenkind	0	1
+neunmalkluger	0	1
+berschissen	0	1
+fut	0	1
+untreu	0	1
+assi	0	1
+nuttensohn	0	1
+mutlos	0	1
+hurenbock	0	1
+denkfaul	0	1
+scheußlich	0	1
+reagenzglasgeburt	0	1
+fickfehler	0	1
+inkompetent	0	1
+borniert	0	1
+nervig	0	1
+mitläufer	0	1
+hofnarr	0	1
+narr	0	1
+halunke	0	1
+ficker	0	1
+labil	0	1
+freak	0	1
+unzuverlässig	0	1
+blauäugig	0	1
+faul	0	1
+kasper	0	1
+zugekokst	0	1
+pantoffelheld	0	1
+wixxer	0	1
+gammler	0	1
+nuttenkind	0	1
+stümperhaft	0	1
+wichsfleck	0	1
+nutzlos	0	1
+heuchelei	0	1
+pickelface	0	1
+mistratte	0	1
+ungehobelt	0	1
+hosenscheißer	0	1
+spastiker	0	1
+fucker	0	1
+versaut	0	1
+heimtückisch	0	1
+beschämen	0	1
+geisteskrank	0	1
+eklig	0	1
+schurke	0	1
+verkackter	0	1
+laienhaft	0	1
+weichei	0	1
+bösartig	0	1
+ungeduscht	0	1
+scheusslich	0	1
+scheißer	0	1
+fies	0	1
+geizhals	0	1
+abgefuckt	0	1
+verabscheuungswürdig	0	1
+dussel	0	1
+arschkind	0	1
+arschgeige	0	1
+desolat	0	1
+drecksau	0	1
+dilettantisch	0	1
+ganz	62	0
+ende	44	0
+problem	41	0
+krieg	39	0
+kurz	30	0
+gewalt	30	0
+angst	24	0
+schuld	23	0
+opfer	23	0
+falsch	22	0
+fehler	21	0
+terror	20	0
+deine	19	0
+groß	18	0
+kind	18	0
+letzte	18	0
+dreck	17	0
+tod	14	0
+propaganda	13	0
+schlimm	13	0
+schade	13	0
+untergang	13	0
+langsam	13	0
+schlecht	12	0
+mord	12	0
+schwarz	11	0
+verboten	11	0
+sorgen	11	0
+alt	10	0
+verbieten	10	0
+ziemlich	10	0
+wut	9	0
+kritisch	9	0
+sterben	8	0
+schließen	8	0
+tot	8	0
+chaos	8	0
+gefahr	8	0
+arabisch	8	0
+kritik	8	0
+unfähig	7	0
+kuh	7	0
+klein	7	0
+leiden	7	0
+müll	7	0
+fehlen	7	0
+kritisieren	7	0
+traurig	7	0
+fallen	7	0
+mist	7	0
+strafbar	7	0
+zensur	7	0
+flüchtling	7	0
+vorwerfen	7	0
+zerstört	7	0
+kampf	7	0
+töten	7	0
+total	6	0
+aufhören	6	0
+beschweren	6	0
+hund	6	0
+wahnsinn	6	0
+pest	6	0
+schwer	6	0
+verdammt	6	0
+krank	6	0
+verlieren	6	0
+klagen	6	0
+pfeife	6	0
+löschen	6	0
+kämpfen	6	0
+lang	6	0
+verurteilen	5	0
+blockieren	5	0
+unfassbar	5	0
+scheitern	5	0
+verschwinden	5	0
+primitiv	5	0
+gefährlich	5	0
+kriminalität	5	0
+beenden	5	0
+not	5	0
+widerspruch	5	0
+protestieren	5	0
+sorge	5	0
+leid	5	0
+schwein	5	0
+drohen	5	0
+unsinn	5	0
+schulden	5	0
+todesstrafe	5	0
+opposition	5	0
+fürchten	5	0
+schämen	5	0
+reich	5	0
+abschaffen	5	0
+betrug	5	0
+niederlage	4	0
+gegner	4	0
+pflicht	4	0
+verletzt	4	0
+furchtbar	4	0
+ratte	4	0
+negativ	4	0
+unterdrückung	4	0
+mühe	4	0
+revolution	4	0
+schuldig	4	0
+zerstören	4	0
+armut	4	0
+hungern	4	0
+aufstand	4	0
+totschlag	4	0
+hart	4	0
+ärgern	4	0
+vollkommen	4	0
+arm	4	0
+einstellen	4	0
+verrat	4	0
+gruselig	4	0
+schäden	4	0
+sack	4	0
+schmutz	4	0
+unmöglich	4	0
+psychisch	3	0
+verachtung	3	0
+hoffnungslos	3	0
+verzweiflung	3	0
+bitter	3	0
+flasche	3	0
+stören	3	0
+kalt	3	0
+empörung	3	0
+esel	3	0
+sau	3	0
+reduzieren	3	0
+provokation	3	0
+abschaffung	3	0
+verzichten	3	0
+kaputt	3	0
+unfall	3	0
+enttäuschen	3	0
+trauern	3	0
+sucht	3	0
+feuer	3	0
+elend	3	0
+jammern	3	0
+verzweifelt	3	0
+zorn	3	0
+untergehen	3	0
+hungrig	3	0
+zwang	3	0
+rutsch	3	0
+fehlanzeige	3	0
+zerstörung	3	0
+bescheuert	3	0
+haft	3	0
+skandal	3	0
+angriff	3	0
+schwanz	3	0
+drastisch	3	0
+schlicht	3	0
+beschneidung	3	0
+manipulation	3	0
+loswerden	3	0
+flucht	3	0
+aufregung	3	0
+nerven	3	0
+unverantwortlich	3	0
+scheiden	2	0
+begrenzt	2	0
+verletzen	2	0
+anklagen	2	0
+beklagen	2	0
+skeptisch	2	0
+fisch	2	0
+ungerechtigkeit	2	0
+unaufhörlich	2	0
+leugnen	2	0
+brechen	2	0
+arbeitslos	2	0
+rutschen	2	0
+rebellion	2	0
+terrorismus	2	0
+lauch	2	0
+bedrohung	2	0
+stürzen	2	0
+dieb	2	0
+trennen	2	0
+beschwerde	2	0
+gleichgültigkeit	2	0
+ablehnung	2	0
+zeitverschwendung	2	0
+bestrafung	2	0
+hohn	2	0
+überfallen	2	0
+unterirdisch	2	0
+wüste	2	0
+problematisch	2	0
+niedergang	2	0
+unterlassen	2	0
+unterdrücken	2	0
+enttäuscht	2	0
+klage	2	0
+teuer	2	0
+verdorben	2	0
+ablehnen	2	0
+streiken	2	0
+kriechen	2	0
+diffamierung	2	0
+unverschämtheit	2	0
+vorbestraft	2	0
+bombardieren	2	0
+rücktritt	2	0
+vorwurf	2	0
+streiten	2	0
+langweilig	2	0
+überflüssig	2	0
+beschränkt	2	0
+reihenweise	2	0
+unklar	2	0
+abnehmen	2	0
+desaster	2	0
+abschreckung	2	0
+radikal	2	0
+auseinandersetzung	2	0
+unbedeutend	2	0
+erschreckend	2	0
+weinen	2	0
+unrecht	2	0
+aggressiv	2	0
+misstrauen	2	0
+konfrontation	2	0
+versenkung	2	0
+schwierig	2	0
+streit	2	0
+auffallen	2	0
+gestört	2	0
+zweifel	2	0
+befürchten	2	0
+angreifen	2	0
+veraltet	2	0
+beschädigen	2	0
+gewaltsam	2	0
+ausschließen	2	0
+absurd	2	0
+unglaubwürdig	2	0
+verbot	2	0
+schamlos	2	0
+fremd	2	0
+scham	2	0
+zweifelhaft	2	0
+erschüttert	2	0
+leere	2	0
+verrückt	2	0
+unterwerfen	2	0
+nörgeln	2	0
+brand	2	0
+erbrechen	2	0
+abstieg	2	0
+versuchung	1	0
+aufschrei	1	0
+berauben	1	0
+ungültig	1	0
+einbrechen	1	0
+trotzen	1	0
+leichtsinn	1	0
+trott	1	0
+begrenzung	1	0
+unnötig	1	0
+farce	1	0
+sinnlos	1	0
+rückzug	1	0
+neustart	1	0
+durcheinander	1	0
+unterlassung	1	0
+zaudern	1	0
+ausbeutung	1	0
+vernachlässigung	1	0
+herausforderung	1	0
+undemokratisch	1	0
+Ärger	1	0
+unredlich	1	0
+sinken	1	0
+abbrechen	1	0
+abfällig	1	0
+unhöflich	1	0
+rückgang	1	0
+härte	1	0
+kälte	1	0
+erschütterung	1	0
+schlange	1	0
+größter	1	0
+wahnsinnig	1	0
+eingeschränkt	1	0
+brennen	1	0
+aggressivität	1	0
+vermeiden	1	0
+aussetzung	1	0
+dramatisch	1	0
+grauen	1	0
+ablenkung	1	0
+attacke	1	0
+drängen	1	0
+zurückgeschickt	1	0
+distanzieren	1	0
+anstrengend	1	0
+langeweile	1	0
+leer	1	0
+unwissend	1	0
+verwirrung	1	0
+fälschung	1	0
+aufbringen	1	0
+schrecklich	1	0
+verherrlichen	1	0
+trennung	1	0
+ausschalten	1	0
+wunde	1	0
+rückläufig	1	0
+unbrauchbar	1	0
+affe	1	0
+grob	1	0
+vermeidung	1	0
+stress	1	0
+zwietracht	1	0
+vergeblich	1	0
+enthauptung	1	0
+verlust	1	0
+undiszipliniert	1	0
+trauma	1	0
+krankheit	1	0
+enttäuschend	1	0
+uneinigkeit	1	0
+abfall	1	0
+zerschlagung	1	0
+krumm	1	0
+pech	1	0
+abbruch	1	0
+schmerzen	1	0
+dekadenz	1	0
+irrsinnig	1	0
+unverständlich	1	0
+besorgt	1	0
+geil	1	0
+überschreiten	1	0
+unklug	1	0
+schmock	1	0
+sauer	1	0
+untragbar	1	0
+korruption	1	0
+aufregen	1	0
+ungerecht	1	0
+gering	1	0
+inflation	1	0
+stoßen	1	0
+müdigkeit	1	0
+Übertreibung	1	0
+kapitalverbrechen	1	0
+rücksichtslos	1	0
+nachlassen	1	0
+rächen	1	0
+ungehorsam	1	0
+schlapp	1	0
+einschränken	1	0
+attackieren	1	0
+einschränkung	1	0
+eingehen	1	0
+kürzen	1	0
+riesig	1	0
+unwürdig	1	0
+belastung	1	0
+abgrund	1	0
+billig	1	0
+beängstigend	1	0
+fad	1	0
+knecht	1	0
+flach	1	0
+provozieren	1	0
+widersprechen	1	0
+invasion	1	0
+unfug	1	0
+keim	1	0
+abdanken	1	0
+isolieren	1	0
+cool	1	0
+unerwartet	1	0
+nötigen	1	0
+uneinig	1	0
+feindlich	1	0
+schmutzig	1	0
+konflikt	1	0
+unruhig	1	0
+senkung	1	0
+bedrohen	1	0
+verschleppen	1	0
+belasten	1	0
+hilflos	1	0
+ruin	1	0
+bestürzt	1	0
+knapp	1	0
+pleite	1	0
+beseitigen	1	0
+last	1	0
+manipulieren	1	0
+zwingen	1	0
+verstoßen	1	0
+befürchtung	1	0
+agitation	1	0
+wütend	1	0
+behinderung	1	0
+schwächen	1	0
+arbeitsloser	1	0
+riskieren	1	0
+ermahnung	1	0
+abschießen	1	0
+erschöpft	1	0
+krise	1	0
+sexy	1	0
+makel	1	0
+altmodisch	1	0
+übersehen	1	0
+ablenken	1	0
+auseinandersetzen	1	0
+dunkelheit	1	0
+angreifer	1	0
+panik	1	0
+kontroverse	1	0
+einfältig	1	0
+geldstrafe	1	0
+verzicht	1	0
+kompliziert	1	0
+übertreiben	1	0
+widerruf	1	0
+seltsam	1	0
+selbstverliebt	1	0
+gebrechlich	1	0
+missachtung	1	0
+täuschen	1	0
+gefährden	1	0
+beschränkung	1	0
+löschung	1	0
+aufgeregt	1	0
+trauer	1	0
+sabotage	1	0
+krass	1	0
+verurteilung	1	0
+pfosten	1	0
+einschüchterung	1	0
+wegfallen	1	0
+diffamieren	1	0
+naivität	1	0
+schrott	1	0
+zusammenbruch	1	0
+Übel	1	0
+unterbrechen	1	0
+zurückgeben	1	0
+dunkel	1	0
+einbruch	1	0
+verdacht	1	0
+müde	1	0
+ertrinken	1	0
+beschnitten	1	0
+unruhe	1	0
+offensive	1	0
+versagen	1	0
+stau	1	0
+Ärgernis	1	0
+fragwürdig	1	0
+zögern	1	0
+verstoß	1	0
+habgier	0	0
+gestreßt	0	0
+zerstörerisch	0	0
+unterwerfung	0	0
+abwertung	0	0
+unbefriedigend	0	0
+schwinden	0	0
+protest	0	0
+fehlermeldung	0	0
+verdrängung	0	0
+aggression	0	0
+verrucht	0	0
+rückstand	0	0
+vergeudung	0	0
+krachen	0	0
+besorgniserregend	0	0
+undercover	0	0
+sturz	0	0
+unsicher	0	0
+infiltration	0	0
+trügerisch	0	0
+anspannen	0	0
+zurückhalten	0	0
+verstimmen	0	0
+lückenhaft	0	0
+ungeschicklichkeit	0	0
+ruchlos	0	0
+fehde	0	0
+rabiat	0	0
+missglücken	0	0
+unlogisch	0	0
+unbestimmtheit	0	0
+mangelbehaftet	0	0
+verminderung	0	0
+unwirtlich	0	0
+zusammenrechen	0	0
+ungeübt	0	0
+schwierigkeit	0	0
+geisteskrankheit	0	0
+allerdicksten	0	0
+zerbrechen	0	0
+unzufriedenheit	0	0
+mittelmäßigkeit	0	0
+anfällig	0	0
+ausfallen	0	0
+einbrecher	0	0
+leistungsunfähig	0	0
+negativität	0	0
+frustrieren	0	0
+annullieren	0	0
+giftig	0	0
+einstürzen	0	0
+verschwenden	0	0
+abstumpfen	0	0
+abtakeln	0	0
+alkoholisiert	0	0
+auslöschung	0	0
+mager	0	0
+Übergewicht	0	0
+kränklich	0	0
+barriere	0	0
+unrentabilität	0	0
+schmuggel	0	0
+intervenieren	0	0
+klischee	0	0
+unerquicklich	0	0
+morbid	0	0
+züchtigen	0	0
+schlumpf	0	0
+schlottern	0	0
+ambivalenz	0	0
+verdächtige	0	0
+unterentwickelt	0	0
+angetrunken	0	0
+ambivalent	0	0
+mangelhaft	0	0
+ausfall	0	0
+ermordung	0	0
+teuerungsrate	0	0
+zahlungsunfähigkeit	0	0
+missverständnis	0	0
+verschmutzung	0	0
+befall	0	0
+unstetig	0	0
+fahrlässig	0	0
+gartenzwerg	0	0
+besteuern	0	0
+befallen	0	0
+traurigkeit	0	0
+ausschließung	0	0
+trüb	0	0
+ziellosigkeit	0	0
+abhängigkeit	0	0
+lausbub	0	0
+panisch	0	0
+zweideutig	0	0
+unbedacht	0	0
+verbannung	0	0
+ergebnislos	0	0
+aufwühlen	0	0
+zwecklos	0	0
+verzögerung	0	0
+turbolenzen	0	0
+ausgleiten	0	0
+unberechtigt	0	0
+träge	0	0
+auflösen	0	0
+unsolidarisch	0	0
+umständlich	0	0
+massaker	0	0
+verängstigt	0	0
+kränkung	0	0
+widerrufen	0	0
+herzlos	0	0
+verlangsamen	0	0
+schadensbild	0	0
+besorgnis	0	0
+zersetzen	0	0
+verletzlich	0	0
+unhöflichkeit	0	0
+ungeheuer	0	0
+stoß	0	0
+erschlaffen	0	0
+verdrängen	0	0
+sprengen	0	0
+fehlkauf	0	0
+schleppend	0	0
+hysterisch	0	0
+töricht	0	0
+ungedeckt	0	0
+wiesel	0	0
+anmaßen	0	0
+verwerflich	0	0
+abwärtstrend	0	0
+antiquiert	0	0
+strenge	0	0
+zwangsmaßnahmen	0	0
+achtlosigkeit	0	0
+inkonsistenz	0	0
+reklamation	0	0
+anspannung	0	0
+inkonsistent	0	0
+misstrauensantrag	0	0
+mittelmäßig	0	0
+bruch	0	0
+ungeschminkt	0	0
+tyrannei	0	0
+diebstahl	0	0
+alarm	0	0
+unwirtschaftlichkeit	0	0
+verstricken	0	0
+bedrücken	0	0
+hunger	0	0
+lurch	0	0
+abwerten	0	0
+teuerung	0	0
+arbeitend	0	0
+wirtschaftskrise	0	0
+verharmlosen	0	0
+drohung	0	0
+ausbeute	0	0
+beschneiden	0	0
+flaute	0	0
+risiko	0	0
+beschuldigung	0	0
+anstrengen	0	0
+trübsal	0	0
+abführen	0	0
+unzusammenhängend	0	0
+ungebeten	0	0
+anfälligkeit	0	0
+umtausch	0	0
+unwirksamkeit	0	0
+höhnisch	0	0
+fraglich	0	0
+bestechen	0	0
+rechtswidrig	0	0
+lasch	0	0
+blitzen	0	0
+schuldnerin	0	0
+unwahrheit	0	0
+arbeitslosigkeit	0	0
+rebellisch	0	0
+unverhältnismäßigkeit	0	0
+todesfall	0	0
+epidemie	0	0
+nille	0	0
+nervosität	0	0
+entkräftet	0	0
+beeinträchtigen	0	0
+ungebührlich	0	0
+inkorrekt	0	0
+blutig	0	0
+stehlen	0	0
+unliebsam	0	0
+turbolenz	0	0
+unglücklich	0	0
+schramme	0	0
+unpersönlich	0	0
+vage	0	0
+abschwächen	0	0
+abrupt	0	0
+nachlässigkeit	0	0
+Überfüllung	0	0
+mangeln	0	0
+unwichtig	0	0
+vorurteil	0	0
+kurzsichtig	0	0
+düsternis	0	0
+überschwemmen	0	0
+schreck	0	0
+beeinträchtigung	0	0
+androhung	0	0
+läppisch	0	0
+flüchtigkeit	0	0
+fragil	0	0
+monotonie	0	0
+welken	0	0
+liquidieren	0	0
+unsittlich	0	0
+jähzorn	0	0
+unfair	0	0
+stenz	0	0
+riskant	0	0
+komisch	0	0
+hemmung	0	0
+abspaltung	0	0
+beunruhigen	0	0
+ungesetzlich	0	0
+abstumpfung	0	0
+knappheit	0	0
+entmutigen	0	0
+infektion	0	0
+rückschritt	0	0
+heimsuchung	0	0
+misstrauisch	0	0
+niedrig	0	0
+schwächung	0	0
+auflösung	0	0
+intolerant	0	0
+frustriert	0	0
+notfall	0	0
+wettbewerbswidrig	0	0
+pflichtwidrig	0	0
+hektik	0	0
+empören	0	0
+beklagenswert	0	0
+anfänger	0	0
+minderung	0	0
+qualvoll	0	0
+abschreibung	0	0
+fehlerhaft	0	0
+bombardement	0	0
+ordnungswidrig	0	0
+dilemma	0	0
+untreue	0	0
+unvollständig	0	0
+hektisch	0	0
+gekränkt	0	0
+fehlgeburt	0	0
+gnadenlosigkeit	0	0
+zusammenbrechen	0	0
+mürrisch	0	0
+unterliegen	0	0
+diffus	0	0
+lakonisch	0	0
+amateur	0	0
+verlangsamung	0	0
+fuchsteufelswild	0	0
+bombardierung	0	0
+gammelig	0	0
+unsolide	0	0
+zerren	0	0
+beschwerlich	0	0
+unerlaubt	0	0
+absperrung	0	0
+verwerfung	0	0
+flüchtiger	0	0
+schräglauf	0	0
+entbehrungsreich	0	0
+apathisch	0	0
+unerbittlichkeit	0	0
+tragödie	0	0
+entlassen	0	0
+düster	0	0
+handicap	0	0
+maßlosigkeit	0	0
+nachlässig	0	0
+schädigend	0	0
+türkischem	0	0
+missgelaunt	0	0
+doppeldeutigkeit	0	0
+entlassung	0	0
+renitent	0	0
+brisant	0	0
+geärgert	0	0
+groteske	0	0
+entführung	0	0
+gebrechen	0	0
+braunfarben	0	0
+desinteressiert	0	0
+vergammeln	0	0
+undurchführbar	0	0
+komplikation	0	0
+unwahr	0	0
+schmerzlich	0	0
+verblassen	0	0
+streng	0	0
+konkurrenzkampf	0	0
+schlägerei	0	0
+fehlverhalten	0	0
+unaufgefordert	0	0
+aufblasen	0	0
+entgleiten	0	0
+riese	0	0
+mittellos	0	0
+ärgerlich	0	0
+schockierend	0	0
+abschreckend	0	0
+bedrängung	0	0
+explosion	0	0
+abstoß	0	0
+unrasiert	0	0
+keimig	0	0
+unbeliebtheit	0	0
+erzürnt	0	0
+heikel	0	0
+schmerzhaft	0	0
+illegalität	0	0
+hungertod	0	0
+absenken	0	0
+defekt	0	0
+beschämung	0	0
+abbau	0	0
+verwundung	0	0
+widersinnig	0	0
+verheeren	0	0
+ausbrechen	0	0
+absperren	0	0
+abraten	0	0
+melodrama	0	0
+zersetzend	0	0
+einsinken	0	0
+stillstehen	0	0
+einschrumpfen	0	0
+langatmig	0	0
+erbittern	0	0
+unbefugt	0	0
+eklatant	0	0
+abtragen	0	0
+harsch	0	0
+unheilbarkeit	0	0
+erleiden	0	0
+mau	0	0
+irrational	0	0
+viertelvoll	0	0
+schwindlig	0	0
+nachteilig	0	0
+fiasko	0	0
+ineffizienz	0	0
+unvorhergesehen	0	0
+bedeutungslos	0	0
+mörderisch	0	0
+ineffizient	0	0
+trostlosigkeit	0	0
+überflutet	0	0
+schadhaft	0	0
+existenzbedrohend	0	0
+erschöpfen	0	0
+schmuggeln	0	0
+verschwenderisch	0	0
+erschweren	0	0
+suboptimal	0	0
+pessimistisch	0	0
+verhängnis	0	0
+entschwinden	0	0
+herabsetzen	0	0
+zusammenhanglos	0	0
+erschütternd	0	0
+halbfertig	0	0
+strittig	0	0
+achtlos	0	0
+verschwörung	0	0
+ausgrenzung	0	0
+unsachgemäß	0	0
+belanglos	0	0
+unerklärlich	0	0
+ungewohnt	0	0
+hysterie	0	0
+pfandsuchend	0	0
+Überschwemmung	0	0
+hemmen	0	0
+unüblich	0	0
+Überhöhung	0	0
+bubi	0	0
+tadeln	0	0
+traumatisch	0	0
+kurseinbruch	0	0
+verfehlung	0	0
+widersprüchlich	0	0
+punk	0	0
+bekümmert	0	0
+abgestanden	0	0
+ermüdung	0	0
+unpopulär	0	0
+murren	0	0
+einbehalten	0	0
+ungleich	0	0
+verstopfen	0	0
+alarmieren	0	0
+umgetauscht	0	0
+fahrlässigkeit	0	0
+qual	0	0
+fehlleistung	0	0
+eigenartig	0	0
+unglück	0	0
+ausgrenzen	0	0
+abnutzen	0	0
+bauer	0	0
+unwissenheit	0	0
+erniedrigung	0	0
+grauenhaft	0	0
+schrumpfen	0	0
+bankrott	0	0
+unrentabel	0	0
+stürmisch	0	0
+unvollkommen	0	0
+verzerrung	0	0
+unterbelichtet	0	0
+ersticken	0	0
+ladykillend	0	0
+alptraum	0	0
+einschlagen	0	0
+schabe	0	0
+lieblos	0	0
+rosten	0	0
+schlachtfeld	0	0
+trotten	0	0
+abstrich	0	0
+langweilen	0	0
+diskriminierung	0	0
+flüchtig	0	0
+garstig	0	0
+dekadent	0	0
+beschränken	0	0
+abstoßen	0	0
+bombe	0	0
+mindern	0	0
+entlaufen	0	0
+verschlechtern	0	0
+zappeln	0	0
+unzureichend	0	0
+ziellos	0	0
+gleichgültig	0	0
+gangster	0	0
+unbegründet	0	0
+missverstehen	0	0
+zoll	0	0
+kriegerisch	0	0
+stottern	0	0
+vergeuden	0	0
+unlauter	0	0
+kläger	0	0
+unerfreulich	0	0
+sprengstoff	0	0
+jammer	0	0
+verstrickung	0	0
+oberflächlichkeit	0	0
+defizitär	0	0
+faulende	0	0
+schädigung	0	0
+dominierung	0	0
+doppelspiel	0	0
+ruckeln	0	0
+schwerwiegend	0	0
+unregelmäßigkeit	0	0
+sabotieren	0	0
+reparatur	0	0
+abnahme	0	0
+schaurig	0	0
+kapitulation	0	0
+ungeordnet	0	0
+skandalös	0	0
+unterlaufen	0	0
+niedergeschlagenheit	0	0
+stornierung	0	0
+unvernünftig	0	0
+bestürzung	0	0
+glücklosigkeit	0	0
+scheidung	0	0
+absturz	0	0
+rammen	0	0
+diktatorisch	0	0
+verwunden	0	0
+umweltschädlich	0	0
+zerfressen	0	0
+stornieren	0	0
+sklavenarbeit	0	0
+glücklos	0	0
+gedrängt	0	0
+missfallen	0	0
+gedränge	0	0
+schlechtigkeit	0	0
+zittern	0	0
+einschüchternd	0	0
+abneigung	0	0
+beschäftigungsloser	0	0
+erschöpfung	0	0
+rücksendung	0	0
+lähmung	0	0
+schonungslos	0	0
+übertreten	0	0
+dezimieren	0	0
+aushungern	0	0
+hindernis	0	0
+rost	0	0
+ermahnen	0	0
+verworren	0	0
+ratlosigkeit	0	0
+lutscher	0	0
+sturheit	0	0
+leblosigkeit	0	0
+rausgeschmissen	0	0
+lutschen	0	0
+schauerlich	0	0
+erdrückend	0	0
+erosion	0	0
+vergelten	0	0
+ungehorsamkeit	0	0
+verleumdung	0	0
+verschimmelt	0	0
+absurdität	0	0
+unerwiesen	0	0
+bedrückt	0	0
+hilflosigkeit	0	0
+unfreundlich	0	0
+anstrengung	0	0
+teufelskreis	0	0
+explodieren	0	0
+preissturz	0	0
+unangenehm	0	0
+unbehaglichkeit	0	0
+degradierung	0	0
+rauh	0	0
+müder	0	0
+entziehung	0	0
+ungezogen	0	0
+ermüden	0	0
+drängelnd	0	0
+panne	0	0
+fehlkonstruktion	0	0
+verdunkeln	0	0
+kränken	0	0
+vorzeitig	0	0
+hungersnot	0	0
+betäuben	0	0
+gefecht	0	0
+ehebruch	0	0
+unvereinbarkeit	0	0
+fanatisch	0	0
+vergeltung	0	0
+meiden	0	0
+intervention	0	0
+starr	0	0
+folgewidrig	0	0
+geiz	0	0
+monoton	0	0
+nass	0	0
+leblos	0	0
+übermäßig	0	0
+unbequemlichkeit	0	0
+wichtigtun	0	0
+verschwendung	0	0
+kündigung	0	0
+stilllegung	0	0
+unbotmäßig	0	0
+unrühmlich	0	0
+wackeln	0	0
+melancholisch	0	0
+unvereinbar	0	0
+träne	0	0
+beseitigung	0	0
+unheilbar	0	0
+unscharf	0	0
+unaufrichtig	0	0
+betrunken	0	0
+anklage	0	0
+unvollständigkeit	0	0
+störung	0	0
+beschwerlichkeit	0	0
+lebensgefährlich	0	0
+unzufrieden	0	0
+unmoralisch	0	0
+streß	0	0
+rothaarig	0	0
+heftig	0	0
+beschuldigen	0	0
+verherrlichung	0	0
+hämisch	0	0
+südländisch	0	0
+verheerend	0	0
+notstand	0	0
+geschäftsauflösung	0	0
+beunruhigend	0	0
+finte	0	0
+unfein	0	0
+vereiteln	0	0
+befangenheit	0	0
+blockade	0	0
+vagheit	0	0
+torheit	0	0
+abhängig	0	0
+zwiespältig	0	0
+freudlos	0	0
+farblos	0	0
+entfremden	0	0
+abnutzung	0	0
+leichtsinnig	0	0
+entrüstet	0	0
+undurchsichtig	0	0
+unsicherheit	0	0
+behindern	0	0
+minderwertigkeit	0	0
+bosheit	0	0
+umstritten	0	0
+sintflut	0	0
+verzweifeln	0	0
+uneinsichtig	0	0
+melancholie	0	0
+furchterregend	0	0
+missachten	0	0
+tatenlos	0	0
+begrenzen	0	0
+ungemütlich	0	0
+pikiert	0	0
+zwieträchtig	0	0
+verschrumpeln	0	0
+frustrierend	0	0
+beule	0	0
+bizarr	0	0
+kapitulieren	0	0
+widerlegen	0	0
+trist	0	0
+flau	0	0
+unkorrekt	0	0
+zerschmettern	0	0
+dürre	0	0
+rätselraten	0	0
+pessimismus	0	0
+entführen	0	0
+ramponieren	0	0
+verwelken	0	0
+undankbarkeit	0	0
+abschrecken	0	0
+unachtsam	0	0
+unpassend	0	0
+fälschen	0	0
+entwürdigend	0	0
+groll	0	0
+rasend	0	0
+zerreißen	0	0
+vorhersehbar	0	0
+kläglicher	0	0
+Überschuß	0	0
+einschlag	0	0
+unwirtschaftlich	0	0
+abbauen	0	0
+apokalyptisch	0	0
+verschlingen	0	0
+qualitätsminderung	0	0
+lähmen	0	0
+verkleinerung	0	0
+unsauber	0	0
+enttäuschung	0	0
+sprengung	0	0
+unzuverlässigkeit	0	0
+kündigen	0	0
+bedürftig	0	0
+Übermaß	0	0
+deformation	0	0
+konfrontieren	0	0
+verärgern	0	0
+rücksichtslosigkeit	0	0
+infiltrieren	0	0
+bedauernswert	0	0
+unloyal	0	0
+banalität	0	0
+launenhaftigkeit	0	0
+inkonsequent	0	0
+abschwächung	0	0
+inkonsequenz	0	0
+verhängnisvoll	0	0
+unstimmigkeit	0	0
+gnadenlos	0	0
+blindheit	0	0
+befremdlich	0	0
+ungünstig	0	0
+konkurrieren	0	0
+konjunkturrückgang	0	0
+neid	0	0
+hinfällig	0	0
+lästig	0	0
+übellaunig	0	0
+hochtrabend	0	0
+sorgenschwer	0	0
+versklaven	0	0
+rechtswidrigkeit	0	0
+katastrophe	0	0
+ungeschickt	0	0
+hölzern	0	0
+desinteresse	0	0
+Überschreitung	0	0
+kentern	0	0
+entmutigung	0	0
+annullierung	0	0
+niederträchtig	0	0
+provisorisch	0	0
+verfehlen	0	0
+erbost	0	0
+ängstigen	0	0
+bitterkeit	0	0
+beschäftigungslos	0	0
+unvermeidlich	0	0
+schwäche	0	0
+schuldner	0	0
+durchfallen	0	0
+destruktiv	0	0
+handgemenge	0	0
+lebensgefahr	0	0
+dezimierung	0	0
+leichtsinnsfehler	0	0
+besteuerung	0	0
+nachteil	0	0
+schmerzvoll	0	0
+happig	0	0
+verwüstung	0	0
+kollabieren	0	0
+wutentbrannt	0	0
+sinnlosigkeit	0	0
+zurückgegeben	0	0
+tragisch	0	0
+abweichen	0	0
+spröde	0	0
+degradieren	0	0
+erschüttern	0	0
+energielosigkeit	0	0
+haarig	0	0
+unsäglich	0	0
+trostlos	0	0
+unsinnig	0	0
+antipathie	0	0
+rebell	0	0
+untröstlich	0	0
+fehleranfällig	0	0
+unbarmherzig	0	0
+frivol	0	0
+gedankenlos	0	0
+bußgeld	0	0
+finster	0	0
+wertverlust	0	0
+revolte	0	0
+deinstallieren	0	0
+ungesund	0	0
+aussetzen	0	0
+vernichtend	0	0
+schädlich	0	0
+zensieren	0	0
+maßlos	0	0
+kopfschmerz	0	0
+obergroß	0	0
+mangel	0	0
+einsturz	0	0
+aufschlagen	0	0
+zwangslage	0	0
+stagnation	0	0
+bedürftige	0	0
+machtlos	0	0
+unvollkommenheit	0	0
+beschäftigungslose	0	0
+strapaze	0	0
+deformieren	0	0
+unwirksam	0	0
+verrücktheit	0	0
+unbehagen	0	0
+einbuße	0	0
+abschreiben	0	0
+kollidieren	0	0
+wimmernden	0	0
+wermutstropfen	0	0
+missglück	0	0
+unzumutbarkeit	0	0
+gefährdung	0	0
+unmenschlichkeit	0	0
+unqualifiziert	0	0
+rivale	0	0
+trägheit	0	0
+funz	0	0
+heimzahlen	0	0
+folgenschwer	0	0
+repetiv	0	0
+defizit	0	0
+vorwand	0	0
+überhöhen	0	0
+schwerfällig	0	0
+riesengroß	0	0
+heruntermachen	0	0
+kontraproduktiv	0	0
+nappel	0	0
+zurückgehen	0	0
+aufschreien	0	0
+kritiker	0	0
+voluminös	0	0
+ruppig	0	0
+untergraben	0	0
+neutralisieren	0	0
+verhasst	0	0
+unzurechnungsfähig	0	0
+geringwertig	0	0
+unwillig	0	0
+täuschung	0	0
+bösartigkeit	0	0
+wertlosigkeit	0	0
+gallig	0	0
+drosseln	0	0
+fesseln	0	0
+undiplomatisch	0	0
+wertlos	0	0
+beunruhigung	0	0
+kontrovers	0	0
+erschrecken	0	0
+unangemessen	0	0
+absteigen	0	0
+abfuhr	0	0
+abweisen	0	0
+steif	0	0
+unordnung	0	0
+verringern	0	0
+niedergeschlagen	0	0
+vertreibung	0	0
+bevormunden	0	0
+verbraucht	0	0
+stilllegen	0	0
+zumutung	0	0
+krude	0	0
+entbindung	0	0
+wrack	0	0
+furcht	0	0
+schock	0	0
+überwältigen	0	0
+ungeeignet	0	0
+neurreich	0	0
+verschmutzen	0	0
+gehandicapt	0	0
+unverbesserlich	0	0
+bewegungslos	0	0
+schmerzerfüllt	0	0
+unglaubwürdigkeit	0	0
+heillos	0	0
+zerstreuen	0	0
+verderben	0	0
+androhen	0	0
+bedauern	0	0
+ungerechtfertigt	0	0
+stagnieren	0	0
+driften	0	0
+verzögern	0	0
+fruchtlos	0	0
+unbefriedigt	0	0
+versäumnis	0	0
+affäre	0	0
+archaisch	0	0
+strafverfahren	0	0
+unverantwortlichkeit	0	0
+wackelig	0	0
+unterwürfig	0	0
+schubs	0	0
+frust	0	0
+bevormundung	0	0
+beschruppt	0	0
+zerschlagen	0	0
+klitzeklein	0	0
+abdämpfen	0	0
+dominieren	0	0
+streik	0	0
+missgeschick	0	0
+ernüchternd	0	0
+verfallen	0	0
+ungewollt	0	0
+erliegen	0	0
+verwirren	0	0
+gans	0	0
+schwund	0	0
+krach	0	0
+chaotisch	0	0
+abgedroschen	0	0
+anomalie	0	0
+unkritisch	0	0
+kollaps	0	0
+fatal	0	0
+willkürlich	0	0
+rückständig	0	0
+stocken	0	0
+gemein	0	0
+versenken	0	0
+verkehrswidrig	0	0
+ungleichheit	0	0
+marzahner	0	0
+verschleudern	0	0
+unpraktisch	0	0
+herrisch	0	0
+stinktier	0	0
+depression	0	0
+profan	0	0
+abschätzig	0	0
+bedrückung	0	0
+feindselig	0	0
+abweisung	0	0
+ungenauigkeit	0	0
+undankbar	0	0
+nötigung	0	0
+totalitär	0	0
+pubertär	0	0
+unbestimmt	0	0
+unfreundlichkeit	0	0
+klobig	0	0
+verwickeln	0	0
+hippie	0	0
+leichtgläubig	0	0
+lädiert	0	0
+zornig	0	0
+konkurrenz	0	0
+ernüchterung	0	0
+wankelmütig	0	0
+finanzkrise	0	0
+abstürzen	0	0
+abdankung	0	0
+widerspenstig	0	0
+ungeduld	0	0
+widrigkeit	0	0
+senken	0	0
+knurrig	0	0
+denkfehler	0	0
+statisch	0	0
+aufreibend	0	0
+unerhört	0	0
+streunend	0	0
+redundanz	0	0
+unschön	0	0
+unmoral	0	0
+aufblähen	0	0
+zerrung	0	0
+kraftlos	0	0
+unzumutbar	0	0
+verbeulen	0	0
+verschlechterung	0	0
+konkurs	0	0
+crash	0	0
+absenkung	0	0
+betrügerisch	0	0
+aufhebung	0	0
+abfallen	0	0
+abschuß	0	0
+ablaufen	0	0
+banal	0	0
+schuldhaft	0	0
+blockierung	0	0
+stur	0	0
+matt	0	0
+fluch	0	0
+aufrühren	0	0
+unklarheit	0	0
+nervenaufreibend	0	0
+rezession	0	0
+verweigerung	0	0
+schimmelig	0	0
+ausgestorben	0	0
+stillstand	0	0
+immobilität	0	0
+wirkungslos	0	0
+makelhaft	0	0
+kippen	0	0
+fehltritt	0	0
+elendig	0	0
+abreissen	0	0
+drosselung	0	0
+magern	0	0
+abriss	0	0
+auseinanderfallen	0	0
+aufgeben	0	0
+verspätet	0	0
+zusammenstoßen	0	0
+weinend	0	0
+vergeltungsmaßnahme	0	0
+zahlungsunfähig	0	0
+merkwürdigkeit	0	0
+einsamkeit	0	0
+gelähmt	0	0
+unbequem	0	0
+niederschmetternd	0	0
+isolation	0	0
+aggressor	0	0
+hinterhalt	0	0
+herausfordern	0	0
+einsam	0	0
+ungeduldig	0	0
+diskreditieren	0	0
+abspalten	0	0
+tabu	0	0
+verspielen	0	0
+verdrießlich	0	0
+entfremdung	0	0
+bedeutungslosigkeit	0	0
+zurückschicken	0	0
+weglassen	0	0
+eingebildet	0	0
+garnichts	0	0
+bluthungrig	0	0
+flüchtend	0	0
+überlastet	0	0
+dämpfer	0	0
+schelte	0	0
+unerbittlich	0	0
+leidende	0	0
+dämpfen	0	0
+verkleinern	0	0
+niedergleitend	0	0
+schmerz	0	0
+übertrieben	0	0
+Überlastung	0	0
+heimsuchen	0	0
+eintönig	0	0
+unterbrechung	0	0
+abrutsch	0	0
+aufruhr	0	0
+unstetigkeit	0	0
+bedenklich	0	0
+unzulässig	0	0
+hängengeblieben	0	0
+dahinschwinden	0	0
+grau	0	0
+schlag	0	0
+ungenau	0	0
+ausländisch	0	0
+groggy	0	0
+turbulent	0	0
+verwüsten	0	0
+unübersichtlich	0	0
+befangen	0	0
+rückständigkeit	0	0
+bedauerlich	0	0
+zusammenstoß	0	0
+unfreiwillig	0	0
+traumatisieren	0	0
+energielos	0	0
+schal	0	0
+rückfall	0	0
+aufgebracht	0	0
+provisorium	0	0
+entbinden	0	0
+kostspieligkeit	0	0
+kürzung	0	0
+bedrohlich	0	0
+anmaßung	0	0
+abgleiten	0	0
+zurückbleiben	0	0
+kahl	0	0
+abrutschen	0	0
+unbewiesen	0	0
+instabilität	0	0
+unheilvoll	0	0
+verzerren	0	0
+umtauschen	0	0
+entziehen	0	0
+brüchig	0	0
+ominös	0	0
+sackgasse	0	0
+glanzlosigkeit	0	0
+grausamkeit	0	0
+mühsam	0	0
+mittellosigkeit	0	0
+dissens	0	0
+unverhältnismäßig	0	0
+besoffen	0	0
+verfälschen	0	0
+tristesse	0	0
+instabil	0	0
+rivalität	0	0
+geistlosigkeit	0	0
+schelten	0	0
+unverlangt	0	0
+öde	0	0
+verletzbar	0	0
+schimpfend	0	0
+anstößig	0	0
+hartnäckig	0	0
+absinken	0	0
+verletzung	0	0
+feminin	0	0
+aussichtslos	0	0
+trugschluß	0	0
+schubsen	0	0
+kostspielig	0	0
+allergrößte	0	0
+versklavung	0	0
+verdecken	0	0
+verfassungswidrig	0	0
+dürr	0	0
+demütigung	0	0
+kollision	0	0
+zerschunden	0	0
+liquidation	0	0
+vermindern	0	0
+abweichung	0	0
+schocken	0	0
+verdorbenheit	0	0
+verderblich	0	0
+verzwickt	0	0
+verfall	0	0
+drift	0	0
+ehebrechen	0	0
+gammeln	0	0
+beanstanden	0	0
+seicht	0	0
+kaltherzig	0	0
+ausbruch	0	0
+nervös	0	0
+sündenbock	0	0
+schlitterbahn	0	0
+frustration	0	0
+missmutig	0	0
+steuerhinterziehung	0	0
+haarsträubend	0	0
+aussterben	0	0
+entsetzlich	0	0
+meckern	0	0
+zweifeln	0	0
+unnütz	0	0
+unregelmäßig	0	0
+immobil	0	0
+abdämpfung	0	0
+kostenintensiv	0	0
+winzig	0	0
+unmut	0	0
+misslingen	0	0
+närrisch	0	0
+grotesk	0	0
+verirren	0	0
+entnervt	0	0
+melodramatisch	0	0
+bürde	0	0
+beschädigung	0	0
+widrig	0	0

@@ -34,9 +34,14 @@ sorted_neg = sorted(neg_count.items(), key=operator.itemgetter(1), reverse=True)
 
 with open(output, 'w') as write_file:
     for item in sorted_off:
-        write_file.write(str(item)+'\n')
+        
+        write_file.write(item[0] + '\t')
+        write_file.write(str(item[1])+'\t')
+        write_file.write('1\n')
     for item in sorted_neg:
-        write_file.write(str(item)+'\n')
+        write_file.write(item[0] + '\t')
+        write_file.write(str(item[1])+'\t')
+        write_file.write('0\n')
             
 
 def getSeeds(n, list):
