@@ -1,13 +1,14 @@
 import operator
 
-tweet_path = 'daten/tokenized_tweets.txt'
+tweet_path = '/home/duke/Downloads/tweets-de-2013-2014-2015-2017.cleaned.txt'
+#tweet_path = 'daten/tokenized_tweets.txt'
 baselist = 'daten/Baselist/final_list.txt'
 output = 'daten/Baselist_counted'
 
 off_count = {}
 neg_count = {}
 with open(baselist) as read_file:
-    for line in read_file.read().splitlines():
+    for line in read_file.readlines():
         line = line.split()
         if(line[2]=='1'):
             off_count[line[0]] = 0
@@ -18,7 +19,7 @@ with open(baselist) as read_file:
 
 def count():
     with open(tweet_path) as read_file:
-        for line in read_file.read().splitlines():
+        for line in read_file:
             for word in line.split():
                 word = word.lower().strip()
                 if(word in off_count):
