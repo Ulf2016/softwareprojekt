@@ -7,8 +7,8 @@ from pathlib import Path
 def main(argv):
     parser = argparse.ArgumentParser(description="Ausfuehrung des Adsorption Algorithmus mit verschiedenen Inputs")
     parser.add_argument('--rootFolder', '-R', help="absoluter Pfad zu der einzulesenden Ordnerstruktur mit den Input-Daten.")
-    parser.add_argument('--range_mu2','-mu2', type=float, nargs='+', default=[0.001, 0.004, 0.007, 0.01, 0.04, 0.07, 0.1, 0.4, 0.7, 1.0], help='Range zum testen fuer Hyperparameter mu2')
-    parser.add_argument('--range_mu3','-mu3', type=float, nargs='+', default=[0.001, 0.004, 0.007, 0.01, 0.04, 0.07, 0.1, 0.4, 0.7, 1.0], help='Range zum testen fuer Hyperparameter mu3')
+    parser.add_argument('--range_mu2','-mu2', type=float, nargs='+', default=[0.001, 0.006, 0.01, 0.06, 0.1, 0.6, 1.0], help='Range zum testen fuer Hyperparameter mu2')
+    parser.add_argument('--range_mu3','-mu3', type=float, nargs='+', default=[0.001, 0.006, 0.01, 0.06, 0.1, 0.6, 1.0], help='Range zum testen fuer Hyperparameter mu3')
     parser.add_argument('--iter','-i', type=int, default=15, help='Anzahl der Iterationen fuer Algorithmus')
     parser.add_argument('--algo','-a', default='mad', help='Welcher Algorithmus? (mad oder adsorption)')
 
