@@ -1,0 +1,16 @@
+#inputs
+    graph_file = /home/duke/Dropbox/Softwareprojekt/softwareprojekt/daten/test/graph_input.txt
+    seed_file = /home/duke/Dropbox/Softwareprojekt/softwareprojekt/daten/test/most_frequent_words_seeds_71_72/seeds.txt
+    gold_labels_file = /home/duke/Dropbox/Softwareprojekt/softwareprojekt/daten/test/most_frequent_words_seeds_71_72/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.2
+    mu3 = 0.2
+    beta = 2
+    output_file = /home/duke/Dropbox/Softwareprojekt/softwareprojekt/daten/test/most_frequent_words_seeds_71_72/output/output-mu2-0.2-mu3-0.2
+    

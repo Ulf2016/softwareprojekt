@@ -1,0 +1,2 @@
+[mu2, mu3, correctneg, falseneg, correctneg%, correctoff, falseoff, correctoff%, correct%]
+[0.2, 0.2, 1184, 1, 0.99915611814346, 65, 285, 0.18571428571428572, 0.8136807817589576]
