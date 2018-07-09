@@ -1,0 +1,16 @@
+#inputs
+    graph_file = /Users/ulisteinbach/Desktop/SS18/software_projekt/softwareprojekt/daten/testlauf070718_random/graph_input.txt
+    seed_file = /Users/ulisteinbach/Desktop/SS18/software_projekt/softwareprojekt/daten/testlauf070718_random/baselexicon_random_seeds100_100/seeds.txt
+    gold_labels_file = /Users/ulisteinbach/Desktop/SS18/software_projekt/softwareprojekt/daten/testlauf070718_random/baselexicon_random_seeds100_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = adsorption
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 1.0
+    mu3 = 1.0
+    beta = 2
+    output_file = /Users/ulisteinbach/Desktop/SS18/software_projekt/softwareprojekt/daten/testlauf070718_random/baselexicon_random_seeds100_100/output/output-mu2-1.0-mu3-1.0
+    
