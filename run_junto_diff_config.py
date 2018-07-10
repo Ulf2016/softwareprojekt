@@ -36,7 +36,7 @@ def main(argv):
             evaluation = p / 'evaluation.txt'
             output_path = p / 'output/'
             if(not output_path.is_dir()):
-                os.makedirs(output_path)
+                Path.mkdir(output_path)
             run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
 
 
@@ -106,12 +106,10 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
                         else:
                             if(line[1].split()[0] == 'neg'):
                                 falseneg += 1
-                            elif(line[1].split()[0] == 'off'):
+                            if(line[1].split()[0] == 'off'):
                                 falseoff += 1
-                            else:
+                            if(line[3].split()[0] == '__DUMMY__'):
                                 dummy+=1 
-                                falseneg += 1
-                                falseoff += 1
 
             off = falseoff+correctoff
             neg = falseneg+correctneg
@@ -122,7 +120,7 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
             peroff = float(correctoff)/float(off)
             perneg = float(correctneg)/float(neg)
             perall = float(allcorrect)/float(all_)
-            e.append([mu2, mu3, correctneg, falseneg, perneg, correctoff, falseoff, peroff, perall])
+            e.append([mu2, mu3, correctneg, falseneg, perneg, correctoff, falseoff, peroff, perall, dummy])
             
 
             count+=1
