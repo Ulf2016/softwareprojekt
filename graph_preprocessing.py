@@ -3,6 +3,7 @@ import sys, os
 import string
 import json
 import math
+import re
 import ast
 import copy 
 import statistics
@@ -19,7 +20,7 @@ from scipy import spatial
 
 class GraphPreprocessor:
 
-	def __init__(self, path_to_baselexicon, pathoutput, path_to_embeddingfile, cutoff):
+	def __init__(self, path_to_baselexicon, pathoutput, path_to_embeddingfile, cutoff=0.1):
 		self.baselexicon = {}
 		self.most_freq_wiki = []
 		self.basepath = path_to_baselexicon
@@ -32,21 +33,25 @@ class GraphPreprocessor:
 			for line in basefile:
 				# POS-tag	\t 	abusiveTag
 				l = line.split()
-				k = l[0].strip()
+				k = l[0].strip().lower()
 				t = [l[1].strip(), l[2].strip()]
 				self.baselexicon[k] = t
 	
 	def read_embeddings(self):
 		# file not found --> create baselexicon from raw embeddings	
+		umlaut_pattern = re.compile(".*(ae).*|.*(oe).*|.*(ue).*", re.I)
 		f = open(self.embeddingraw, 'r')
 		for line in f: 
 			token = line.split(" ")[0].strip()
 			try:
+				if(umlaut_pattern.match(token)):
+					token = token.lower().replace("ae", "ä").replace("ue", "ü").replace("oe", "ö")	
 				value = self.baselexicon[token]
 				vector = line.split()[1:]
 				self.baselexicon[token].append(np.array(vector, dtype=np.float))
 			except KeyError as e:
 				continue
+
 
 	def read_most_frequent_words_from_wikipedia(self):
 		words = []
@@ -90,6 +95,7 @@ class GraphPreprocessor:
 				print(e)
 			 
 	def write_baselexicon_to_file(self, path=""):
+		self.noEmbeddings = []
 		if(path):
 			out = open(os.path.join(path, "baselexicon_extended_wikipedia.txt"), 'w')
 		else:
@@ -98,9 +104,13 @@ class GraphPreprocessor:
 			if len(val) == 3:
 				#out.write(key + "\t" + val[0] + "\t" + str(val[-1]) + "\t" + str(val[1]) + "\n")
 				out.write(key + "\t" + val[0] + "\t" + np.array2string(val[-1], separator=',').replace("\n", "") + "\t" + str(val[1]) + "\n")
+			else:
+				self.noEmbeddings.append(key)
+		
 
 	def read_baselexicon_from_file(self):
 		self.baselexicon = {}
+		count = 0
 		try:
 			with open('annotation/baselexicon_embeddings.txt', 'r') as basefile:
 		 		for line in basefile:
@@ -110,7 +120,9 @@ class GraphPreprocessor:
 		 			v = ast.literal_eval(l[2])
 		 			vector = np.array(v, dtype=np.float)
 		 			abusive = l[3].strip()
+		 			count += 1
 		 			self.baselexicon[token] = [tag, abusive, vector] 
+		 		print("read baselexicon with " + str(count) + " words")
 		 		return 1
 		except FileNotFoundError as e:
 			return 0
@@ -191,6 +203,10 @@ class GraphPreprocessor:
 			for line in input_file:
 				l = line.split("\t")
 				word = l[0]
+				try:
+					self.baselexicon[word]
+				except KeyError as e:
+					continue
 				label = int(l[2].strip())
 				if(label):
 					abusive_words.append(word)
@@ -198,17 +214,29 @@ class GraphPreprocessor:
 					non_abusive_words.append(word)
 		return abusive_words, non_abusive_words
 
+	def create_pool_of_words(self, w1, w2, pool_size):
+		assert(len(w1) >= pool_size)
+		pool_pos = w1[:pool_size]
+		assert(len(w2) >= pool_size)
+		pool_neg = w2[:pool_size]
+		return pool_pos, pool_neg
+
 	def create_graph_seed_and_goldlabel_from_most_freq(self, nSeedsPos, nSeedsNeg, path):
+		
 		abusiveWords, non_abusiveWords = self.read_most_freq_words()
-	
-		assert(nSeedsPos <= len(abusiveWords))
-		assert(nSeedsNeg <= len(non_abusiveWords))
+		pool_pos, pool_neg = self.create_pool_of_words(abusiveWords, non_abusiveWords, 100)
+		# separate pool of words for each class
+		
+		assert(nSeedsPos <= len(pool_pos))
+		assert(nSeedsNeg <= len(pool_neg))
+		allWords = self.baselexicon.keys()
 
-		seeds_pos = abusiveWords[:nSeedsPos]
-		seeds_neg = non_abusiveWords[:nSeedsNeg]
+		seeds_pos = pool_pos[:nSeedsPos]
+		seeds_neg = pool_neg[:nSeedsNeg]
 
-		allWords = [word for word, val in self.baselexicon.items() if not ( (word in seeds_pos) or (word in seeds_neg) ) ]
-		# assert(( len(seeds_pos) + len(seeds_neg) + len(allWords) ) == len(self.baselexicon.keys()))
+		allWords = (set(allWords) - set(pool_pos)) - set(pool_neg)
+		
+		assert(( len(pool_pos) + len(pool_neg) + len(allWords) ) == len(self.baselexicon.keys()))
 		self.write_seeds_and_goldlabels(allWords, seeds_pos, seeds_neg, path)
 		
 	def create_graph_seed_and_goldlabel_from_wikipedia(self, nSeedsPos, nSeedsNeg, path):
@@ -216,38 +244,45 @@ class GraphPreprocessor:
 		if not self.most_freq_wiki:
 			self.read_most_frequent_words_from_wikipedia()
 		self.read_baselexicon_from_file()
-		self.add_wikiwords_to_baselexicon(nSeedsNeg)
-		allWords = [word for word, val in self.baselexicon.items() if int(val[1]) != 2]
+		self.add_wikiwords_to_baselexicon(100)
+		
+		allWords = [word for word, val in self.baselexicon.items() if (int(val[1]) != 2) ]
+
 		non_abusiveWords = [word for word, val in self.baselexicon.items() if int(val[1]) == 2]
 		abusiveWords = [word for word, val in self.baselexicon.items() if int(val[1]) == 1]
-		assert(nSeedsPos <= len(abusiveWords))
-		while(len(seeds_pos) < nSeedsPos):
-			index = randrange(len(abusiveWords))
-			word = abusiveWords.pop(index)
-			seeds_pos.append(word)
-			i = allWords.index(word)
-			allWords.pop(i)
-		self.write_seeds_and_goldlabels(allWords, seeds_pos, non_abusiveWords, path)
+		
+		pool_pos, pool_neg = self.create_pool_of_words(abusiveWords, non_abusiveWords, 100)
+
+		assert(nSeedsPos <= len(pool_pos))
+		seeds_pos = pool_pos[:nSeedsPos]
+		seeds_neg = pool_neg[:nSeedsNeg]
+
+		allWords = (set(allWords) - set(pool_pos)) - set(pool_neg)
+		print(len(allWords), len(self.baselexicon.keys()))
+		assert(( len(pool_pos) + len(pool_neg) + len(allWords) ) == len(self.baselexicon.keys()))
+
+		self.write_seeds_and_goldlabels(allWords, seeds_pos, seeds_neg, path)
 
 	def write_seeds_and_goldlabels(self, allWords, seeds_pos, seeds_neg, path):
 		# write to outputfile
 		#  <source_node>TAB<target_node>TAB<edge_weight>
 		
-		excluded_words = []
 		path = self.create_path_if_not_exists(path)
 		with open(os.path.join(path, 'gold_labels.txt'), 'w') as goldlabel_file:
 			for word in allWords:
 				label = int(self.baselexicon[word][1])
-				if(label):
+				if(label == 1):
 					label_string = 'off'
-				else:
+				elif(label == 0):
 					label_string = 'neg'
-				if(word in self.graph_input):
-					goldlabel_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
 				else:
-					excluded_words.append(word)
-		print("excluded " + str(len(excluded_words)) + " words")
-		print(excluded_words)
+					continue
+				# if(word in self.graph_input):
+				goldlabel_file.write(word + "\t" + label_string + "\t" + str(1.0) + "\n")
+		# 		else:
+		# 			excluded_words.append(word)
+		# print("excluded " + str(len(excluded_words)) + " words")
+		# print(excluded_words)
 
 		with open(os.path.join(path, 'seeds.txt'), 'w') as seeds_file:
 			for word in seeds_pos:
@@ -263,7 +298,7 @@ class GraphPreprocessor:
 		Wort \t Label \t Weight
 		Extract n words from baselexicon and m < n seed words from abusive words in baselexicon
 		"""
-		seed(2)
+		
 		seeds_pos = []
 		seeds_neg = []
 		words = []
@@ -271,28 +306,22 @@ class GraphPreprocessor:
 		abusiveWords = [word for word, val in self.baselexicon.items() if int(val[1]) == 1]
 		non_abusiveWords = [word for word, val in self.baselexicon.items() if int(val[1]) == 0]
 		allWords = [word for word, val in self.baselexicon.items() if int(val[1]) != 2]
-		
-		assert(nSeedsPos <= len(abusiveWords))
-		assert(nSeedsNeg <= len(non_abusiveWords))
-		
-		while(len(seeds_pos) < nSeedsPos):
-			index = randrange(len(abusiveWords))
-			word = abusiveWords.pop(index)
-			seeds_pos.append(word)
-			i = allWords.index(word)
-			allWords.pop(i)
+		print(len(abusiveWords), len(non_abusiveWords))
+		pool_pos, pool_neg = self.create_pool_of_words(abusiveWords, non_abusiveWords, 100)
 
-		while(len(seeds_neg) < nSeedsNeg):
-			index = randrange(len(non_abusiveWords))
-			word = non_abusiveWords.pop(index)
-			seeds_neg.append(word)
-			i = allWords.index(word)
-			allWords.pop(i)
+		assert(nSeedsPos <= len(pool_pos))
+		assert(nSeedsNeg <= len(pool_neg))
+		
+		seeds_pos = pool_pos[:nSeedsPos]
+		seeds_neg = pool_neg[:nSeedsNeg]
 
-		# assert((len(seeds_pos) + len(seeds_neg) + len(allWords)) == len(self.baselexicon))
-		print(len(seeds_neg), len(seeds_pos), len(allWords), len(self.baselexicon))
+		allWords = (set(allWords) - set(pool_pos)) - set(pool_neg)
+		
+		assert(( len(pool_pos) + len(pool_neg) + len(allWords) ) == len(self.baselexicon.keys()))
+
 		self.write_seeds_and_goldlabels(allWords, seeds_pos, seeds_neg, path)
 	
+
 	def create_path_if_not_exists(self, path):
 		if (os.path.exists(path)):
 			pass
@@ -301,28 +330,6 @@ class GraphPreprocessor:
 			os.makedirs(path)
 		return path
 
-	def createConfig(self, graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, mu2, mu3, beta, output_file):
-	    #template for the config file. 
-	    to_write='''#inputs
-	    graph_file = {}
-	    seed_file = {}
-	    gold_labels_file = {}
-	    #Parameters
-	    iters = {}
-	    verbose = {}
-	    prune_threshold = {}
-	    algo = {}
-	    #Hyperparameters
-	    mu1 = {}
-	    mu2 = {}
-	    mu3 = {}
-	    beta = {}
-	    output_file = {}
-	    '''.format(graph_file, seed_file, gold_labels_file, iters, verbose, 
-	    prune_threshold, algo, mu1, mu2, mu3, beta, output_file)
-	 
-	    with open(os.path.join(self.outputpath,'new_config'), 'w') as write_file:
-	        write_file.write(to_write)
 
 # set score normalization
 # konnektivität 
@@ -357,17 +364,16 @@ def main(argv):
 				g.read_baselexicon()
 				g.read_embeddings()
 				g.write_baselexicon_to_file()
+				print("could not find embeddings for " + str(len(g.noEmbeddings)) + " words")
+				print(g.noEmbeddings)
 			else:
 				print("reading baselexicon from file")
 			
 			g.calculate_cosine_similarity(outputpath)
 			experiments = []
-			for i in range(upperBound):
-				neg = upperBound - i
-				for j in range(upperBound):
-					off = upperBound - j
-					if(off>lowerBound and neg > lowerBound):
-						experiments.append((off, neg))
+			for i in range(lowerBound, upperBound + 10, 10):
+				for j in range(lowerBound, upperBound + 10, 10):
+					experiments.append((i, j))
 			
 			out_csv = open(os.path.join(outputpath, "results.csv"), "w")
 			writer = csv.writer(out_csv, delimiter=' ', quotechar='"', quoting=csv.QUOTE_ALL)
