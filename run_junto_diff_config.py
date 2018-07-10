@@ -66,7 +66,8 @@ def createConfig(graph_file, seed_file, gold_labels_file, iters, verbose,
     '''.format(graph_file, seed_file, gold_labels_file, iters, verbose, 
     prune_threshold, algo, mu1, mu2, mu3, beta, output_file)
 
-    with open(root_folder / 'new_config', 'w+') as write_file:
+    config_path = root_folder / 'new_config'
+    with config_path.open(mode='w') as write_file:
         write_file.write(to_write)
 
 
@@ -92,7 +93,7 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
             falseneg = 0
 
             dummy = 0
-            with open(output_file, 'r') as read_file:
+            with output_file.open(mode='r') as read_file:
                 for line in read_file.read().splitlines():
                     line = line.split('\t')
                     if(len(line[1])>0):  
@@ -127,11 +128,11 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
 
     s = sorted(e, key=lambda e: e[8], reverse=True)
     if(write_results and len(s) != 0):
-        with open(results, 'a') as result_file:
+        with results.open(mode='a') as result_file:
             result_file.write(p.stem + ', ')
             result_file.write(str(s[0]).strip('[]')+'\n')
 
-    with open(evaluation, 'w') as write_file:
+    with evaluation.open(mode='w') as write_file:
         write_file.write('[mu2, mu3, correctneg, falseneg, correctneg%, correctoff, falseoff, correctoff%, correct%]\n')
         for i in s:
             write_file.write(str(i) + '\n')
