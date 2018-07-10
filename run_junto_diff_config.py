@@ -36,7 +36,7 @@ def main(argv):
             evaluation = p / 'evaluation.txt'
             output_path = p / 'output/'
             if(not output_path.is_dir()):
-                os.makedirs(output_path)
+                Path.mkdir(output_path)
             run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
 
 
@@ -66,7 +66,8 @@ def createConfig(graph_file, seed_file, gold_labels_file, iters, verbose,
     '''.format(graph_file, seed_file, gold_labels_file, iters, verbose, 
     prune_threshold, algo, mu1, mu2, mu3, beta, output_file)
 
-    with open(root_folder / 'new_config', 'w+') as write_file:
+    config_path = root_folder / 'new_config'
+    with config_path.open(mode='w') as write_file:
         write_file.write(to_write)
 
 
@@ -92,7 +93,7 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
             falseneg = 0
 
             dummy = 0
-            with open(output_file, 'r') as read_file:
+            with output_file.open(mode='r') as read_file:
                 for line in read_file.read().splitlines():
                     line = line.split('\t')
                     if(len(line[1])>0):  
@@ -106,12 +107,10 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
                         else:
                             if(line[1].split()[0] == 'neg'):
                                 falseneg += 1
-                            elif(line[1].split()[0] == 'off'):
+                            if(line[1].split()[0] == 'off'):
                                 falseoff += 1
-                            else:
+                            if(line[3].split()[0] == '__DUMMY__'):
                                 dummy+=1 
-                                falseneg += 1
-                                falseoff += 1
 
             off = falseoff+correctoff
             neg = falseneg+correctneg
@@ -122,18 +121,18 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
             peroff = float(correctoff)/float(off)
             perneg = float(correctneg)/float(neg)
             perall = float(allcorrect)/float(all_)
-            e.append([mu2, mu3, correctneg, falseneg, perneg, correctoff, falseoff, peroff, perall])
+            e.append([mu2, mu3, correctneg, falseneg, perneg, correctoff, falseoff, peroff, perall, dummy])
             
 
             count+=1
 
     s = sorted(e, key=lambda e: e[8], reverse=True)
     if(write_results and len(s) != 0):
-        with open(results, 'a') as result_file:
+        with results.open(mode='a') as result_file:
             result_file.write(p.stem + ', ')
             result_file.write(str(s[0]).strip('[]')+'\n')
 
-    with open(evaluation, 'w') as write_file:
+    with evaluation.open(mode='w') as write_file:
         write_file.write('[mu2, mu3, correctneg, falseneg, correctneg%, correctoff, falseoff, correctoff%, correct%]\n')
         for i in s:
             write_file.write(str(i) + '\n')
