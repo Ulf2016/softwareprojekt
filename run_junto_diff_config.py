@@ -30,7 +30,8 @@ def main(argv):
         beta = 2
 
         #iterating over subfolders of root_folder
-        for p in subfolders:
+        for i, p in enumerate(subfolders):
+            print(i,'/',len(subfolders))
             seed_file = p / 'seeds.txt'
             gold_labels_file = p / 'gold_labels.txt'
             evaluation = p / 'evaluation.txt'
