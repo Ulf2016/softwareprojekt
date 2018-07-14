@@ -35,7 +35,8 @@ def main(argv):
 
         #iterating over subfolders of root_folder
         report, for_sorting = [], []
-        for p in subfolders:
+        for i, p in enumerate(subfolders):
+            print(i+1,'/',len(subfolders))
             seed_file = p / 'seeds.txt'
             gold_labels_file = p / 'gold_labels.txt'
             evaluation = p / 'evaluation.txt'

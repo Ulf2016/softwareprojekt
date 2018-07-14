@@ -1,7 +1,13 @@
 #inputs
+<<<<<<< HEAD
     graph_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_random/graph_input.txt
     seed_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_random/baselexicon_random_seeds70_90/seeds.txt
     gold_labels_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_random/baselexicon_random_seeds70_90/gold_labels.txt
+=======
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/testlauf_110718_random/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/testlauf_110718_random/baselexicon_random_seeds70_90/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/testlauf_110718_random/baselexicon_random_seeds70_90/gold_labels.txt
+>>>>>>> 41235a9def37d303944b259517fa6ce4cde07148
     #Parameters
     iters = 15
     verbose = true
@@ -9,8 +15,15 @@
     algo = mad
     #Hyperparameters
     mu1 = 1
+<<<<<<< HEAD
     mu2 = 0.001
     mu3 = 0.001
     beta = 2
     output_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_random/baselexicon_random_seeds70_90/output/output-mu2-0.001-mu3-0.001
+=======
+    mu2 = 1.0
+    mu3 = 1.0
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/testlauf_110718_random/baselexicon_random_seeds70_90/output/output-mu2-1.0-mu3-1.0
+>>>>>>> 41235a9def37d303944b259517fa6ce4cde07148
     
