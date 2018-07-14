@@ -50,7 +50,7 @@ def main(argv):
 
         sorted_report = sorted(zip(for_sorting, report), key=operator.itemgetter(0), reverse=True)
 
-        with results.open(mode='a') as write_file:
+        with results.open(mode='w') as write_file:
             for i in sorted_report:
                 write_file.write(i[1][0]+'\n')
                 write_file.write(i[1][1]+'\n')
