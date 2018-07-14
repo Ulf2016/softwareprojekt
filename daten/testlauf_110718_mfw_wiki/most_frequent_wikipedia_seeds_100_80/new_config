@@ -1,0 +1,16 @@
+#inputs
+    graph_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_mfw_wiki/graph_input.txt
+    seed_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_mfw_wiki/most_frequent_wikipedia_seeds_100_80/seeds.txt
+    gold_labels_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_mfw_wiki/most_frequent_wikipedia_seeds_100_80/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.001
+    mu3 = 0.001
+    beta = 2
+    output_file = /home/duke/Documents/softwareprojekt/daten/testlauf_110718_mfw_wiki/most_frequent_wikipedia_seeds_100_80/output/output-mu2-0.001-mu3-0.001
+    

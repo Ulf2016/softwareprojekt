@@ -2,6 +2,10 @@ import sys, os
 import operator
 import argparse
 from pathlib import Path
+import numpy as numpy
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 
 
 def main(argv):
@@ -19,7 +23,7 @@ def main(argv):
         r_mu2, r_mu3 = args.range_mu2, args.range_mu3
 
         graph_file = root_folder / 'graph_input.txt'
-        results = root_folder / 'results.csv'
+        results = root_folder / 'report'
         write_results = True
         subfolders = [x for x in root_folder.iterdir() if x.is_dir()]
 
@@ -30,6 +34,7 @@ def main(argv):
         beta = 2
 
         #iterating over subfolders of root_folder
+        report, for_sorting = [], []
         for p in subfolders:
             seed_file = p / 'seeds.txt'
             gold_labels_file = p / 'gold_labels.txt'
@@ -37,8 +42,17 @@ def main(argv):
             output_path = p / 'output/'
             if(not output_path.is_dir()):
                 Path.mkdir(output_path)
-            run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+            tmp_rep, tmp_sort = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+            report.extend(tmp_rep)
+            for_sorting.extend(tmp_sort)
+        print(report)
 
+        sorted_report = sorted(zip(for_sorting, report), key=operator.itemgetter(0), reverse=True)
+
+        with results.open(mode='a') as write_file:
+            for i in sorted_report:
+                write_file.write(i[1][0]+'\n')
+                write_file.write(i[1][1]+'\n')
 
 
     except UnboundLocalError as e:
@@ -73,9 +87,9 @@ def createConfig(graph_file, seed_file, gold_labels_file, iters, verbose,
 
 
 def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results):
-
+    report = []
+    for_sorting = []
     count = 0
-    e = []
     for i in r_mu2:
         mu2 = i
         for j in r_mu3:
@@ -86,56 +100,36 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
             if(not Path.exists(output_file)):
                 config_path = p / 'new_config'
                 os.system('junto config ' + config_path.__str__())
-            correctoff = 0
-            falseoff = 0
 
-            correctneg = 0
-            falseneg = 0
+            y_true = []
+            y_pred = []
+            
+            
 
-            dummy = 0
             with output_file.open(mode='r') as read_file:
                 for line in read_file.read().splitlines():
                     line = line.split('\t')
                     if(len(line[1])>0):  
-                        if(line[1].split()[0] == line[3].split()[0]):
-                            if(line[1].split()[0] == 'neg'):
-                                correctneg += 1
-                            elif(line[1].split()[0] == 'off'): 
-                                correctoff += 1
-                            else:
-                                print('wat')
+                        gold_label = line[1].split()[0]
+                        pred_label = line[3].split()[0]
+                        if(gold_label == 'off'):
+                            y_true.append(1)
                         else:
-                            if(line[1].split()[0] == 'neg'):
-                                falseneg += 1
-                            if(line[1].split()[0] == 'off'):
-                                falseoff += 1
-                            if(line[3].split()[0] == '__DUMMY__'):
-                                dummy+=1 
-
-            off = falseoff+correctoff
-            neg = falseneg+correctneg
-            all_ = correctneg+correctoff+falseneg+falseoff
-            allcorrect = correctneg+correctoff
-            negoff = 'neg: ' + str(neg) + '/off: ' + str(off) + '/dummy:' + str(dummy)
-
-            peroff = float(correctoff)/float(off)
-            perneg = float(correctneg)/float(neg)
-            perall = float(allcorrect)/float(all_)
-            e.append([mu2, mu3, correctneg, falseneg, perneg, correctoff, falseoff, peroff, perall, dummy])
-            
+                            y_true.append(0)
+                        if(pred_label == 'off'):
+                            y_pred.append(1)
+                        elif(pred_label == 'neg'):
+                            y_pred.append(0)
+                        else:
+                            y_pred.append(2)
+            name = output_path.parts[-2] + output_file.name
+            rep = classification_report(y_true, y_pred, labels=[0,1], target_names=['negative', 'offensive'])
+            for_sorting.append(float(rep.split()[-2]))
+            report.append([name, rep])
 
             count+=1
+    return report, for_sorting
 
-    s = sorted(e, key=lambda e: e[8], reverse=True)
-    if(write_results and len(s) != 0):
-        with results.open(mode='a') as result_file:
-            result_file.write(p.stem + ', ')
-            result_file.write(str(s[0]).strip('[]')+'\n')
-
-    with evaluation.open(mode='w') as write_file:
-        write_file.write('[mu2, mu3, correctneg, falseneg, correctneg%, correctoff, falseoff, correctoff%, correct%]\n')
-        for i in s:
-            write_file.write(str(i) + '\n')
 
 if __name__ == '__main__': 
     main(sys.argv[1:])
