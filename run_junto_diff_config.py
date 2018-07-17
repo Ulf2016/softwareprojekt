@@ -44,29 +44,21 @@ def main(argv):
             output_path = p / 'output/'
             if(not output_path.is_dir()):
                 Path.mkdir(output_path)
-            tmp_rep, tmp_sort, tmp_confu, tmp_f1 = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+            tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
             report.extend(tmp_rep)
-            f1.append(tmp_f1)
-            confu.extend(tmp_confu)
-            for_sorting.extend(tmp_sort)
 
-        sorted_report = sorted(zip(for_sorting, report, confu, f1), key=operator.itemgetter(3), reverse=True)
 
         with results.open(mode='w') as write_file:
-            for i in sorted_report:
-                write_file.write(i[1][0]+'\n')
-                write_file.write(i[1][1]+'\n')
-                write_file.write('off_gold: ' + str(i[1][2].count(1))+' ')
-                write_file.write('neg_gold: ' + str(i[1][2].count(0))+'\n')
-                write_file.write('off_pred: ' + str(i[1][3].count(1))+' ')
-                write_file.write('neg_pred: ' + str(i[1][3].count(0))+'\n')
-                write_file.write('Recall: ')
-                write_file.write(str(i[2]))
-                write_file.write('\n')
-                write_file.write('f1: ')
-                write_file.write(str(i[3]))
-                write_file.write('\n')
-                write_file.write('\n')
+            for i in sorted(report, key=operator.itemgetter(-1), reverse=True):
+                write_file.write(str(i[0]) + '\n')
+                write_file.write('  \t off \t neg\n')
+                write_file.write('off \t {} \t {} \n'.format(i[1], i[2]))
+                write_file.write('neg \t {} \t {} \n'.format(i[3], i[4]))
+                write_file.write('Precision: ' + str(i[5]) + '\n')
+                write_file.write('Recall: ' + str(i[6]) + '\n')
+                write_file.write('Accuracy: ' + str(i[7]) + '\n')
+                write_file.write('F1-Score: ' + str(i[8]) + '\n\n')
+                
     except UnboundLocalError as e:
         print(e)
 
@@ -102,6 +94,7 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
     report = []
     confu = []
     for_sorting = []
+    f1 = []
     count = 0
     for i in r_mu2:
         mu2 = i
@@ -126,7 +119,7 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
                         gold_label = line[1].split()[0]
                         has_seed_label = len(line[2]) == 0
                         pred_label = line[3].split()[0]
-                        if(not has_seed_label):
+                        if(has_seed_label):
                             if(gold_label == 'off'):
                                 y_true.append(1)
                             elif(gold_label == 'neg'):
@@ -137,16 +130,49 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
                                 y_pred.append(0)
                             else:
                                 y_pred.append(0)
+
+            tp = 0
+            fp = 0
+            fn = 0
+            tn = 0 
+            for gold, pred in zip(y_true, y_pred):
+                
+                if(gold == pred):
+                    if(gold == 1):
+                        tp += 1
+                    if(gold == 0):
+                        tn += 1
+                elif(gold != pred):
+                    if(gold == 1):
+                        fn += 1
+                    if(gold == 0):
+                        fp += 1
+
+            if(tp == 0):
+                precision = 0
+                recall = 0
+                f1 = 0
+            else:
+                precision = tp/(tp+fp)
+                recall = tp/(tp+fn)
+                f1 = 2*((precision*recall)/(precision+recall))
+            accuracy = (tp+tn)/(tp+tn+fp+fn)
+
+
+
+
             name = output_path.parts[-2] + output_file.name
-            confusion = recall_score(y_true, y_pred, labels=[0, 1], average='macro')
+            '''confusion = confusion_matrix(y_true, y_pred, labels=[0, 1])
             confu.append(confusion)
-            f1 = f1_score(y_true, y_pred, labels=[0, 1], average='macro')
-            rep = classification_report(y_true, y_pred, labels=[0,1,2], target_names=['negative', 'offensive', 'dummy'])
+            f1.append(f1_score(y_true, y_pred, labels=[0, 1]))
+            rep = classification_report(y_true, y_pred, labels=[0,1], target_names=['negative', 'offensive'])
             for_sorting.append(float(rep.split()[-2]))
             report.append([name, rep, y_true, y_pred])
-            count+=1
+            count+=1'''
+
+            report.append([name, tp, fp, fn, tn, precision, recall, accuracy, f1])
             assert(len(y_true) == len(y_pred))
-    return report, for_sorting, confu, f1
+    return report
 
 
 if __name__ == '__main__': 
