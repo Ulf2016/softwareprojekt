@@ -3,7 +3,8 @@ import operator
 import argparse
 from pathlib import Path
 import numpy as numpy
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import f1_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
@@ -34,7 +35,7 @@ def main(argv):
         beta = 2
 
         #iterating over subfolders of root_folder
-        report, for_sorting = [], []
+        report, for_sorting, confu, f1 = [], [], [], []
         for i, p in enumerate(subfolders):
             print(i+1,'/',len(subfolders))
             seed_file = p / 'seeds.txt'
@@ -43,19 +44,29 @@ def main(argv):
             output_path = p / 'output/'
             if(not output_path.is_dir()):
                 Path.mkdir(output_path)
-            tmp_rep, tmp_sort = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+            tmp_rep, tmp_sort, tmp_confu, tmp_f1 = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
             report.extend(tmp_rep)
+            f1.append(tmp_f1)
+            confu.extend(tmp_confu)
             for_sorting.extend(tmp_sort)
-        print(report)
 
-        sorted_report = sorted(zip(for_sorting, report), key=operator.itemgetter(0), reverse=True)
+        sorted_report = sorted(zip(for_sorting, report, confu, f1), key=operator.itemgetter(3), reverse=True)
 
         with results.open(mode='w') as write_file:
             for i in sorted_report:
                 write_file.write(i[1][0]+'\n')
                 write_file.write(i[1][1]+'\n')
-
-
+                write_file.write('off_gold: ' + str(i[1][2].count(1))+' ')
+                write_file.write('neg_gold: ' + str(i[1][2].count(0))+'\n')
+                write_file.write('off_pred: ' + str(i[1][3].count(1))+' ')
+                write_file.write('neg_pred: ' + str(i[1][3].count(0))+'\n')
+                write_file.write('Recall: ')
+                write_file.write(str(i[2]))
+                write_file.write('\n')
+                write_file.write('f1: ')
+                write_file.write(str(i[3]))
+                write_file.write('\n')
+                write_file.write('\n')
     except UnboundLocalError as e:
         print(e)
 
@@ -89,6 +100,7 @@ def createConfig(graph_file, seed_file, gold_labels_file, iters, verbose,
 
 def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results):
     report = []
+    confu = []
     for_sorting = []
     count = 0
     for i in r_mu2:
@@ -112,24 +124,29 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
                     line = line.split('\t')
                     if(len(line[1])>0):  
                         gold_label = line[1].split()[0]
+                        has_seed_label = len(line[2]) == 0
                         pred_label = line[3].split()[0]
-                        if(gold_label == 'off'):
-                            y_true.append(1)
-                        else:
-                            y_true.append(0)
-                        if(pred_label == 'off'):
-                            y_pred.append(1)
-                        elif(pred_label == 'neg'):
-                            y_pred.append(0)
-                        else:
-                            y_pred.append(2)
+                        if(not has_seed_label):
+                            if(gold_label == 'off'):
+                                y_true.append(1)
+                            elif(gold_label == 'neg'):
+                                y_true.append(0)
+                            if(pred_label == 'off'):
+                                y_pred.append(1)
+                            elif(pred_label == 'neg'):
+                                y_pred.append(0)
+                            else:
+                                y_pred.append(0)
             name = output_path.parts[-2] + output_file.name
-            rep = classification_report(y_true, y_pred, labels=[0,1], target_names=['negative', 'offensive'])
+            confusion = recall_score(y_true, y_pred, labels=[0, 1], average='macro')
+            confu.append(confusion)
+            f1 = f1_score(y_true, y_pred, labels=[0, 1], average='macro')
+            rep = classification_report(y_true, y_pred, labels=[0,1,2], target_names=['negative', 'offensive', 'dummy'])
             for_sorting.append(float(rep.split()[-2]))
-            report.append([name, rep])
-
+            report.append([name, rep, y_true, y_pred])
             count+=1
-    return report, for_sorting
+            assert(len(y_true) == len(y_pred))
+    return report, for_sorting, confu, f1
 
 
 if __name__ == '__main__': 
