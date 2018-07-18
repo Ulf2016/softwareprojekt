@@ -2,11 +2,7 @@ import sys, os
 import operator
 import argparse
 from pathlib import Path
-import numpy as numpy
-from sklearn.metrics import recall_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
+
 
 
 def main(argv):
