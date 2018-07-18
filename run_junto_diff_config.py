@@ -49,7 +49,8 @@ def main(argv):
 
 
         with results.open(mode='w') as write_file:
-            for i in sorted(report, key=operator.itemgetter(-1), reverse=True):
+            'name, tp, fp, fn, tn, precision, recall, accuracy, f1'
+            for i in sorted(report, key=operator.itemgetter(5), reverse=True):
                 write_file.write(str(i[0]) + '\n')
                 write_file.write('  \t off \t neg\n')
                 write_file.write('off \t {} \t {} \n'.format(i[1], i[2]))
@@ -162,13 +163,6 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
 
 
             name = output_path.parts[-2] + output_file.name
-            '''confusion = confusion_matrix(y_true, y_pred, labels=[0, 1])
-            confu.append(confusion)
-            f1.append(f1_score(y_true, y_pred, labels=[0, 1]))
-            rep = classification_report(y_true, y_pred, labels=[0,1], target_names=['negative', 'offensive'])
-            for_sorting.append(float(rep.split()[-2]))
-            report.append([name, rep, y_true, y_pred])
-            count+=1'''
 
             report.append([name, tp, fp, fn, tn, precision, recall, accuracy, f1])
             assert(len(y_true) == len(y_pred))
