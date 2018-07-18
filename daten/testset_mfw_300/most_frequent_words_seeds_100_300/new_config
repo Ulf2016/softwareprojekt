@@ -1,0 +1,16 @@
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/testset_mfw_300/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/testset_mfw_300/most_frequent_words_seeds_100_300/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/testset_mfw_300/most_frequent_words_seeds_100_300/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.1
+    mu3 = 0.1
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/testset_mfw_300/most_frequent_words_seeds_100_300/output/output-mu2-0.1-mu3-0.1
+    
