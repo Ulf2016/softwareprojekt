@@ -42397,3 +42397,532 @@ dueker@ella:~/Documents/softwareprojekt$ ls[K[Kexit
 exit
 exit
 exit
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/D ownloads/extended_mfw
+extended_mfw/                          extended_mfw-20180719T152504Z-001.zip
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/
+_DS_Store                          most_frequent_words_seeds_80_90/
+graph_input.txt                    most_frequent_words_seeds_90_100/
+most_frequent_words_seeds_100_100/ most_frequent_words_seeds_90_90/
+most_frequent_words_seeds_80_100/  results.csv
+most_frequent_words_seeds_80_80/   
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/
+1 / 6
+sh: 1: junto: not found
+Traceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.001-mu3-0.001'
+dueker@ella:~/Documents/softwareprojekt$ export JUNTO_DIR [K%[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd
+dueker@ella:~$ ls
+CRF++-0.58  Downloads  Music	  Public	     sem_proj16  Vorkurs
+Desktop     Mail       nltk_data  scikit_learn_data  Templates	 wekafiles
+Documents   Maildir    Pictures   screenlog.0	     Videos	 workspace
+dueker@ella:~$ cd Documents/
+dueker@ella:~/Documents$ ls
+dynamusic  junto  sitent  softwareprojekt
+dueker@ella:~/Documents$ export JUNTO_DIR [K [K=~/Docuem[K[Kments/junto
+dueker@ella:~/Documents$ export PATH [K=$PATH:$JUNTO_DIR/bin
+dueker@ella:~/Documents$ echo %[K$PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/students/dueker/Documents/junto/bin
+dueker@ella:~/Documents$ echo $PATHxport PATH=$PATH:$JUNTO_DIR/binJUNTO_DIR=~/Documents/junto[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd Documents/ls[Kcdpython3 run_junto_diff_config.py -R ~/Downloads/extendedd_mfw/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clscd[K[Kcd softwareprojekt/
+dueker@ella:~/Documents/softwareprojekt$ cd softwareprojekt/[9Pecho $PATHxport PATH=$PATH:$JUNTO_DIR/binJUNTO_DIR=~/Documents/junto[2PPATH=$PATH:$JUNTO_DIR/bincho $PATH[Kcd softwareprojekt/[9Pecho $PATHxport PATH=$PATH:$JUNTO_DIR/binJUNTO_DIR=~/Documents/juntols[Kcd Documents/ls[Kcdpython3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/
+1 / 6
+#inputs
+    graph_file = /home/students/dueker/Downloads/extended_mfw/graph_input.txt
+    seed_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.001
+    mu3 = 0.001
+    beta = 2
+    output_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.001-mu3-0.001
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+^CTraceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.001-mu3-0.001'
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/[C -mu2 0.01 -mu3 0.01
+1 / 6
+#inputs
+    graph_file = /home/students/dueker/Downloads/extended_mfw/graph_input.txt
+    seed_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+^CTraceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.01-mu3-0.01'
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Downloads/extended_mfw/ -mu2 0.01 -mu3 0.01
+1 / 6
+#inputs
+    graph_file = /home/students/dueker/Downloads/extended_mfw/graph_input.txt
+    seed_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.lang.String.substring(String.java:1969)
+	at java.lang.String.split(String.java:2353)
+	at java.lang.String.split(String.java:2422)
+	at upenn.junto.config.EdgeFileReader$$anonfun$apply$2.apply(GraphInfo.scala:41)
+	at upenn.junto.config.EdgeFileReader$$anonfun$apply$2.apply(GraphInfo.scala:39)
+	at scala.collection.Iterator$$anon$11.next(Iterator.scala:328)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:48)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:176)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:45)
+	at scala.collection.TraversableOnce$class.to(TraversableOnce.scala:273)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1157)
+	at scala.collection.TraversableOnce$class.toList(TraversableOnce.scala:257)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1157)
+	at upenn.junto.config.EdgeFileReader$.apply(GraphInfo.scala:44)
+	at upenn.junto.config.GraphConfigLoader$$anonfun$1.apply(GraphLoader.scala:41)
+	at upenn.junto.config.GraphConfigLoader$$anonfun$1.apply(GraphLoader.scala:41)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:108)
+	at upenn.junto.config.GraphConfigLoader$.apply(GraphLoader.scala:41)
+	at upenn.junto.app.JuntoConfigRunner$.apply(Junto.scala:98)
+	at upenn.junto.app.JuntoConfigRunner$.main(Junto.scala:132)
+	at upenn.junto.app.JuntoConfigRunner.main(Junto.scala)
+Traceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Downloads/extended_mfw/most_frequent_words_seeds_100_100/output/output-mu2-0.01-mu3-0.01'
+dueker@ella:~/Documents/softwareprojekt$ [Kdueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/ -mu2 0.01 -mu3 0.01[K -mu2 0.01 -mu3 0.01[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pcd softwareprojekt/
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pecho $PATHxport PATH=$PATH:$JUNTO_DIR/binJUNTO_DIR=~/Documents/juntols[Kcd Documents/ls[Kcdpython3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[Kdueker@ella:~/Documents/softwareprojekt$ exit[2Plsexitpython3 run_junto_diff_config.py -R ~/Downloads/extended_mfw/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[Klscd Documents/ls[Kexport JUNTO_DIR=~/Documents/junto[2PPATH=$PATH:$JUNTO_DIR/bincho $PATH[Kcd softwareprojekt/python3 run_junto_diff_config.py -R ~/Downloads/extended_mfw/ -mu2 0.01 -mu3 0.01[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Khtop
+[?1049h[1;52r(B[m[4l[?7h[?1h=[?25l[39;49m[?1000h[39;49m(B[m[H[2J[2d  [36m1  [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m](B[m    [36m9  [39m(B[0;1m[(B[0m[34m||||||||||||||||||||||||(B[0;1m[30m  75.0%[39m](B[m   [36m17 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m](B[m    [36m25 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m][3;3H(B[0m[36m2  [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m](B[m    [36m10 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m](B[m   [36m18 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m](B[m    [36m26 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m][4;3H(B[0m[36m3  [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m](B[m    [36m11 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m](B[m   [36m19 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m](B[m    [36m27 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m][5;3H(B[0m[36m4  [39m(B[0;1m[(B[0m[34m||||||||||||||||[31m||||||||(B[0;1m[30m  75.0%[39m](B[m    [36m12 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m](B[m   [36m20 [39m(B[0;1m[(B[0m[34m|||||||||||(B[0;1m[30m               33.3%[39m](B[m    [36m28 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m][6;3H(B[0m[36m5  [39m(B[0;1m[(B[0m[34m||||||||||||||||||||||||(B[0;1m[30m  75.0%[39m](B[m    [36m13 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m](B[m   [36m21 [39m(B[0;1m[[30m                           0.0%[39m](B[m    [36m29 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m][7;3H(B[0m[36m6  [39m(B[0;1m[(B[0m[34m||||||||||||||||||||||||(B[0;1m[30m  75.0%[39m](B[m    [36m14 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m](B[m   [36m22 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m](B[m    [36m30 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m][8;3H(B[0m[36m7  [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m](B[m    [36m15 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m](B[m   [36m23 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m](B[m    [36m31 [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||(B[0;1m[30m     66.7%[39m][9;3H(B[0m[36m8  [39m(B[0;1m[(B[0m[34m|||||||||||||||||||||||||100.0%[39m(B[0;1m](B[m    [36m16 [39m(B[0;1m[(B[0m[31m|||||||||||||||||||||||||100.0%[39m(B[0;1m](B[m   [36m24 [39m(B[0;1m[(B[0m[34m||||||||||||||||(B[0;1m[30m          50.0%[39m](B[m    [36m32 [39m(B[0;1m[[30m                           0.0%[39m][10;3H(B[0m[36mMem[39m(B[0;1m[(B[0m[32m|||||||||||||||||||||||||[34m|[33m|||||||||||||||||||||||||||||||||||(B[0;1m[30m43.6G/126G[39m](B[m   [36mTasks: (B[0;1m[36m198(B[0m[36m, (B[0;1m[32m244(B[0m[32m thr[36m; (B[0;1m[32m17(B[0m[36m running[11;3HSwp[39m(B[0;1m[(B[0m[31m|||||||||||||(B[0;1m[30m                                                851M/4.68G[39m](B[m   [36mLoad average: [39m(B[0;1m22.82 [36m25.24 (B[0m[36m30.77 [12;82HUptime: (B[0;1m[36m106 days(!), 08:40:56[14d(B[0m[30m[42m  PID USER      PRI  NI  VIRT   RES   SHR S [30m[46mCPU% [30m[42mMEM%   TIME+  Command                                                                                             [15;1H[30m[46m31675 takhsha    30  10 37.8G 33.2G 70192 S 1927 26.3     665h python frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[16;2H[39;49m(B[m2188 (B[0;1m[30mhubert    [39m(B[m 30 [32m 10 [36m2515M  854M 37[39m(B[m240 [32mR [39m(B[m109.  0.7 (B[0;1m[31m90h[39m(B[m39:02 python svm.py[17d 5874 dueker     30 [32m 10 [36m19[39m(B[m936 [36m 4[39m(B[m412 [36m 2[39m(B[m964 [32mR [39m(B[m109.  0.0  0:00.08 htop[18d10922 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 [32mR [39m(B[m72.7 26.3 (B[0;1m[31m23h[39m(B[m40:37 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[19;1H[39m(B[m10924 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 [32mR [39m(B[m72.7 26.3 (B[0;1m[31m23h[39m(B[m40:38 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[20;1H[39m(B[m10925 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 [32mR [39m(B[m72.7 26.3 (B[0;1m[31m23h[39m(B[m40:59 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[21;1H[39m(B[m10962 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 S 72.7 26.3 (B[0;1m[31m16h[39m(B[m25:43 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[22;1H[39m(B[m10963 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 S 72.7 26.3 (B[0;1m[31m20h[39m(B[m44:20 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[23;1H[39m(B[m10965 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 S 72.7 26.3 (B[0;1m[31m20h[39m(B[m43:53 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[24;1H[39m(B[m10966 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 S 72.7 26.3 (B[0;1m[31m20h[39m(B[m44:17 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[25;1H[39m(B[m10923 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 [32mR [39m(B[m36.4 26.3 (B[0;1m[31m23h[39m(B[m40:47 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[26;1H[39m(B[m10964 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 (B[0;1m[31m37.8G 33.2G (B[0m[36m70[39m(B[m192 S 36.4 26.3 (B[0;1m[31m20h[39m(B[m44:19 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/test_qa.csv --dev ../../corpora/y[27;5H[39m(B[m1 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 200M  6[39m(B[m904 [36m 4[39m(B[m624 S  0.0  0.0 19:32.14 /sbin/init[28;3H506 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 381M  245M  244M [39m(B[mS  0.0  0.2 13:25.19 /lib/systemd/systemd-journald[29;3H531 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 104M [39m(B[m  932   816 S  0.0  0.0  0:00.00 /sbin/lvmetad -f[30;3H539 (B[0;1m[30mroot      [39m(B[m 20   0 [36m20[39m(B[m828     0     0 S  0.0  0.0  0:00.00 /usr/sbin/blkmapd[31;3H554 (B[0;1m[30mroot      [39m(B[m 20   0 [36m45[39m(B[m884 [36m 3[39m(B[m196 [36m 2[39m(B[m532 S  0.0  0.0  0:12.46 /lib/systemd/systemd-udevd[32;3H809 (B[0;1m[30mroot      [39m(B[m 20   0 [36m23[39m(B[m348     0     0 S  0.0  0.0  0:00.00 /usr/sbin/rpc.idmapd[33;3H845 (B[0;1m[30mroot      [39m(B[m 20   0 [36m49[39m(B[m872 [36m 2[39m(B[m996 [36m 2[39m(B[m844 S  0.0  0.0  0:11.65 /sbin/rpcbind -f -w[34;3H851 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 4[39m(B[m216   580   580 S  0.0  0.0  0:00.00 /usr/sbin/acpid[35;3H897 (B[0;1m[30mrtkit     [39m(B[m 20   0 [36m 173M  2[39m(B[m372 [36m 2[39m(B[m300 S  0.0  0.0  0:43.48 [32m/usr/lib/rtkit/rtkit-daemon[36;3H[39m(B[m898 (B[0;1m[30mrtkit     [39m(B[m RT [32m  1 [36m 173M  2[39m(B[m372 [36m 2[39m(B[m300 S  0.0  0.0  0:34.75 [32m/usr/lib/rtkit/rtkit-daemon[37;3H[39m(B[m853 (B[0;1m[30mrtkit     [39m(B[m 21 [32m  1 [36m 173M  2[39m(B[m372 [36m 2[39m(B[m300 S  0.0  0.0  1:18.26 /usr/lib/rtkit/rtkit-daemon[38;3H857 (B[0;1m[30mroot      [39m(B[m 20   0 [36m35[39m(B[m896 [36m 2[39m(B[m728 [36m 2[39m(B[m588 S  0.0  0.0 28:29.67 /usr/sbin/irqbalance --foreground[39;3H859 (B[0;1m[30mroot      [39m(B[m 20   0 [36m42[39m(B[m120 [36m 2[39m(B[m712 [36m 2[39m(B[m672 S  0.0  0.0  5:01.18 /usr/sbin/inetd[40;3H861 (B[0;1m[30mroot      [39m(B[m 20   0 [36m25[39m(B[m148 [36m 2[39m(B[m740 [36m 2[39m(B[m572 S  0.0  0.0  0:03.39 /usr/sbin/smartd -n[41;3H883 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 271M  3[39m(B[m660 [36m 3[39m(B[m164 S  0.0  0.0  0:55.07 [32m/usr/lib/accountsservice/accounts-daemon[42;3H[39m(B[m896 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 271M  3[39m(B[m660 [36m 3[39m(B[m164 S  0.0  0.0  0:07.04 [32m/usr/lib/accountsservice/accounts-daemon[43;3H[39m(B[m864 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 271M  3[39m(B[m660 [36m 3[39m(B[m164 S  0.0  0.0  1:42.01 /usr/lib/accountsservice/accounts-daemon[44;3H866 (B[0;1m[30mroot      [39m(B[m 20   0 [36m39[39m(B[m040 [36m 4[39m(B[m432 [36m 3[39m(B[m340 S  0.0  0.0  1:00.47 /lib/systemd/systemd-logind[45;3H871 (B[0;1m[30mavahi     [39m(B[m 20   0 [36m49[39m(B[m396 [36m 3[39m(B[m216 [36m 2[39m(B[m748 S  0.0  0.0  8:27.98 avahi-daemon: running [ella.local][46;3H875 (B[0;1m[30mmessagebu [39m(B[m 20   0 [36m47[39m(B[m916 [36m 3[39m(B[m640 [36m 2[39m(B[m664 S  0.0  0.0  1:42.00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation[47;3H886 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 867M  3[39m(B[m392 [36m 2[39m(B[m860 S  0.0  0.0  1:56.52 [32m/usr/sbin/nscd[48;3H[39m(B[m887 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 867M  3[39m(B[m392 [36m 2[39m(B[m860 S  0.0  0.0  0:22.92 [32m/usr/sbin/nscd[49;3H[39m(B[m888 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 867M  3[39m(B[m392 [36m 2[39m(B[m860 S  0.0  0.0  0:03.21 [32m/usr/sbin/nscd[50;3H[39m(B[m889 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 867M  3[39m(B[m392 [36m 2[39m(B[m860 S  0.0  0.0  0:04.59 [32m/usr/sbin/nscd[51;3H[39m(B[m890 (B[0;1m[30mroot      [39m(B[m 20   0 [36m 867M  3[39m(B[m392 [36m 2[39m(B[m860 S  0.0  0.0  0:00.00 [32m/usr/sbin/nscd[52d[39m(B[mF1[30m[46mHelp  [39;49m(B[mF2[30m[46mSetup [39;49m(B[mF3[30m[46mSearch[39;49m(B[mF4[30m[46mFilter[39;49m(B[mF5[30m[46mTree  [39;49m(B[mF6[30m[46mSortBy[39;49m(B[mF7[30m[46mNice -[39;49m(B[mF8[30m[46mNice +[39;49m(B[mF9[30m[46mKill  [39;49m(B[mF10[30m[46mQuit                                                                                   [?7l [?7h[H[39;49m(B[m[27;51r[27;1H[12T[1;52r[2;27H[31m|[2;36H(B[0;1m[30m0[2;67H(B[0m[31m|(B[0;1m[30m     65.1[2;102H(B[0m[34m||||[31m|(B[0;1m[30m     66[2;143H(B[0m[31m|(B[0;1m[30m        55.4[3;28H(B[0m[31m|(B[0;1m[30m    67.1[3;63H(B[0m[34m||||[31m|(B[0;1m[30m     63.9[3;106H(B[0m[31m|(B[0;1m[30m     63.3%[3;144H(B[0m[31m|(B[0;1m[30m       57.3%[4;23H(B[0m[34m|||||[31m|(B[0;1m[30m    67.8[4;63H(B[0m[34m||||[31m|(B[0;1m[30m     64.9[4;106H(B[0m[31m|(B[0;1m[30m     65.4%[4;141H(B[0m[31m|[4;152H(B[0;1m[30m47[5;23H(B[0m[34m||||[31m||(B[0;1m[30m    66.9[5;66H(B[0m[31m|(B[0;1m[30m      62.7%[5;97H(B[0m[34m||||||||[31m|[112G(B[0;1m[30m61.9[5;151H(B[0m[34m|94.[31m2(B[0;1m[30m%[6;27H(B[0m[31m|(B[0;1m[30m     65.5[6;67H(B[0m[31m|[6;76H(B[0;1m[30m5[6;86H(B[0m[34m|||||||||||||||||||[31m|[112G(B[0;1m[30m63.3[6;142H(B[0m[34m||||[31m|(B[0;1m[30m     65.5[7;27H(B[0m[31m|(B[0;1m[30m     64[7;67H(B[0m[31m|[74G(B[0;1m[30m4.0[7;106H(B[0m[31m|(B[0;1m[30m     65.2%[7;144H(B[0m[31m|(B[0;1m[30m       57.9%[8;27H(B[0m[31m|[8;36H(B[0;1m[30m9[8;63H(B[0m[34m||||[31m|(B[0;1m[30m     63[8;106H(B[0m[31m|[113G(B[0;1m[30m5.0[8;145H(B[0m[31m|(B[0;1m[30m [153G1.0[9;27H(B[0m[31m|(B[0;1m[30m     67.1%[9;47H(B[0m[34m|||||||||||||||||||||[31m|(B[0;1m[30m    68.4%[9;102H(B[0m[34m||||[31m|(B[0;1m[30m     62.8[9;126H(B[0m[34m|||||||||||||||||||[31m|[152G(B[0;1m[30m60.1[10;96H[32m6[12;110H[36m8[15;43H(B[0m[30m[46mR 1798[16;2H[39;49m(B[m4681 (B[0;1m[30mtakhsha[16;25H(B[0m[36m5945M 1852M 71[39m(B[m268 [32mR [39m(B[m177.  1.4 (B[0;1m[31m44h[39m(B[m04:15[16;71Hfrcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[17;2H2188 (B[0;1m[30mhubert    [17;25H(B[0m[36m2515M  854M 37[39m(B[m240 [32mR [39m(B[m101.  0.7 (B[0;1m[31m90h[39m(B[m39:04 python svm.py[18;4H65[18;45H62.8[56G(B[0;1m[31m0h[39m(B[m43:54[19;4H66[19;45H61.5[56G(B[0;1m[31m0h[39m(B[m44:1[20;4H64[20;45H61.5[56G(B[0;1m[31m0h[39m(B[m44:20[21;5H3[21;43H[32mR [39m(B[m60.8[55G(B[0;1m[31m20h[39m(B[m44:21[22;4H22[22;45H59.5[56G(B[0;1m[31m3h[39m(B[m40:38[23;4H24[23;45H58.8[56G(B[0;1m[31m3h[39m(B[m40:39[24;4H25[24;45H58.2[56G(B[0;1m[31m3h[39m(B[m40:59[25;43HS 58.2[25;62H8[26;5H2[26;43H[32mR [39m(B[m46.3[55G(B[0;1m[31m16h[39m(B[m25:43[27d 3612 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  6.6  1.4 (B[0;1m[31m 1h[39m(B[m00:50 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[28;2H[39m(B[m3614 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  6.6  1.4 (B[0;1m[31m 1h[39m(B[m00:51 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[29;2H[39m(B[m3609 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  5.9  1.4 (B[0;1m[31m 1h[39m(B[m00:32 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[30;2H[39m(B[m3613 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  5.9  1.4 (B[0;1m[31m 1h[39m(B[m00:47 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[31;2H[39m(B[m3611 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  5.3  1.4 (B[0;1m[31m 1h[39m(B[m00:52 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[32;2H[39m(B[m3548 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  4.6  1.4 (B[0;1m[31m 1h[39m(B[m28:42 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[33;2H[39m(B[m3549 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  4.6  1.4 (B[0;1m[31m 1h[39m(B[m28:40 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[34;2H[39m(B[m3550 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  4.6  1.4 (B[0;1m[31m 1h[39m(B[m28:36 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[35;2H[39m(B[m3551 (B[0;1m[30mtakhsha   [39m(B[m 30 [32m 10 [36m5945M 1852M 71[39m(B[m268 S  4.0  1.4 (B[0;1m[31m 1h[39m(B[m28:43 [32mpython frcvs2permit.py --train ../../corpora/yahoo/yahoo_processed/train_qa.csv --dev ../../corpora/[36;2H[39m(B[m5874 dueker     30 [32m 10 [36m19[39m(B[m936 [36m 4[39m(B[m412 [36m 2[39m(B[m964 [32mR [39m(B[m 2.0  0.0  0:00.11 htop[37d22017 (B[0;1m[30mholzinger [39m(B[m 30 [32m 10 [36m20[39m(B[m296 [36m 4[39m(B[m984 [36m 3[39m(B[m012 S  2.0  0.0 (B[0;1m[31m 6h[39m(B[m29:52 htop[38d17480 dueker     30 [32m 10 [36m34[39m(B[m328 [36m 2[39m(B[m448 [36m 1[39m(B[m708 S  0.7  0.0  0:00.15 SCREEN -L[H[2;34H(B[0;1m[30m4.2[2;67H(B[0m[34m|[31m|(B[0;1m[30m    66.9[2;113H5.1[2;143H(B[0m[34m||[31m|[152G(B[0;1m[30m62.5[3;27H(B[0m[31m|(B[0;1m[30m     62.7[3;66H(B[0m[31m|(B[0;1m[30m [74G1.3[3;105H(B[0m[31m|(B[0;1m[30m [113G2[3;153H9.4[4;26H(B[0m[31m||(B[0;1m[30m     63.7[4;76H5[4;113H4.3[4;141H(B[0m[34m|||[31m|[152G(B[0;1m[30m57.8[5;26H(B[0m[31m|(B[0;1m[30m      61[5;66H(B[0m[34m|[31m|[74G(B[0;1m[30m3.6[5;113H2.3[5;144H(B[0m[31m|(B[0;1m[30m       58.0[6;34H4.4[6;66H(B[0m[31m|(B[0;1m[30m [74G0.0[6;105H(B[0m[34m||[31m|(B[0;1m[30m    66.7[6;153H3.2[7;26H(B[0m[31m|(B[0;1m[30m [34G1.5[7;74H3.8[7;113H3.9[7;144H(B[0m[34m||||||[31m|(B[0;1m[30m 77.4[8;26H(B[0m[31m|(B[0;1m[30m [34G2.1[8;74H4.5[8;106H [113G4.1[8;145H(B[0m[34m||||[31m|(B[0;1m[30m  74[9;26H(B[0m[31m|(B[0;1m[30m [34G4.5[9;65H(B[0m[31m|(B[0;1m[30m       59.9[9;143H(B[0m[31m|(B[0;1m[30m  [152G55.4[10;95H[32m50[103G31[12;110H[36m9[15;43H(B[0m[30m[46mS 1763[15;61H6[16;43H(B[0;1m[31mD [39m(B[m191[16;62H7[17;47H2[17;62H5[18;43HS 60.4[18;62H5[19;43HS 60.4[19;62H9[20;43HS 60.4[20;62H1[21;43HS 60.4[21;62H2[22;43H[32mR [39m(B[m59.1[22;62H9[23;5H3[23;43H[32mR [39m(B[m58.4[23;61H4[24;5H4[24;43H[32mR [39m(B[m57.8[24;61H3[25;5H5[25;43H[32mR [39m(B[m57.8[25;59H1:00[26;46H7.1[26;62H4[27;3H550[27;43H[32mR [27;58H[39m(B[m28:36[28;3H548[28;43H[32mR [39m(B[m 6.0[28;58H28:42[29;3H551[29;43H[32mR [39m(B[m 6.0[29;58H28:43[30;5H4[30;48H3[30;61H51[32;5H9[32;43H[32mR [39m(B[m 5.3[32;62H0[33;3H612[33;58H00:5[34;3H613[34;58H00:47[35;3H609[35;58H00:32[36d4[38;48H0[H[2;25H[31m||(B[0;1m[30m [34G1.3[2;67H(B[0m[31m|(B[0;1m[30m     65.0[2;113H6.9[2;144H(B[0m[31m|(B[0;1m[30m [152G56.8[3;34H4.3[3;74H2.4[3;105H(B[0m[34m|[31m|[3;115H(B[0;1m[30m8[3;153H7.9[4;26H(B[0m[34m||[31m|(B[0;1m[30m    67.3[4;74H5.6[4;115H2[4;153H9.6[5;26H(B[0m[34m|[31m|[34G(B[0;1m[30m3.3[5;66H(B[0m[31m|(B[0;1m[30m [74G1.7[5;105H(B[0m[34m|[31m|[113G(B[0;1m[30m5.7[5;144H(B[0m[34m|[31m|[153G(B[0;1m[30m9.4[6;36H6[6;66H(B[0m[34m|[31m|[74G(B[0;1m[30m5.7[6;106H(B[0m[31m|(B[0;1m[30m     64.8[6;146H(B[0m[34m||[31m|(B[0;1m[30m   70.0[7;26H(B[0m[34m||[31m|(B[0;1m[30m    65.9[7;66H(B[0m[31m|(B[0;1m[30m [7;76H6[7;113H2.8[7;142H(B[0m[31m|(B[0;1m[30m         52.2[8;26H(B[0m[34m||[31m|(B[0;1m[30m    67.3[8;76H8[8;106H(B[0m[31m|[113G(B[0;1m[30m5.7[8;149H(B[0m[34m|||8[31m4(B[0;1m[30m.8[9;34H1.2[9;65H(B[0m[34m||[31m|(B[0;1m[30m     64.0[9;113H4.6[9;143H(B[0m[34m|[31m|[9;153H(B[0;1m[30m7[10;96H[32m6[103G27[11;97H[39m3.00[11;112H(B[0m[36m4[12;107H(B[0;1m[36m1:01[15;28H(B[0m[30m[46m7[15;47H50[16;25H[39;49m[36m6049[16;43H[39m(B[mS 189[16;61H21[17;47H0[17;62H7[18;43H[32mR [39m(B[m60.1[18;62H6[19;43H[32mR [39m(B[m60.1[19;61H20[20;43H[32mR [39m(B[m58.8[20;62H2[21;43H[32mR [39m(B[m59.5[21;62H3[22;43HS 57.6[22;61H40[23;43HS 57.0[23;61H50[24;43HS 57.6[24;61H40[25;43HS 58.2[25;62H1[26;48H3[26;62H5[27;25H[36m6049[27;43H[39m(B[mS  4.9[28;25H[36m6049[28;43H[39m(B[mS  5.5[29;25H[36m6049[29;43H[39m(B[mS  4.9[30;25H[36m6049[30;46H[39m(B[m4.9[31;25H[36m6049[31;43H[32mR [39m(B[m 6.1[32;25H[36m6049[32;43H[39m(B[mS  5.5[33;25H[36m6049[33;46H[39m(B[m5.5[33;62H1[34;25H[36m6049[34;43H[32mR [39m(B[m 5.5[35;25H[36m6049[35;43H[32mR [39m(B[m 6.1[36d4[36;62H8[37;43H[32mR [39m(B[m 1.8[H[2;22H[31m|(B[0;1m[30m    [33G48.5[2;67H(B[0m[34m|||||[31m|(B[0;1m[30m80.7[2;106H(B[0m[34m|[31m|(B[0;1m[30m    68.6[2;144H(B[0m[34m|||||[31m|(B[0;1m[30m  74.0[3;27H(B[0m[34m|||||[31m|(B[0;1m[30m79.6[3;61H(B[0m[31m|(B[0;1m[30m     [73G43.1[3;106H(B[0m[34m|[31m|(B[0;1m[30m    68.9[3;139H(B[0m[31m|(B[0;1m[30m     [152G42.5[4;28H(B[0m[34m||||[31m|(B[0;1m[30m81.1[4;61H(B[0m[31m|(B[0;1m[30m           45.0[4;106H(B[0m[34m|||||[31m|(B[0;1m[30m80.5[4;144H(B[0m[34m|||(B[0;1m[30m     65.9[5;22H(B[0m[31m|(B[0;1m[30m          49.4[5;66H(B[0m[34m||||||(B[0;1m[30m 79.4[5;102H(B[0m[31m|(B[0;1m[30m         51.8[5;143H(B[0m[31m|(B[0;1m[30m  [153G4.5[6;27H(B[0m[34m|||||[31m|(B[0;1m[30m79[6;62H(B[0m[31m|(B[0;1m[30m          47.6[6;102H(B[0m[31m|(B[0;1m[30m         50.3[6;143H         53.8[7;22H(B[0m[31m|(B[0;1m[30m          46.4[7;66H(B[0m[34m||||||[31m|(B[0;1m[30m79.3[7;106H(B[0m[34m|||||[31m|(B[0;1m[30m81.4[7;142H(B[0m[34m|||||(B[0;1m[30m     66.3[8;28H(B[0m[34m||||[31m|(B[0;1m[30m80.7[8;67H(B[0m[34m||||[31m|(B[0;1m[30m 77.6[8;103H(B[0m[31m|(B[0;1m[30m        54.2[8;142H          49.4[9;22H(B[0m[31m|(B[0;1m[30m    [33G47.0[9;61H(B[0m[31m|(B[0;1m[30m           46.7[9;106H(B[0m[34m|||||[31m|(B[0;1m[30m78.9[9;144H(B[0m[34m|||||||(B[0;1m[30m 79.8[10;95H[32m61[103G32[12;110H[36m3[15;28H(B[0m[30m[46m8[15;43HR 1705[16;45H[39;49m(B[m248[16;62H5[17;47H1[17;62H9[18;43HS 35.3[18;62H7[19;43HS 34[20;43HS 34.1[21;43HS 35.3[22;43H[32mR [39m(B[m76[22;62H1[23;43H[32mR [39m(B[m76.6[23;62H1[24;43H[32mR [39m(B[m76[24;62H2[25;43H[32mR [39m(B[m76.0[25;62H2[26;43HS 25.7[27;46H8.4[28;46H7.2[29;46H8.4[30;43H[32mR [39m(B[m 7.8[31;46H7.2[32;46H7.8[33;43H[32mR [39m(B[m 7.8[34;46H7.2[35;46H7.2[36;46H1.2[36;61H20[37;43HS  3.0[H[2;22H[34m||||||||||[31m|(B[0;1m[30m82.0[2;72H(B[0m[34m|[31m8(B[0;1m[30m3.0[2;107H(B[0m[34m|||||[31m8(B[0;1m[30m5.2[2;149H(B[0m[34m|||87[31m.(B[0;1m[30m8[3;21H(B[0m[31m|(B[0;1m[30m           43[3;59H(B[0m[31m|(B[0;1m[30m  [3;73H36.9[3;101H(B[0m[31m|(B[0;1m[30m          45[3;136H(B[0m[31m|(B[0;1m[30m   [3;152H32.0[4;32H(B[0m[34m|8[31m5(B[0;1m[30m.0[4;60H(B[0m[31m|(B[0;1m[30m [4;74H1.1[4;111H(B[0m[34m|8[31m5(B[0;1m[30m.0[4;147H(B[0m[34m|||||8[31m6(B[0;1m[30m.1[5;20H(B[0m[31m|(B[0;1m[30m  [5;34H0.5[5;72H(B[0m[34m|8[31m5(B[0;1m[30m.3[5;100H(B[0m[31m|(B[0;1m[30m  [5;112H43[5;135H(B[0m[31m|(B[0;1m[30m        [5;152H27.2[6;30H(B[0m[31m|(B[0;1m[30m  72.3[6;62H(B[0m[34m|||||||||||[31m8(B[0;1m[30m4.0[6;101H(B[0m[31m|(B[0;1m[30m [6;112H47.0[6;137H(B[0m[31m|(B[0;1m[30m     [6;152H3[7;22H(B[0m[34m||[7;33H(B[0;1m[30m52.7[7;59H(B[0m[31m|(B[0;1m[30m             3[7;111H(B[0m[34m|(B[0;1m[30m82[7;147H(B[0m[34m|||||[31m8(B[0;1m[30m2.1[8;32H(B[0m[34m|[31m8(B[0;1m[30m3.6[8;59H              35[8;103H(B[0m[34m||||||||[31m|(B[0;1m[30m81[8;135H(B[0m[31m|(B[0;1m[30m      [8;152H28.6[9;21H(B[0m[31m|(B[0;1m[30m [9;34H2.7[9;61H(B[0m[34m||||||||||||[31m8(B[0;1m[30m3.8[9;99H(B[0m[31m|(B[0;1m[30m            41.5[9;151H(B[0m[34m|88[31m.(B[0;1m[30m5[10;95H[32m39[103G19[12;110H[36m4[15;48H(B[0m[30m[46m1[16;25H[39;49m[36m5945[16;43H(B[0;1m[31mD [39m(B[m192[16;62H8[17d10[18;43H[32mR [39m(B[m28[19;43H[32mR [39m(B[m27.6[19;62H1[20;43H[32mR [39m(B[m27.6[20;62H3[21;43H[32mR [39m(B[m27.6[21;62H4[22;43HS 82.2[22;62H2[23;43HS 82.2[23;62H3[24;43HS 82.2[24;62H3[25;43HS 82.9[25;62H4[26;43H[32mR [39m(B[m21.6[27;25H[36m5945[27;46H[39m(B[m4.7[28;25H[36m5945[28;46H[39m(B[m5.4[29;25H[36m5945[29;46H[39m(B[m4.7[30;25H[36m5945[30;43H[39m(B[mS  6.7[30;62H2[31;25H[36m5945[31;43H[39m(B[mS  7.4[32;25H[36m5945[32;46H[39m(B[m6.7[33;25H[36m5945[33;43H[39m(B[mS  7.4[34;25H[36m5945[34;43H[39m(B[mS  7.4[35;25H[36m5945[35;43H[39m(B[mS  6.7[36;46H2.0[36;62H3[37;46H2.7[H[2;27H[31m|(B[0;1m[30m     65.1[2;68H(B[0m[31m|(B[0;1m[30m    65.8[2;107H     65.4[2;144H        57.0[3;21H(B[0m[34m||||||[31m|(B[0;1m[30m     65.8[3;59H(B[0m[34m|||||||||[31m|(B[0;1m[30m    67.1[3;101H(B[0m[34m|||||[31m|(B[0;1m[30m     64.1[3;136H(B[0m[34m||||||||[31m|[152G(B[0;1m[30m57.1[4;27H(B[0m[31m|(B[0;1m[30m     65.2[4;60H(B[0m[34m||||||[31m|[73G(B[0;1m[30m62.0[4;106H(B[0m[31m|(B[0;1m[30m     64.4[4;145H(B[0m[31m|(B[0;1m[30m      60[5;20H(B[0m[34m|||||||[31m|(B[0;1m[30m     63.0[5;68H(B[0m[31m|(B[0;1m[30m    67.7[5;100H(B[0m[34m|||||||(B[0;1m[30m     66.4[5;135H(B[0m[34m|||||||[31m|[5;152H(B[0;1m[30m52.0[6;26H(B[0m[31m|(B[0;1m[30m      63.8[6;67H(B[0m[31m|(B[0;1m[30m     65.6[6;101H(B[0m[34m|||||[31m|(B[0;1m[30m     63.9[6;137H(B[0m[34m|||||||[31m|[152G(B[0;1m[30m58.4[7;24H(B[0m[34m|||[31m|(B[0;1m[30m     65.1[7;59H(B[0m[34m|||||||[31m|[73G(B[0;1m[30m62.8[7;106H(B[0m[31m|(B[0;1m[30m     6[7;145H(B[0m[31m|(B[0;1m[30m      60[8;27H(B[0m[31m|(B[0;1m[30m     66.2[8;59H(B[0m[34m|||||||||[31m|(B[0;1m[30m    68[8;106H(B[0m[31m|(B[0;1m[30m     64[8;135H(B[0m[34m|||||||||||||||||97.4%[9;21H||||||[31m|(B[0;1m[30m     63.0[9;66H(B[0m[31m|(B[0;1m[30m      61.6[9;99H(B[0m[34m|||||||[31m|(B[0;1m[30m     66.7[9;141H(B[0m[31m|(B[0;1m[30m          47.1[10;95H[32m53[103G22[11;97H[39m2.84 [36m25.17 (B[0m[36m30.69[12;110H(B[0;1m[36m6[15;47H(B[0m[30m[46m93[16;46H[39;49m(B[m41[16;61H30[17d2[18;45H61.7[18;62H8[19;45H61.1[19;62H2[20;45H63.1[20;62H4[21;45H62.4[21;62H5[22;45H58.5[22;62H3[23;45H57.8[24;45H58.5[24;62H4[25;45H57.8[25;62H5[26;45H47.9[26;62H6[27;46H3.3[28;46H3.9[29;46H3.3[30;46H4.6[31;46H4.6[32;46H3.3[33;46H4.6[34;46H5.3[35;46H5.3[35;62H3[36d6[37;48H0[H[2;27H[34m|[31m|(B[0;1m[30m    66.0[2;67H(B[0m[31m|(B[0;1m[30m     63.3[2;107H(B[0m[31m|(B[0;1m[30m    68[2;144H(B[0m[34m||||||||8[31m8(B[0;1m[30m.2[3;36H4[3;67H(B[0m[31m|(B[0;1m[30m     64.9[3;113H2.7[3;141H(B[0m[31m|(B[0;1m[30m   [152G48.7[4;34H4.9[4;66H(B[0m[34m|[31m|[74G(B[0;1m[30m4.2[4;106H(B[0m[34m|[31m|(B[0;1m[30m    69.0[4;153H3.0[5;34H4.8[5;74H5.3[5;106H(B[0m[31m|[113G(B[0;1m[30m5.8[5;142H(B[0m[34m|[5;153H(B[0;1m[30m4.3[6;26H(B[0m[34m|[31m|[34G(B[0;1m[30m4.5[6;74H2.7[6;113H5.8[6;143H(B[0m[31m|[6;155H(B[0;1m[30m7[7;26H(B[0m[31m|[7;36H(B[0;1m[30m3[7;66H(B[0m[34m|[31m|[74G(B[0;1m[30m5.6[7;113H4.5[7;143H(B[0m[31m|(B[0;1m[30m  [152G54.6[8;34H5.8[8;67H(B[0m[31m|(B[0;1m[30m     65.1[8;106H(B[0m[34m|[113G(B[0;1m[30m6[8;148H(B[0m[31m|(B[0;1m[30m   71.9%[9;27H(B[0m[34m|[31m|(B[0;1m[30m    66.7[9;66H(B[0m[34m|[31m|[74G(B[0;1m[30m4.2[9;106H(B[0m[34m|[31m|[115G(B[0;1m[30m2[9;141H(B[0m[34m|||[31m|[152G(B[0;1m[30m55.9[10;96H[32m0[103G16[12;110H[36m7[15;43H(B[0m[30m[46mS 1807[16;46H[39;49m(B[m36[16;62H2[17d3[18;48H0[18;62H9[19;43HS 63.7[19;62H3[20;43HS 62.4[20;62H5[21;46H3.0[21;62H6[22;46H9.1[22;62H4[23;46H9.7[23;62H4[24;46H9.1[24;62H5[25;46H9.1[26d3[26;62H7[27;46H4.6[28;46H4.6[29d9[30;46H3.9[31;46H3.9[32d9[33;46H3.3[34;46H3[35d3[36d.6[36;61H30[H[2;26H[31m|(B[0;1m[30m      62.8[2;76H1[2;106H(B[0m[31m|(B[0;1m[30m     63.8[2;145H(B[0m[31m|(B[0;1m[30m      60.8[3;34H4.1[3;76H5[3;105H(B[0m[31m|(B[0;1m[30m [113G3.6[3;141H(B[0m[34m|[31m|[3;152H(B[0;1m[30m51.0[4;34H3.5[4;74H5.6[4;106H(B[0m[31m|(B[0;1m[30m     65.3[4;144H  [152G56.3[5;36H1[5;67H(B[0m[31m|(B[0;1m[30m     63.8[5;113H2.9[5;143H(B[0m[34m||[31m|[152G(B[0;1m[30m60.8[6;26H(B[0m[31m|[34G(B[0;1m[30m2.1[6;74H4.9[6;105H(B[0m[31m|(B[0;1m[30m [113G2.6[6;143H(B[0m[34m||[31m|[152G(B[0;1m[30m61.8[7;36H2[7;67H [74G2.8[7;106H(B[0m[34m|[31m|(B[0;1m[30m    66.9[7;143H(B[0m[34m|[31m|[7;153H(B[0;1m[30m6.8[8;26H(B[0m[31m|[34G(B[0;1m[30m2.1[8;68H(B[0m[31m|[8;106H||[8;148H[34m||||8[31m6(B[0;1m[30m.8[9;26H(B[0m[31m|(B[0;1m[30m      60.9[9;66H(B[0m[31m|(B[0;1m[30m [74G2.9[9;106H(B[0m[31m|(B[0;1m[30m     63.6[9;143H(B[0m[31m|(B[0;1m[30m [9;155H4[10;103H[32m21[12;110H[36m9[15;46H(B[0m[30m[46m769[16;46H[39;49m(B[m47[16;62H4[17;47H0[17;62H5[18;48H1[18;59H4:00[19;43H[32mR [39m(B[m61[19;62H4[20;43H[32mR [39m(B[m61.7[20;62H6[21;46H1.7[21;62H7[22;43H[32mR [39m(B[m56.5[22;62H5[23;43H[32mR [39m(B[m58.5[23;62H5[24;43H[32mR [39m(B[m58.5[24;62H6[25;46H8.5[25;62H6[26;46H6.6[26;62H8[27;46H3.9[27;62H7[28;46H3.9[30;46H4.6[31;46H4.6[33;46H4.6[34;46H4.6[35d9[36d0[36;62H3[H[2;26H[34m|[31m||(B[0;1m[30m    65.4[2;76H7[2;105H(B[0m[31m|(B[0;1m[30m [2;115H2[2;155H5[3;34H5.6[3;66H(B[0m[31m|(B[0;1m[30m [74G1.6[3;105H(B[0m[34m||[31m|(B[0;1m[30m    66.2[3;142H(B[0m[34m||[31m|[3;153H(B[0;1m[30m8.7[4;36H9[4;66H(B[0m[31m|(B[0;1m[30m [74G2.5[4;105H(B[0m[31m|(B[0;1m[30m [113G1.4[4;144H(B[0m[34m|[31m|[152G(B[0;1m[30m60.9[5;27H(B[0m[34m|[31m|(B[0;1m[30m    67.3[5;76H6[5;105H(B[0m[31m|(B[0;1m[30m [5;115H5[5;144H(B[0m[31m|(B[0;1m[30m [152G57.1[6;26H(B[0m[34m|[34G(B[0;1m[30m4.5[6;66H(B[0m[31m|(B[0;1m[30m [74G1[6;115H7[6;144H(B[0m[31m|(B[0;1m[30m [152G56.4[7;26H(B[0m[34m|[34G(B[0;1m[30m4.0[7;66H(B[0m[31m|[74G(B[0;1m[30m1.5[7;106H(B[0m[31m|(B[0;1m[30m     65.6[7;155H1[8;27H [8;36H2[8;66H(B[0m[31m|(B[0;1m[30m      61.0[8;113H5.3[8;152H83.0[9;34H1.2[9;74H0.8[9;113H4.7[9;143H(B[0m[34m||||(B[0;1m[30m     64.9[10;104H[32m0[12;109H[36m10[15;47H(B[0m[30m[46m5[16d[39;49m(B[m82[16;62H7[17;47H1[17;62H6[18;46H0.5[18;62H1[19;46H2.5[19;62H5[20;46H2.5[20;62H7[21;48H9[21;62H8[22;46H5.9[22;62H6[23;46H5.9[23;62H6[24;46H6[25d5.9[25;62H7[26;46H8[27d5.3[28;46H5.3[29;46H5.3[30;46H6.0[31d7[32;46H5.3[33;46H5.3[34d7[35;46H5.3[36;62H6[37;46H1.3[H[52d[J[?12l[?25h[?1000l[52;1H[?1049l[?1l>dueker@ella:~/Documents/softwareprojekt$ [Kdueker@ella:~/Documents/softwareprojekt$ htoppython3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/ -mu2 0.01 -mu3 0.01[Ahtop[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 run_junto_diff_config.py -R ~/Doownloads/extended_mfw/ -mu2 0.01 -mu3 0.01[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -m[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -mu[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~ -m[1@u[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/ -[1@m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CD [1@-[1@o[1@c[1@u[6@ments/[1@s[1@o[14@ftwareprojekt/[1@d[1@a[4@ten/
+baseline_results_C05.csv            output_050718_2/
+baseline_results_C1.csv             preprocessed_tweets_normalized.txt
+baseline_results.csv                preprocessed_tweets.txt
+Baselist/                           schimpfwortliste
+Baselist_counted                    seeds.txt
+deutschrap/                         SentiWS/
+extended_mfw_cutoff_040/            test/
+germeval/                           testlauf_100718/
+gold_labels.txt                     testlauf_110718_mfw/
+graph/                              testlauf_110718_mfw_wiki/
+graph_input.txt                     testlauf_110718_random/
+graph_output_300618                 testset_mfw_200/
+graph_output_300618_v2              testset_mfw_300/
+hilfsskripts/                       testset_random_200/
+IWNLP.Lemmatizer_20170501.json      testset_random_300/
+mi_vocab.txt                        tokenized_tweets_normalized.txt
+most_freq_wikipedia_words.txt       tokenized_tweets.txt
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doocuments/softwareprojekt/daten/ -mu2 0.01 -mu3 0.01[1@e[1@x[1@t[1@e[20@nded_mfw_cutoff_040/
+1 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_100/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+2 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_80/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_80/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_80/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+3 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_90/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_90/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_90/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+4 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_100/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+5 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_80/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_80/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_80/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+6 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_90/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_90/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_90/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+7 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_100/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+8 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_80/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_80/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_80/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+9 / 9
+#inputs
+    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/graph_input.txt
+    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_90/seeds.txt
+    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_90/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_90/output/output-mu2-0.01-mu3-0.01
+    
+ERROR StatusLogger Unable to locate a logging implementation, using SimpleLogger
+dueker@ella:~/Documents/softwareprojekt$ s[Kls
+agreement.py		daten			 README.md
+annotation		getMostFrequentSeeds.py  run_junto_diff_config.py
+autosarkasmus		graph_evaluation.py	 screenlog.0
+baseline_classifier.py	graph_preprocessing.py	 vortrag
+baseline_results.csv	no_agreement.txt
+dueker@ella:~/Documents/softwareprojekt$ cd c[Kdaten
+dueker@ella:~/Documents/softwareprojekt/daten$ ls
+baseline_results_C05.csv	output_050718_2
+baseline_results_C1.csv		preprocessed_tweets_normalized.txt
+baseline_results.csv		preprocessed_tweets.txt
+Baselist			schimpfwortliste
+Baselist_counted		seeds.txt
+deutschrap			SentiWS
+extended_mfw_cutoff_040		test
+germeval			testlauf_100718
+gold_labels.txt			testlauf_110718_mfw
+graph				testlauf_110718_mfw_wiki
+graph_input.txt			testlauf_110718_random
+graph_output_300618		testset_mfw_200
+graph_output_300618_v2		testset_mfw_300
+hilfsskripts			testset_random_200
+IWNLP.Lemmatizer_20170501.json	testset_random_300
+mi_vocab.txt			tokenized_tweets_normalized.txt
+most_freq_wikipedia_words.txt	tokenized_tweets.txt
+dueker@ella:~/Documents/softwareprojekt/daten$ cd extended_mfw_cutoff_040/
+dueker@ella:~/Documents/softwareprojekt/daten/extended_mfw_cutoff_040$ ls
+graph_input.txt			   most_frequent_words_seeds_80_90
+most_frequent_words_seeds_100_100  most_frequent_words_seeds_90_100
+most_frequent_words_seeds_100_80   most_frequent_words_seeds_90_80
+most_frequent_words_seeds_100_90   most_frequent_words_seeds_90_90
+most_frequent_words_seeds_80_100   report
+most_frequent_words_seeds_80_80    results.csv
+dueker@ella:~/Documents/softwareprojekt/daten/extended_mfw_cutoff_040$ less repo rt
+[?1049h[?1h=most_frequent_words_seeds_80_100output-mu2-0.01-mu3-0.01
+         off     neg
+off      24      107 
+neg      145     7571 
+Precision: 0.183206106870229
+Recall: 0.14201183431952663
+Accuracy: 0.967885816235504
+F1-Score: 0.15999999999999998
+
+most_frequent_words_seeds_90_100output-mu2-0.01-mu3-0.01
+         off     neg
+off      27      131 
+neg      142     7547 
+Precision: 0.17088607594936708
+Recall: 0.15976331360946747
+Accuracy: 0.9652096342551294
+F1-Score: 0.1651376146788991
+
+most_frequent_words_seeds_100_100output-mu2-0.01-mu3-0.01
+         off     neg
+off      32      162 
+neg      137     7516 
+Precision: 0.16494845360824742
+[7mreport[27m[K[KRecall: 0.1893491124260355
+Accuracy: 0.9618962660889512
+F1-Score: 0.17630853994490356
+
+most_frequent_words_seeds_80_90output-mu2-0.01-mu3-0.01
+         off     neg
+off      25      134 
+neg      144     7544 
+Precision: 0.15723270440251572
+Recall: 0.14792899408284024
+Accuracy: 0.9645724480693258
+F1-Score: 0.15243902439024393
+
+most_frequent_words_seeds_90_90output-mu2-0.01-mu3-0.01
+         off     neg
+off      28      158 
+neg      141     7520 
+Precision: 0.15053763440860216
+Recall: 0.16568047337278108
+Accuracy: 0.9618962660889512
+F1-Score: 0.15774647887323942
+
+most_frequent_words_seeds_80_80output-mu2-0.01-mu3-0.01
+:[K[K         off     neg
+off      25      142 
+neg      144     7536 
+Precision: 0.1497005988023952
+Recall: 0.14792899408284024
+Accuracy: 0.9635529501720402
+F1-Score: 0.1488095238095238
+
+most_frequent_words_seeds_90_80output-mu2-0.01-mu3-0.01
+         off     neg
+off      28      165 
+neg      141     7513 
+Precision: 0.14507772020725387
+Recall: 0.16568047337278108
+Accuracy: 0.9610042054288263
+F1-Score: 0.15469613259668505
+
+most_frequent_words_seeds_100_90output-mu2-0.01-mu3-0.01
+         off     neg
+off      32      190 
+neg      137     7488 
+Precision: 0.14414414414414414
+Recall: 0.1893491124260355
+:[K[KAccuracy: 0.9583280234484516
+F1-Score: 0.16368286445012786
+
+most_frequent_words_seeds_100_80output-mu2-0.01-mu3-0.01
+         off     neg
+off      32      195 
+neg      137     7483 
+Precision: 0.14096916299559473
+Recall: 0.1893491124260355
+Accuracy: 0.9576908372626481
+F1-Score: 0.16161616161616163
+
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>[?1049ldueker@ella:~/Documents/softwareprojekt/daten/extended_mfw_cutoff_040$ cd ..
+dueker@ella:~/Documents/softwareprojekt/daten$ cd ..
+dueker@ella:~/Documents/softwareprojekt$ git push
+dUsername for 'https://github.com': dueker
+Password for 'https://ddueker@github.com': 
+dueker@ella:~/Documents/softwareprojekt$ git push
+Username for 'https://github.com': faduueker     eker@googlemail.com
+Password for 'https://fadueker@googlemail.com@github.com': 
+Everything up-to-date
+dueker@ella:~/Documents/softwareprojekt$ gt[Kit comm[K[K[K[Kadd[K[K[K[K[K[K[Kgit status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_100_100/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_100_70/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_100_80/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_100_90/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_70_100/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_70_70/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_70_80/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_70_90/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_80_100/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_80_70/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_80_80/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_80_90/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_90_100/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_90_70/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_90_80/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/most_frequent_words_seeds_90_90/new_config[m
+	[31mmodified:   daten/testlauf_110718_mfw/report[m
+	[31mmodified:   screenlog.0[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_100/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_100/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_80/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_80/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_90/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_100_90/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_100/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_100/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_80/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_80/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_90/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_80_90/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_100/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_100/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_80/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_80/output/[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_90/new_config[m
+	[31mdaten/extended_mfw_cutoff_040/most_frequent_words_seeds_90_90/output/[m
+	[31mdaten/extended_mfw_cutoff_040/report[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dueker@ella:~/Documents/softwareprojekt$ git add daten/extended_mfw_cutoff_040/
+dueker@ella:~/Documents/softwareprojekt$ git commit -a -m 'ergebnisse eten[K[K[Kxtenden [K
