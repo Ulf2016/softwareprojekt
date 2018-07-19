@@ -1,0 +1,66 @@
+dueker@ella:~/Documents/softwareprojekt/daten/testset_mfw_300$ cd ..
+dueker@ella:~/Documents/softwareprojekt/daten$ cd ..
+dueker@ella:~/Documents/softwareprojekt$ ls 
+agreement.py		daten			 README.md
+annotation		getMostFrequentSeeds.py  run_junto_diff_config.py
+autosarkasmus		graph_evaluation.py	 screenlog.0
+baseline_classifier.py	graph_preprocessing.py	 vortrag
+baseline_results.csv	no_agreement.txt
+dueker@ella:~/Documents/softwareprojekt$ pr[Kython3 run_junto_diff_config.py -R ~/D ocuments/date[K[K[K[Ksoftwareprojekt/daten/testset_random_300/[K -mu2 0.001,[K 0.01 0.1 -m2[Ku3 0.001  0.01 0.1
+1 / 1
+sh: 1: junto: not found
+Traceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Documents/softwareprojekt/daten/testset_random_300/baselexicon_random_seeds100_300/output/output-mu2-0.001-mu3-0.001'
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doocuments/softwareprojekt/daten/testset_random_300 -mu2 0.001 0.01 0.1 -mu3 0.001  0.01 0.1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/ -mu2 0.001 0.01 0.1 -mu3 0.001[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+1 / 1
+sh: 1: junto: not found
+Traceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Documents/softwareprojekt/daten/testset_random_300/baselexicon_random_seeds100_300/output/output-mu2-0.001-mu3-0.001'
+dueker@ella:~/Documents/softwareprojekt$ python3 run_junto_diff_config.py -R ~/Doocuments/softwareprojekt/daten/testset_random_300/ -mu2 0.001 0.01 0.1 -mu3 0.0011 0.01 0.1[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 run_junto_diff_config.py -R ~/Doocuments/softwareprojekt/daten/testset_random_300/ -mu2 0.001 0.01 0.1 -mu3 0.0011 0.01 0.1[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktst[Ke[K[Kestset_random_300/ -m2[Ku2 0.001,[K 0.02[K1 0.1 -mu3 0.00 1 0.1[K01 0.1
+1 / 1
+sh: 1: junto: not found
+Traceback (most recent call last):
+  File "run_junto_diff_config.py", line 169, in <module>
+    main(sys.argv[1:])
+  File "run_junto_diff_config.py", line 43, in main
+    tmp_rep  = run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_threshold, algo, mu1, r_mu2, r_mu3, beta, output_path, p, evaluation, write_results, results)
+  File "run_junto_diff_config.py", line 112, in run_junto
+    with output_file.open(mode='r') as read_file:
+  File "/usr/lib/python3.5/pathlib.py", line 1151, in open
+    opener=self._opener)
+  File "/usr/lib/python3.5/pathlib.py", line 1005, in _opener
+    return self._accessor.open(self, flags, mode)
+  File "/usr/lib/python3.5/pathlib.py", line 371, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/students/dueker/Documents/softwareprojekt/daten/testset_random_300/baselexicon_random_seeds100_300/output/output-mu2-0.001-mu3-0.001'
+dueker@ella:~/Documents/softwareprojekt$ cd ..
+dueker@ella:~/Documents$ exit
+exit

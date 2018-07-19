@@ -1,0 +1,81 @@
+baselexicon_random_seeds100_200output-mu2-0.001-mu3-0.001
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.001-mu3-0.01
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.001-mu3-0.1
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.01-mu3-0.001
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.01-mu3-0.1
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.1-mu3-0.001
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.1-mu3-0.01
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+
+baselexicon_random_seeds100_200output-mu2-0.1-mu3-0.1
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 1072 
+Precision: 0
+Recall: 0
+Accuracy: 0.8631239935587761
+F1-Score: 0
+

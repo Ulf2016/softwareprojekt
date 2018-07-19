@@ -1,0 +1,81 @@
+most_frequent_words_seeds_100_300output-mu2-0.001-mu3-0.001
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.001-mu3-0.01
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.001-mu3-0.1
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.01-mu3-0.001
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.01-mu3-0.1
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.1-mu3-0.001
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.1-mu3-0.01
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
+most_frequent_words_seeds_100_300output-mu2-0.1-mu3-0.1
+  	 off 	 neg
+off 	 0 	 0 
+neg 	 170 	 972 
+Precision: 0
+Recall: 0
+Accuracy: 0.851138353765324
+F1-Score: 0
+
