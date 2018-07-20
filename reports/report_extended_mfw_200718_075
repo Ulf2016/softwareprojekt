@@ -1,0 +1,81 @@
+most_frequent_words_seeds_80_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 49 	 23 
+neg 	 121 	 1149 
+Precision: 0.6805555555555556
+Recall: 0.28823529411764703
+Accuracy: 0.8926974664679582
+F1-Score: 0.4049586776859504
+
+most_frequent_words_seeds_90_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 97 	 102 
+neg 	 73 	 1070 
+Precision: 0.48743718592964824
+Recall: 0.5705882352941176
+Accuracy: 0.8695976154992549
+F1-Score: 0.5257452574525745
+
+most_frequent_words_seeds_80_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 88 	 95 
+neg 	 82 	 1077 
+Precision: 0.4808743169398907
+Recall: 0.5176470588235295
+Accuracy: 0.8681073025335321
+F1-Score: 0.4985835694050992
+
+most_frequent_words_seeds_80_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 101 	 279 
+neg 	 69 	 893 
+Precision: 0.2657894736842105
+Recall: 0.5941176470588235
+Accuracy: 0.7406855439642325
+F1-Score: 0.36727272727272725
+
+most_frequent_words_seeds_90_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 124 	 424 
+neg 	 46 	 748 
+Precision: 0.22627737226277372
+Recall: 0.7294117647058823
+Accuracy: 0.6497764530551415
+F1-Score: 0.34540389972144847
+
+most_frequent_words_seeds_100_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 134 	 522 
+neg 	 36 	 650 
+Precision: 0.20426829268292682
+Recall: 0.788235294117647
+Accuracy: 0.5842026825633383
+F1-Score: 0.32445520581113796
+
+most_frequent_words_seeds_90_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 125 	 495 
+neg 	 45 	 677 
+Precision: 0.20161290322580644
+Recall: 0.7352941176470589
+Accuracy: 0.5976154992548435
+F1-Score: 0.3164556962025316
+
+most_frequent_words_seeds_100_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 135 	 656 
+neg 	 35 	 516 
+Precision: 0.1706700379266751
+Recall: 0.7941176470588235
+Accuracy: 0.485096870342772
+F1-Score: 0.28095733610822055
+
+most_frequent_words_seeds_100_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 135 	 666 
+neg 	 35 	 506 
+Precision: 0.16853932584269662
+Recall: 0.7941176470588235
+Accuracy: 0.47764530551415796
+F1-Score: 0.2780638516992791
+
