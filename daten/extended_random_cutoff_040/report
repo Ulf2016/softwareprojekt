@@ -1,0 +1,81 @@
+baselexicon_random_seeds80_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 20 	 55 
+neg 	 149 	 7623 
+Precision: 0.26666666666666666
+Recall: 0.11834319526627218
+Accuracy: 0.9740028036192175
+F1-Score: 0.16393442622950818
+
+baselexicon_random_seeds80_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 20 	 55 
+neg 	 149 	 7623 
+Precision: 0.26666666666666666
+Recall: 0.11834319526627218
+Accuracy: 0.9740028036192175
+F1-Score: 0.16393442622950818
+
+baselexicon_random_seeds80_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 19 	 53 
+neg 	 150 	 7625 
+Precision: 0.2638888888888889
+Recall: 0.11242603550295859
+Accuracy: 0.9741302408563782
+F1-Score: 0.15767634854771784
+
+baselexicon_random_seeds90_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 25 	 77 
+neg 	 144 	 7601 
+Precision: 0.24509803921568626
+Recall: 0.14792899408284024
+Accuracy: 0.9718363705874856
+F1-Score: 0.18450184501845018
+
+baselexicon_random_seeds90_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 24 	 76 
+neg 	 145 	 7602 
+Precision: 0.24
+Recall: 0.14201183431952663
+Accuracy: 0.9718363705874856
+F1-Score: 0.17843866171003717
+
+baselexicon_random_seeds100_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 35 	 112 
+neg 	 134 	 7566 
+Precision: 0.23809523809523808
+Recall: 0.20710059171597633
+Accuracy: 0.9686504396584682
+F1-Score: 0.22151898734177214
+
+baselexicon_random_seeds90_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 24 	 77 
+neg 	 145 	 7601 
+Precision: 0.2376237623762376
+Recall: 0.14201183431952663
+Accuracy: 0.9717089333503249
+F1-Score: 0.17777777777777778
+
+baselexicon_random_seeds100_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 35 	 113 
+neg 	 134 	 7565 
+Precision: 0.23648648648648649
+Recall: 0.20710059171597633
+Accuracy: 0.9685230024213075
+F1-Score: 0.22082018927444796
+
+baselexicon_random_seeds100_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 35 	 113 
+neg 	 134 	 7565 
+Precision: 0.23648648648648649
+Recall: 0.20710059171597633
+Accuracy: 0.9685230024213075
+F1-Score: 0.22082018927444796
+
