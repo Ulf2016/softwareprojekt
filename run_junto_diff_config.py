@@ -106,8 +106,6 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
 
             y_true = []
             y_pred = []
-            
-            
 
             with output_file.open(mode='r') as read_file:
                 for line in read_file.read().splitlines():
@@ -154,12 +152,7 @@ def run_junto(graph_file, seed_file, gold_labels_file, iters, verbose, prune_thr
                 recall = tp/(tp+fn)
                 f1 = 2*((precision*recall)/(precision+recall))
             accuracy = (tp+tn)/(tp+tn+fp+fn)
-
-
-
-
             name = output_path.parts[-2] + output_file.name
-
             report.append([name, tp, fp, fn, tn, precision, recall, accuracy, f1])
             assert(len(y_true) == len(y_pred))
     return report
