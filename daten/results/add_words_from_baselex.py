@@ -3,7 +3,8 @@ from pathlib import Path
 off_words = []
 with open('../Baselist/final_list.txt') as read_file:
     for line in read_file:
-        off_words.append(line.split('\t')[0])
+        if(int(line.split('\t')[2]) == 1):
+            off_words.append(line.split('\t')[0])
 
 root = Path('extracted_words')
 files = [x for x in root.iterdir() if x.suffix == '.out']
