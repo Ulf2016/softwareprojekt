@@ -1,0 +1,16 @@
+#inputs
+    graph_file = /home/students/dueker/Downloads/extended_mfw_200718/extended_mfw_200718_090_010/graph_input.txt
+    seed_file = /home/students/dueker/Downloads/extended_mfw_200718/extended_mfw_200718_090_010/most_frequent_words_seeds_90_100/seeds.txt
+    gold_labels_file = /home/students/dueker/Downloads/extended_mfw_200718/extended_mfw_200718_090_010/most_frequent_words_seeds_90_100/gold_labels.txt
+    #Parameters
+    iters = 15
+    verbose = true
+    prune_threshold = 0
+    algo = mad
+    #Hyperparameters
+    mu1 = 1
+    mu2 = 0.01
+    mu3 = 0.01
+    beta = 2
+    output_file = /home/students/dueker/Downloads/extended_mfw_200718/extended_mfw_200718_090_010/most_frequent_words_seeds_90_100/output/output-mu2-0.01-mu3-0.01
+    
