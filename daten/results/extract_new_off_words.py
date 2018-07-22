@@ -2,13 +2,14 @@ from pathlib import Path
 import operator
 
 root = Path('extended_mfw_200718_075/')
+for_name = root.stem.__str__().strip('/')
 subfolders = [x for x in root.iterdir() if(x.is_dir())]
 
 for i in subfolders:
     p = i / 'output'
+    for_name2 = i.stem.__str__().strip('/')
     files = [f for f in p.iterdir() if(f.suffix != '.out')]
     for j in files:
-        print(j)
         new_words = []
         with j.open() as read_file:
             for line in read_file:
@@ -19,7 +20,7 @@ for i in subfolders:
                     new_words.append((word, certainty))
                     
 
-        o = Path(j.__str__()+'.out')
+        o = Path('extracted_words/'+for_name+for_name2+'.out')
 
         new_words = sorted(new_words, key = operator.itemgetter(1), reverse=True)
 
