@@ -1,0 +1,81 @@
+baselexicon_random_seeds80_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 70 	 60 
+neg 	 100 	 1112 
+Precision: 0.5384615384615384
+Recall: 0.4117647058823529
+Accuracy: 0.8807749627421758
+F1-Score: 0.4666666666666667
+
+baselexicon_random_seeds80_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 90 	 130 
+neg 	 80 	 1042 
+Precision: 0.4090909090909091
+Recall: 0.5294117647058824
+Accuracy: 0.8435171385991058
+F1-Score: 0.46153846153846156
+
+baselexicon_random_seeds90_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 101 	 160 
+neg 	 69 	 1012 
+Precision: 0.38697318007662834
+Recall: 0.5941176470588235
+Accuracy: 0.8293591654247392
+F1-Score: 0.4686774941995359
+
+baselexicon_random_seeds90_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 115 	 265 
+neg 	 55 	 907 
+Precision: 0.3026315789473684
+Recall: 0.6764705882352942
+Accuracy: 0.7615499254843517
+F1-Score: 0.4181818181818182
+
+baselexicon_random_seeds80_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 106 	 271 
+neg 	 64 	 901 
+Precision: 0.28116710875331563
+Recall: 0.6235294117647059
+Accuracy: 0.7503725782414307
+F1-Score: 0.3875685557586837
+
+baselexicon_random_seeds100_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 123 	 322 
+neg 	 47 	 850 
+Precision: 0.27640449438202247
+Recall: 0.7235294117647059
+Accuracy: 0.7250372578241431
+F1-Score: 0.4
+
+baselexicon_random_seeds90_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 130 	 528 
+neg 	 40 	 644 
+Precision: 0.19756838905775076
+Recall: 0.7647058823529411
+Accuracy: 0.5767511177347243
+F1-Score: 0.3140096618357488
+
+baselexicon_random_seeds100_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 135 	 572 
+neg 	 35 	 600 
+Precision: 0.19094766619519093
+Recall: 0.7941176470588235
+Accuracy: 0.5476900149031296
+F1-Score: 0.30786773090079816
+
+baselexicon_random_seeds100_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 136 	 768 
+neg 	 34 	 404 
+Precision: 0.1504424778761062
+Recall: 0.8
+Accuracy: 0.40238450074515647
+F1-Score: 0.2532588454376164
+

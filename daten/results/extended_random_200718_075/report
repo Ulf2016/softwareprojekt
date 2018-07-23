@@ -1,0 +1,81 @@
+baselexicon_random_seeds80_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 54 	 38 
+neg 	 116 	 1134 
+Precision: 0.5869565217391305
+Recall: 0.3176470588235294
+Accuracy: 0.8852459016393442
+F1-Score: 0.4122137404580153
+
+baselexicon_random_seeds80_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 73 	 92 
+neg 	 97 	 1080 
+Precision: 0.44242424242424244
+Recall: 0.4294117647058823
+Accuracy: 0.8591654247391952
+F1-Score: 0.43582089552238806
+
+baselexicon_random_seeds90_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 91 	 122 
+neg 	 79 	 1050 
+Precision: 0.4272300469483568
+Recall: 0.5352941176470588
+Accuracy: 0.8502235469448585
+F1-Score: 0.475195822454308
+
+baselexicon_random_seeds90_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 105 	 228 
+neg 	 65 	 944 
+Precision: 0.3153153153153153
+Recall: 0.6176470588235294
+Accuracy: 0.7816691505216096
+F1-Score: 0.41749502982107356
+
+baselexicon_random_seeds80_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 95 	 222 
+neg 	 75 	 950 
+Precision: 0.2996845425867508
+Recall: 0.5588235294117647
+Accuracy: 0.7786885245901639
+F1-Score: 0.3901437371663245
+
+baselexicon_random_seeds100_100output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 118 	 277 
+neg 	 52 	 895 
+Precision: 0.29873417721518986
+Recall: 0.6941176470588235
+Accuracy: 0.7548435171385991
+F1-Score: 0.4176991150442478
+
+baselexicon_random_seeds90_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 122 	 457 
+neg 	 48 	 715 
+Precision: 0.21070811744386875
+Recall: 0.7176470588235294
+Accuracy: 0.6236959761549925
+F1-Score: 0.3257676902536716
+
+baselexicon_random_seeds100_90output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 131 	 491 
+neg 	 39 	 681 
+Precision: 0.21061093247588425
+Recall: 0.7705882352941177
+Accuracy: 0.6050670640834576
+F1-Score: 0.33080808080808083
+
+baselexicon_random_seeds100_80output-mu2-0.01-mu3-0.01
+  	 off 	 neg
+off 	 134 	 692 
+neg 	 36 	 480 
+Precision: 0.162227602905569
+Recall: 0.788235294117647
+Accuracy: 0.45752608047690013
+F1-Score: 0.26907630522088355
+
