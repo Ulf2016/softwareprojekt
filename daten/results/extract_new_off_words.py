@@ -1,7 +1,7 @@
 from pathlib import Path
 import operator
 
-root = Path('extended_mfw_200718_075/')
+root = Path('extended_random_200718_090_010/')
 for_name = root.stem.__str__().strip('/')
 subfolders = [x for x in root.iterdir() if(x.is_dir())]
 
