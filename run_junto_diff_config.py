@@ -20,7 +20,7 @@ def main(argv):
         r_mu2, r_mu3 = args.range_mu2, args.range_mu3
 
         graph_file = root_folder / 'graph_input.txt'
-        results = root_folder / 'report'
+        results = root_folder / 'report_unsorted'
         write_results = True
         subfolders = [x for x in root_folder.iterdir() if x.is_dir()]
 

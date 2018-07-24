@@ -1,7 +1,7 @@
 #inputs
-    graph_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_random_200718_090_010/graph_input.txt
-    seed_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_random_200718_090_010/baselexicon_random_seeds90_80/seeds.txt
-    gold_labels_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_random_200718_090_010/baselexicon_random_seeds90_80/gold_labels.txt
+    graph_file = /home/duke/Documents/softwareprojekt/daten/results/extended_random_200718_090_010/graph_input.txt
+    seed_file = /home/duke/Documents/softwareprojekt/daten/results/extended_random_200718_090_010/baselexicon_random_seeds90_80/seeds.txt
+    gold_labels_file = /home/duke/Documents/softwareprojekt/daten/results/extended_random_200718_090_010/baselexicon_random_seeds90_80/gold_labels.txt
     #Parameters
     iters = 15
     verbose = true
@@ -12,5 +12,5 @@
     mu2 = 0.01
     mu3 = 0.01
     beta = 2
-    output_file = /home/students/dueker/Documents/softwareprojekt/daten/extended_random_200718_090_010/baselexicon_random_seeds90_80/output/output-mu2-0.01-mu3-0.01
+    output_file = /home/duke/Documents/softwareprojekt/daten/results/extended_random_200718_090_010/baselexicon_random_seeds90_80/output/output-mu2-0.01-mu3-0.01
     

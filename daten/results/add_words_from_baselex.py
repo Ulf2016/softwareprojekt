@@ -4,7 +4,7 @@ off_words = []
 with open('../Baselist/final_list.txt') as read_file:
     for line in read_file:
         if(int(line.split('\t')[2]) == 1):
-            off_words.append(line.split('\t')[0])
+            off_words.append(line.split('\t')[0] + '\t' + '1.0')
 
 root = Path('extracted_words')
 files = [x for x in root.iterdir() if x.suffix == '.out']
@@ -16,7 +16,7 @@ for i in files:
     output = out_path / i.stem
     with i.open() as read_file:
         for line in read_file:
-            new_off_words.append(line.split('\t')[0])
+            new_off_words.append(line)
     
     with output.open('w') as write_file:
         for j in off_words:
