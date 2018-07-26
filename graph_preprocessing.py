@@ -52,7 +52,7 @@ class GraphPreprocessor:
 				continue
 
 	def read_embeddings_for_wiktionary_words(self, wiktionary_words):
-		print("lookup embeddings for " + str(len(wiktionary_words)) + " new negative words from wiktionary")
+		print("Lookup embeddings for " + str(len(wiktionary_words)) + " new negative words from wiktionary")
 		before = len(self.baselexicon)
 		found = [] 
 		umlaut_pattern = re.compile(".*(ae).*|.*(oe).*|.*(ue).*", re.I)
@@ -140,7 +140,7 @@ class GraphPreprocessor:
 		 			vector = np.array(v, dtype=np.float)
 		 			abusive = l[3].strip()
 		 			self.baselexicon[token] = [tag, abusive, vector] 
-		 		print("read baselexicon with " + str(len(self.baselexicon)) + " words")
+		 		print("Read baselexicon with " + str(len(self.baselexicon)) + " words")
 		 		return 1
 		except FileNotFoundError as e:
 			return 0
@@ -172,7 +172,8 @@ class GraphPreprocessor:
 			for i in range(len(l)):
 				counter += 1
 				key = l[i]
-				print("Word " + str(counter))
+				if counter % 50 == 0:
+					print(str(counter) + " words processed")
 				for j in l[i:]:
 					if(key != j):
 						try:
@@ -203,14 +204,14 @@ class GraphPreprocessor:
 			else:
 
 				# normalize
-				print("calculate median value")
+				print("Calculate median value")
 				key = d.keys()
 				values = d.values()
 				scores = np.array(list(values))
 				median = np.median(scores)
 				mean = np.mean(scores)
 			
-				print("reducing graph density")
+				print("Reducing graph density")
 				for k,v in zip(key, scores):
 					if abs(float(v) - mean) >= self.cutoff:
 						dic[k] = v
@@ -234,7 +235,7 @@ class GraphPreprocessor:
 				li.append(c)
 
 			self.graph_input = set(li)
-			print("writing graph input file")
+			print("Writing graph input file")
 			# write to file
 			self.create_graph_output(dic, os.path.dirname(path))
 
@@ -388,8 +389,8 @@ class GraphPreprocessor:
 				raise FileNotFoundError
 			
 		except FileNotFoundError as e:
-			print("extended baselexicon_embeddings_X.txt not found")
-			print("create baselexicon_embeddings_X.txt from wiktionary negative words")
+			print("Extended baselexicon_embeddings_X.txt not found")
+			print("Create baselexicon_embeddings_X.txt from wiktionary negative words")
 			wiktionary_words = {}
 			counter = 0
 			with open(path2, "r") as wiktionary:
@@ -413,7 +414,7 @@ class GraphPreprocessor:
 			pass
 		else:
 			if not (os.path.exists(os.path.dirname(path))):
-				print("creating directories for " + path)
+				print("Creating directories for " + path)
 				os.makedirs(os.path.dirname(path))
 		return path
 
@@ -457,12 +458,12 @@ def main(argv):
 			if not (g.read_baselexicon_from_file(os.path.join(outputpath, "annotation/baselexicon_embeddings.txt"))):
 
 				print("##################################")
-				print("create baselexicon with embeddings")
+				print("Create baselexicon with embeddings")
 				g.read_baselexicon()
 				g.read_embeddings()
 				g.write_baselexicon_to_file(os.path.join(outputpath, "annotation/baselexicon_embeddings.txt"))
-				print("could not find embeddings for " + str(len(g.noEmbeddings)) + " words")
-				print(g.noEmbeddings)		
+				print("Could not find embeddings for " + str(len(g.noEmbeddings)) + " words")
+				# print(g.noEmbeddings)		
 		
 			#Graph Erweiterung
 			if(os.path.exists(extend)):
@@ -501,7 +502,7 @@ def main(argv):
 					g.create_graph_seed_and_goldlabel(parameters[0], parameters[1], path)
 		
 		else:
-			sys.exit("please specifiy parameters: --outputfolder / --embeddingFile / --upper / --lower / --methode / --cutoff \nRefer to -h for help" )
+			sys.exit("Please specifiy parameters: --outputfolder / --embeddingFile / --upper / --lower / --methode / --cutoff \nRefer to -h for help" )
 
 	except Exception as e:
 		print(e)
